@@ -1,0 +1,130 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+
+namespace Auditoria
+{
+    class Audit
+    {
+        int roomNB;
+        int placeNB;
+        bool isMultimedia;
+        bool isOccupied;
+        string cafedra;
+
+        public Audit(int roomNB, int placeNB = 100, bool isMultimedia = true, bool isOccupied = false, string cafedra = "KB-3")
+        {
+            this.roomNB = roomNB;
+            this.placeNB = placeNB;
+            this.isMultimedia = isMultimedia;
+            this.isOccupied = isOccupied;
+            this.cafedra = cafedra;
+        }
+
+        public void SetRoomNB(int newRoomNB)
+        { 
+            if (newRoomNB <= 0) 
+            {
+                Console.WriteLine("Неправильный формат номера!\n");
+                return;
+            }
+
+            this.roomNB = newRoomNB;
+        }
+        public int GetRoomNB() => this.roomNB;
+        public void SetOccupied(bool isOccupied) => this.isOccupied = isOccupied;
+        public void OccupyRoom(string cafedra, int placeNB) 
+        {
+            if (isOccupied) 
+            {
+                Console.WriteLine("Аудитория занята!\n");
+                return;
+            }
+            if (this.placeNB < placeNB)
+            {
+                Console.WriteLine("Недостаточно мест!\n");
+                return;
+            }
+            if (cafedra != this.cafedra)
+            {
+                Console.WriteLine("Не ваша кафедра!\n");
+                return;
+            }
+
+            this.cafedra = cafedra;
+            SetOccupied(true);
+        }
+        public void SwitchMultimedia() => this.isMultimedia = !this.isMultimedia;
+        public string Display() 
+        {
+            string oc = this.isOccupied ? "occupied" : "free";
+            string output = $"" +
+                $"{this.roomNB} = roomNB;\r\n" +
+                $"{this.placeNB} = placeNB;\r\n" +
+                $"{this.isMultimedia} = isMultimedia;\r\n" +
+                $"{oc} = isOccupied;\r\n" +
+                $"{this.cafedra} = cafedra;\r\n" +
+                $"--------------------------------------------\n";
+            Console.WriteLine(output);
+            return output;
+        }
+    }
+
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            List<Audit> auditories = new List<Audit>();
+
+            int num = 0;
+            for (int i = 0; i < 4; i++) 
+            {
+                auditories.Add(new Audit(111 + num++));
+            }
+            foreach (Audit audit in auditories)
+            {
+                audit.Display();
+            }
+
+            for (int i = 0; i < auditories.Count; i++) 
+            {
+                if (auditories[i].GetRoomNB() == 113)
+                    auditories[i].SetRoomNB(112);
+            }
+
+            foreach (Audit audit in auditories)
+            {
+                audit.Display();
+            }
+
+            string path = @"D:\Yana\test.txt";
+            using (StreamWriter sw = new StreamWriter(path)) 
+            {
+                foreach (Audit audit in auditories) 
+                {
+                    sw.WriteLine(audit.Display());
+                }
+            }
+
+            /*            Audit audit112 = new Audit(112);
+                        audit112.Display();
+
+                        audit112.OccupyRoom("KD-12", 100);
+                        audit112.Display();
+
+                        audit112.OccupyRoom("KB-3", 101);
+                        audit112.Display();
+
+                        audit112.SetRoomNB(800);
+                        audit112.Display();
+
+                        audit112.OccupyRoom("KB-3", 100);
+                        audit112.SwitchMultimedia();
+                        audit112.Display();*/
+        }
+    }
+}
