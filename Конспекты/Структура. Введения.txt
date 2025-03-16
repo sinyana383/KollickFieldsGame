@@ -1,0 +1,3 @@
+First paragraph: Write about the problem globally (about VR and tools I use)
+Second paragraph: Write about the problem specifically("В разработке [жанр моей игры используются такие механики как]")
+Third paragraph: How to solve the problem ("Необходимо провести в первой главе..., во второй..., в третей разработку и тестирование"
