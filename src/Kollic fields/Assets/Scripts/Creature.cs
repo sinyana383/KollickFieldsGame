@@ -11,7 +11,7 @@ public class Creature : MonoBehaviour
         if (collision.gameObject.TryGetComponent(out Weapon weapon))
         {
             this.transform.position += new Vector3(0.3f, 0, 0);
-            //weapon.gameObject.SetActive(false);
+            weapon.gameObject.SetActive(false);
 
             this.hp -= weapon.Dmg;
             Dead();
@@ -21,7 +21,7 @@ public class Creature : MonoBehaviour
         {
             if(this.hp <= 0)
             {
-                Destroy(this.gameObject);
+                Destroy(this);
             }
         }
 
