@@ -7,8 +7,6 @@ public class Idol : MonoBehaviour
     {
         if (collision.gameObject.TryGetComponent(out Weapon weapon))
         {
-           
-            weapon.gameObject.SetActive(false);
 
             this.toughness -= weapon.Dmg;
             Broken();
@@ -18,7 +16,7 @@ public class Idol : MonoBehaviour
         {
             if (this.toughness <= 0)
             {
-                Destroy(this);
+                Destroy(gameObject);
             }
         }
 

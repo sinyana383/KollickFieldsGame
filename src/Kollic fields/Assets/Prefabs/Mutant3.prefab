@@ -843,6 +843,7 @@ GameObject:
   m_Component:
   - component: {fileID: 270305943148325614}
   - component: {fileID: 6250464015061390115}
+  - component: {fileID: 1318129499910522641}
   m_Layer: 0
   m_Name: Mutant3
   m_TagString: Untagged
@@ -858,7 +859,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2358087903550022050}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.967195, z: -0, w: -0.25403544}
+  m_LocalRotation: {x: -0, y: -0.9671947, z: 0, w: -0.25403646}
   m_LocalPosition: {x: 52.5, y: 0.59993744, z: 235.5}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
@@ -887,6 +888,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13727eef46f56bf4b828066ee1c826d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!136 &1318129499910522641
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2358087903550022050}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.3
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1 &2574063049091964999
 GameObject:
   m_ObjectHideFlags: 0
