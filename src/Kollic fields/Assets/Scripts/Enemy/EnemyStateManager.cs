@@ -5,6 +5,7 @@ using UnityEngine.AI;
 
 public class EnemyStateManager : MonoBehaviour
 {
+    [SerializeField] public Animator animator;
     [SerializeField] NavMeshAgent agent;
     [SerializeField] Transform player;
     [SerializeField] Transform target;
@@ -29,6 +30,7 @@ public class EnemyStateManager : MonoBehaviour
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
+        animator = GetComponent<Animator>();
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

@@ -7,6 +7,9 @@ public class IdleState : AState
         // начало анимации idle
         Debug.Log("Idle Enetered");
         enemyManager.SetSpeed(0);
+        enemyManager.animator.SetBool("is_Attacking", false);
+        enemyManager.animator.SetBool("is_Angry", false);
+
     }
     public override void ExitState(EnemyStateManager enemyManager) 
     {
