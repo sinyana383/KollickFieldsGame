@@ -324,15 +324,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 270305943148325614, guid: da9a18143d735e74f80856df40890092, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 273.2
+      value: 272.79056
       objectReference: {fileID: 0}
     - target: {fileID: 270305943148325614, guid: da9a18143d735e74f80856df40890092, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.0000009536743
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 270305943148325614, guid: da9a18143d735e74f80856df40890092, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 207.9
+      value: 208.33945
       objectReference: {fileID: 0}
     - target: {fileID: 270305943148325614, guid: da9a18143d735e74f80856df40890092, type: 3}
       propertyPath: m_LocalRotation.w
@@ -362,6 +362,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1318129499910522641, guid: da9a18143d735e74f80856df40890092, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2358087903550022050, guid: da9a18143d735e74f80856df40890092, type: 3}
       propertyPath: m_Name
       value: Mutant3
@@ -373,6 +377,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2358087903550022050, guid: da9a18143d735e74f80856df40890092, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1209720573}
+    - targetCorrespondingSourceObject: {fileID: 2358087903550022050, guid: da9a18143d735e74f80856df40890092, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1209720574}
+    - targetCorrespondingSourceObject: {fileID: 2358087903550022050, guid: da9a18143d735e74f80856df40890092, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1209720578}
   m_SourcePrefab: {fileID: 100100000, guid: da9a18143d735e74f80856df40890092, type: 3}
 --- !u!1001 &139539323
 PrefabInstance:
@@ -456,6 +466,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1730076154}
     m_Modifications:
+    - target: {fileID: 534567160780705711, guid: 9f66ab6b53673d34f9bcb2785a088fb7, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2634895029449201234, guid: 9f66ab6b53673d34f9bcb2785a088fb7, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4086434650163025872, guid: 9f66ab6b53673d34f9bcb2785a088fb7, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4795693199338838246, guid: 9f66ab6b53673d34f9bcb2785a088fb7, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -511,6 +533,14 @@ PrefabInstance:
     - target: {fileID: 5316052008210874972, guid: 9f66ab6b53673d34f9bcb2785a088fb7, type: 3}
       propertyPath: m_Name
       value: Conifer8 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5316052008210874972, guid: 9f66ab6b53673d34f9bcb2785a088fb7, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6923350723660244647, guid: 9f66ab6b53673d34f9bcb2785a088fb7, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -928,6 +958,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fern1
       objectReference: {fileID: 0}
+    - target: {fileID: 7471151650333848853, guid: 438b452f680aa5e40a455e0ac3afeaa2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8370401215106580495, guid: 438b452f680aa5e40a455e0ac3afeaa2, type: 3}
       propertyPath: m_LocalScale.x
       value: 3
@@ -999,7 +1033,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 220128116}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wise Rock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1037,7 +1071,7 @@ GameObject:
   - component: {fileID: 250824815}
   - component: {fileID: 250824814}
   - component: {fileID: 250824813}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrain (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1179,9 +1213,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 889857120, guid: 5285e089d080f3440b5c810df28d500f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524120951719800613, guid: 5285e089d080f3440b5c810df28d500f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4572775472411205859, guid: 5285e089d080f3440b5c810df28d500f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5665062071444369605, guid: 5285e089d080f3440b5c810df28d500f, type: 3}
       propertyPath: m_Name
       value: Conifer7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5665062071444369605, guid: 5285e089d080f3440b5c810df28d500f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1259,7 +1309,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 446659448}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ferns
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1388,9 +1438,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1730076154}
     m_Modifications:
+    - target: {fileID: 1322772215569290, guid: cb39455407de9a446a98945562d6f61d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1753970552198330, guid: cb39455407de9a446a98945562d6f61d, type: 3}
       propertyPath: m_Name
       value: Conifer1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753970552198330, guid: cb39455407de9a446a98945562d6f61d, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4638873546731360, guid: cb39455407de9a446a98945562d6f61d, type: 3}
       propertyPath: m_LocalScale.x
@@ -1443,6 +1501,22 @@ PrefabInstance:
     - target: {fileID: 4638873546731360, guid: cb39455407de9a446a98945562d6f61d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991825988792250313, guid: cb39455407de9a446a98945562d6f61d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991825988792250315, guid: cb39455407de9a446a98945562d6f61d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991825988792250325, guid: cb39455407de9a446a98945562d6f61d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991825988792250327, guid: cb39455407de9a446a98945562d6f61d, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1514,9 +1588,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 711567021, guid: 4b9cb236e41cbad41b7e402a9c862b80, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 711567024, guid: 4b9cb236e41cbad41b7e402a9c862b80, type: 3}
       propertyPath: m_Name
       value: Conifer4-mobile
+      objectReference: {fileID: 0}
+    - target: {fileID: 711567024, guid: 4b9cb236e41cbad41b7e402a9c862b80, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1724544759517178317, guid: 4b9cb236e41cbad41b7e402a9c862b80, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8768956675934258863, guid: 4b9cb236e41cbad41b7e402a9c862b80, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9137358760982928008, guid: 4b9cb236e41cbad41b7e402a9c862b80, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1537,7 +1631,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 700008633}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bushes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1651,9 +1745,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 700008633}
     m_Modifications:
+    - target: {fileID: 1027797064177948, guid: 74db6d999812f7a4e88df15f70ffe04b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1206863370534204, guid: 74db6d999812f7a4e88df15f70ffe04b, type: 3}
       propertyPath: m_Name
       value: Juniper1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1206863370534204, guid: 74db6d999812f7a4e88df15f70ffe04b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1262574025317580, guid: 74db6d999812f7a4e88df15f70ffe04b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1286718772302728, guid: 74db6d999812f7a4e88df15f70ffe04b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1371023426238764, guid: 74db6d999812f7a4e88df15f70ffe04b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935226978996410, guid: 74db6d999812f7a4e88df15f70ffe04b, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4998099937044784, guid: 74db6d999812f7a4e88df15f70ffe04b, type: 3}
       propertyPath: m_LocalScale.x
@@ -1777,9 +1895,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 352104271, guid: 1c329e9912bc46240b1dfbd279670517, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 352104274, guid: 1c329e9912bc46240b1dfbd279670517, type: 3}
       propertyPath: m_Name
       value: Conifer2-mobile (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 352104274, guid: 1c329e9912bc46240b1dfbd279670517, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1897580725285285547, guid: 1c329e9912bc46240b1dfbd279670517, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2644109978525563534, guid: 1c329e9912bc46240b1dfbd279670517, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3841273704182361391, guid: 1c329e9912bc46240b1dfbd279670517, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6794634135790070749, guid: 1c329e9912bc46240b1dfbd279670517, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1997,9 +2139,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1730076154}
     m_Modifications:
+    - target: {fileID: 1553533633199898, guid: e465c9371e8be4e4e9d16cbc3c21e629, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1981085733426200, guid: e465c9371e8be4e4e9d16cbc3c21e629, type: 3}
       propertyPath: m_Name
       value: Conifer3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1981085733426200, guid: e465c9371e8be4e4e9d16cbc3c21e629, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4780209478670262, guid: e465c9371e8be4e4e9d16cbc3c21e629, type: 3}
       propertyPath: m_LocalScale.x
@@ -2052,6 +2202,18 @@ PrefabInstance:
     - target: {fileID: 4780209478670262, guid: e465c9371e8be4e4e9d16cbc3c21e629, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913337963185274148, guid: e465c9371e8be4e4e9d16cbc3c21e629, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913337963185274168, guid: e465c9371e8be4e4e9d16cbc3c21e629, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913337963185274170, guid: e465c9371e8be4e4e9d16cbc3c21e629, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2149,6 +2311,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Conifer4
       objectReference: {fileID: 0}
+    - target: {fileID: 1882767463436504, guid: f412280541e2b614c9c93be764f2986d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4281484255854450, guid: f412280541e2b614c9c93be764f2986d, type: 3}
       propertyPath: m_LocalScale.x
       value: 3
@@ -2200,6 +2366,26 @@ PrefabInstance:
     - target: {fileID: 4281484255854450, guid: f412280541e2b614c9c93be764f2986d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577802369739114537, guid: f412280541e2b614c9c93be764f2986d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577802369739114541, guid: f412280541e2b614c9c93be764f2986d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577802369739114543, guid: f412280541e2b614c9c93be764f2986d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577802369739114545, guid: f412280541e2b614c9c93be764f2986d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577802369739114547, guid: f412280541e2b614c9c93be764f2986d, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2366,9 +2552,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1730076154}
     m_Modifications:
+    - target: {fileID: 1553533633199898, guid: e465c9371e8be4e4e9d16cbc3c21e629, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1981085733426200, guid: e465c9371e8be4e4e9d16cbc3c21e629, type: 3}
       propertyPath: m_Name
       value: Conifer3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1981085733426200, guid: e465c9371e8be4e4e9d16cbc3c21e629, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4780209478670262, guid: e465c9371e8be4e4e9d16cbc3c21e629, type: 3}
       propertyPath: m_LocalScale.x
@@ -2422,6 +2616,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5913337963185274148, guid: e465c9371e8be4e4e9d16cbc3c21e629, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913337963185274168, guid: e465c9371e8be4e4e9d16cbc3c21e629, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913337963185274170, guid: e465c9371e8be4e4e9d16cbc3c21e629, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2443,6 +2649,26 @@ PrefabInstance:
     - target: {fileID: 1232859710026472, guid: eabe2b83f5f933b428085f822f42e372, type: 3}
       propertyPath: m_Name
       value: Juniper2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232859710026472, guid: eabe2b83f5f933b428085f822f42e372, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527769773489584, guid: eabe2b83f5f933b428085f822f42e372, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1558262374843882, guid: eabe2b83f5f933b428085f822f42e372, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1585033248239402, guid: eabe2b83f5f933b428085f822f42e372, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1710027309827736, guid: eabe2b83f5f933b428085f822f42e372, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4425493690549636, guid: eabe2b83f5f933b428085f822f42e372, type: 3}
       propertyPath: m_LocalScale.x
@@ -2649,9 +2875,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1730076154}
     m_Modifications:
+    - target: {fileID: 1553533633199898, guid: e465c9371e8be4e4e9d16cbc3c21e629, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1981085733426200, guid: e465c9371e8be4e4e9d16cbc3c21e629, type: 3}
       propertyPath: m_Name
       value: Conifer3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1981085733426200, guid: e465c9371e8be4e4e9d16cbc3c21e629, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4780209478670262, guid: e465c9371e8be4e4e9d16cbc3c21e629, type: 3}
       propertyPath: m_LocalScale.x
@@ -2705,6 +2939,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5913337963185274148, guid: e465c9371e8be4e4e9d16cbc3c21e629, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913337963185274168, guid: e465c9371e8be4e4e9d16cbc3c21e629, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913337963185274170, guid: e465c9371e8be4e4e9d16cbc3c21e629, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2723,9 +2969,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1730076154}
     m_Modifications:
+    - target: {fileID: 1071206640338986, guid: f589e0d8823945644bbc909b51bbc389, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1087329658325304, guid: f589e0d8823945644bbc909b51bbc389, type: 3}
       propertyPath: m_Name
       value: Conifer2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087329658325304, guid: f589e0d8823945644bbc909b51bbc389, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4864179076299986, guid: f589e0d8823945644bbc909b51bbc389, type: 3}
       propertyPath: m_LocalScale.x
@@ -2778,6 +3032,22 @@ PrefabInstance:
     - target: {fileID: 4864179076299986, guid: f589e0d8823945644bbc909b51bbc389, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812625238981303180, guid: f589e0d8823945644bbc909b51bbc389, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812625238981303182, guid: f589e0d8823945644bbc909b51bbc389, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812625238981303184, guid: f589e0d8823945644bbc909b51bbc389, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812625238981303186, guid: f589e0d8823945644bbc909b51bbc389, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3812625238981396398, guid: f589e0d8823945644bbc909b51bbc389, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2957,6 +3227,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 220128116}
     m_Modifications:
+    - target: {fileID: 2531469740890983074, guid: 9ca1132a90a166c47bbbeb77ff02493a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3540423603175826747, guid: 9ca1132a90a166c47bbbeb77ff02493a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664238623462527426, guid: 9ca1132a90a166c47bbbeb77ff02493a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6327578713251609104, guid: 9ca1132a90a166c47bbbeb77ff02493a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8099676690606990272, guid: 9ca1132a90a166c47bbbeb77ff02493a, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -3017,6 +3303,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock7
       objectReference: {fileID: 0}
+    - target: {fileID: 8982074145540480654, guid: 9ca1132a90a166c47bbbeb77ff02493a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3038,6 +3328,10 @@ PrefabInstance:
     - target: {fileID: 2285882559147214474, guid: 19465306755a123419f0adfaff289872, type: 3}
       propertyPath: m_Name
       value: Fern2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2285882559147214474, guid: 19465306755a123419f0adfaff289872, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8911194016663647460, guid: 19465306755a123419f0adfaff289872, type: 3}
       propertyPath: m_LocalScale.x
@@ -3128,6 +3422,45 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!195 &1209720574
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209720572}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2.64
+  m_BaseOffset: -0.1
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &1209720578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209720572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d28d4d1b9cf3bee45930010554b0771d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 0}
+  player: {fileID: 0}
+  target: {fileID: 0}
+  walkSpeed: 5
+  agroDistance: 15
 --- !u!1001 &1225630145
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3188,9 +3521,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 889857120, guid: 5285e089d080f3440b5c810df28d500f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524120951719800613, guid: 5285e089d080f3440b5c810df28d500f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4572775472411205859, guid: 5285e089d080f3440b5c810df28d500f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5665062071444369605, guid: 5285e089d080f3440b5c810df28d500f, type: 3}
       propertyPath: m_Name
       value: Conifer7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5665062071444369605, guid: 5285e089d080f3440b5c810df28d500f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3340,9 +3689,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 10931560358615022, guid: 537cec58cf7862f4c9175274eb56f588, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6521047793271394585, guid: 537cec58cf7862f4c9175274eb56f588, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7404380556786805220, guid: 537cec58cf7862f4c9175274eb56f588, type: 3}
       propertyPath: m_Name
       value: Conifer6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7404380556786805220, guid: 537cec58cf7862f4c9175274eb56f588, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7714669376319876666, guid: 537cec58cf7862f4c9175274eb56f588, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7883173945320138158, guid: 537cec58cf7862f4c9175274eb56f588, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3362,6 +3731,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1730076154}
     m_Modifications:
+    - target: {fileID: 534567160780705711, guid: 9f66ab6b53673d34f9bcb2785a088fb7, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2634895029449201234, guid: 9f66ab6b53673d34f9bcb2785a088fb7, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4086434650163025872, guid: 9f66ab6b53673d34f9bcb2785a088fb7, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4795693199338838246, guid: 9f66ab6b53673d34f9bcb2785a088fb7, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.3
@@ -3418,6 +3799,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Conifer8
       objectReference: {fileID: 0}
+    - target: {fileID: 5316052008210874972, guid: 9f66ab6b53673d34f9bcb2785a088fb7, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6923350723660244647, guid: 9f66ab6b53673d34f9bcb2785a088fb7, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3439,6 +3828,10 @@ PrefabInstance:
     - target: {fileID: 2285882559147214474, guid: 19465306755a123419f0adfaff289872, type: 3}
       propertyPath: m_Name
       value: Fern2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2285882559147214474, guid: 19465306755a123419f0adfaff289872, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8911194016663647460, guid: 19465306755a123419f0adfaff289872, type: 3}
       propertyPath: m_LocalScale.x
@@ -3553,6 +3946,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2a80f941499fd15449bb540b4b2bde4c, type: 3}
       propertyPath: m_Name
       value: pegan idol5
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2a80f941499fd15449bb540b4b2bde4c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3689,6 +4086,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Juniper2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1232859710026472, guid: eabe2b83f5f933b428085f822f42e372, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527769773489584, guid: eabe2b83f5f933b428085f822f42e372, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1558262374843882, guid: eabe2b83f5f933b428085f822f42e372, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1585033248239402, guid: eabe2b83f5f933b428085f822f42e372, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1710027309827736, guid: eabe2b83f5f933b428085f822f42e372, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4425493690549636, guid: eabe2b83f5f933b428085f822f42e372, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -3759,9 +4176,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 700008633}
     m_Modifications:
+    - target: {fileID: 1027797064177948, guid: 74db6d999812f7a4e88df15f70ffe04b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1206863370534204, guid: 74db6d999812f7a4e88df15f70ffe04b, type: 3}
       propertyPath: m_Name
       value: Juniper1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1206863370534204, guid: 74db6d999812f7a4e88df15f70ffe04b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1262574025317580, guid: 74db6d999812f7a4e88df15f70ffe04b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1286718772302728, guid: 74db6d999812f7a4e88df15f70ffe04b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1371023426238764, guid: 74db6d999812f7a4e88df15f70ffe04b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935226978996410, guid: 74db6d999812f7a4e88df15f70ffe04b, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4998099937044784, guid: 74db6d999812f7a4e88df15f70ffe04b, type: 3}
       propertyPath: m_LocalScale.x
@@ -3840,7 +4281,8 @@ GameObject:
   - component: {fileID: 1347464411}
   - component: {fileID: 1347464410}
   - component: {fileID: 1347464409}
-  m_Layer: 0
+  - component: {fileID: 1347464412}
+  m_Layer: 6
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3922,6 +4364,38 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1823368455}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1347464412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1347464408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 64
+  m_UseGeometry: 1
+  m_DefaultArea: 0
+  m_GenerateLinks: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.16666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 23800000, guid: 626a6c2150ff48e40ac5aaa49631cc8f, type: 2}
+  m_BuildHeightMesh: 0
 --- !u!1001 &1403987809
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3933,6 +4407,10 @@ PrefabInstance:
     - target: {fileID: 224075075166134309, guid: 0bca27e0f676a6341b9766e8312d6f47, type: 3}
       propertyPath: m_Name
       value: Fern4
+      objectReference: {fileID: 0}
+    - target: {fileID: 224075075166134309, guid: 0bca27e0f676a6341b9766e8312d6f47, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3206999725751231674, guid: 0bca27e0f676a6341b9766e8312d6f47, type: 3}
       propertyPath: m_LocalScale.x
@@ -4010,7 +4488,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6680152610213412567, guid: 989d909146f76f7448c4c3cabfd4cd6b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 278.11
+      value: 273.8
       objectReference: {fileID: 0}
     - target: {fileID: 6680152610213412567, guid: 989d909146f76f7448c4c3cabfd4cd6b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4018,7 +4496,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6680152610213412567, guid: 989d909146f76f7448c4c3cabfd4cd6b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 185.65
+      value: 180.9
       objectReference: {fileID: 0}
     - target: {fileID: 6680152610213412567, guid: 989d909146f76f7448c4c3cabfd4cd6b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4173,6 +4651,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Conifer5-mobile
       objectReference: {fileID: 0}
+    - target: {fileID: 695151891, guid: 6c589ca77193c3b4cbc9762b12e630ea, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 695151896, guid: 6c589ca77193c3b4cbc9762b12e630ea, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 15837274195971144, guid: 6c589ca77193c3b4cbc9762b12e630ea, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1451553843502105386, guid: 6c589ca77193c3b4cbc9762b12e630ea, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8103516291461662464, guid: 6c589ca77193c3b4cbc9762b12e630ea, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8439618621789148732, guid: 6c589ca77193c3b4cbc9762b12e630ea, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4243,9 +4745,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 10931560358615022, guid: 537cec58cf7862f4c9175274eb56f588, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6521047793271394585, guid: 537cec58cf7862f4c9175274eb56f588, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7404380556786805220, guid: 537cec58cf7862f4c9175274eb56f588, type: 3}
       propertyPath: m_Name
       value: Conifer6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7404380556786805220, guid: 537cec58cf7862f4c9175274eb56f588, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7714669376319876666, guid: 537cec58cf7862f4c9175274eb56f588, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7883173945320138158, guid: 537cec58cf7862f4c9175274eb56f588, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4265,9 +4787,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1730076154}
     m_Modifications:
+    - target: {fileID: 1322772215569290, guid: cb39455407de9a446a98945562d6f61d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1753970552198330, guid: cb39455407de9a446a98945562d6f61d, type: 3}
       propertyPath: m_Name
       value: Conifer1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1753970552198330, guid: cb39455407de9a446a98945562d6f61d, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4638873546731360, guid: cb39455407de9a446a98945562d6f61d, type: 3}
       propertyPath: m_LocalScale.x
@@ -4321,6 +4851,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4991825988792250313, guid: cb39455407de9a446a98945562d6f61d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991825988792250315, guid: cb39455407de9a446a98945562d6f61d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991825988792250325, guid: cb39455407de9a446a98945562d6f61d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4991825988792250327, guid: cb39455407de9a446a98945562d6f61d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4339,9 +4885,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1730076154}
     m_Modifications:
+    - target: {fileID: 1071206640338986, guid: f589e0d8823945644bbc909b51bbc389, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1087329658325304, guid: f589e0d8823945644bbc909b51bbc389, type: 3}
       propertyPath: m_Name
       value: Conifer2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087329658325304, guid: f589e0d8823945644bbc909b51bbc389, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4864179076299986, guid: f589e0d8823945644bbc909b51bbc389, type: 3}
       propertyPath: m_LocalScale.x
@@ -4395,6 +4949,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3812625238981303180, guid: f589e0d8823945644bbc909b51bbc389, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812625238981303182, guid: f589e0d8823945644bbc909b51bbc389, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812625238981303184, guid: f589e0d8823945644bbc909b51bbc389, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812625238981303186, guid: f589e0d8823945644bbc909b51bbc389, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4416,6 +4986,14 @@ PrefabInstance:
     - target: {fileID: 1485974044819222, guid: cda9aea6042cc244fa1fe94646e89c6b, type: 3}
       propertyPath: m_Name
       value: Conifer5 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1485974044819222, guid: cda9aea6042cc244fa1fe94646e89c6b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1547870354431928, guid: cda9aea6042cc244fa1fe94646e89c6b, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4559749527086504, guid: cda9aea6042cc244fa1fe94646e89c6b, type: 3}
       propertyPath: m_LocalScale.x
@@ -4469,6 +5047,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3664314758773664072, guid: cda9aea6042cc244fa1fe94646e89c6b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3664314758773664074, guid: cda9aea6042cc244fa1fe94646e89c6b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3664314758773664084, guid: cda9aea6042cc244fa1fe94646e89c6b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3664314758773664086, guid: cda9aea6042cc244fa1fe94646e89c6b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4490,6 +5084,26 @@ PrefabInstance:
     - target: {fileID: 1232859710026472, guid: eabe2b83f5f933b428085f822f42e372, type: 3}
       propertyPath: m_Name
       value: Juniper2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232859710026472, guid: eabe2b83f5f933b428085f822f42e372, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527769773489584, guid: eabe2b83f5f933b428085f822f42e372, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1558262374843882, guid: eabe2b83f5f933b428085f822f42e372, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1585033248239402, guid: eabe2b83f5f933b428085f822f42e372, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1710027309827736, guid: eabe2b83f5f933b428085f822f42e372, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4425493690549636, guid: eabe2b83f5f933b428085f822f42e372, type: 3}
       propertyPath: m_LocalScale.x
@@ -4717,6 +5331,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Conifer4 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1882767463436504, guid: f412280541e2b614c9c93be764f2986d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4281484255854450, guid: f412280541e2b614c9c93be764f2986d, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -4769,6 +5387,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1577802369739114537, guid: f412280541e2b614c9c93be764f2986d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577802369739114541, guid: f412280541e2b614c9c93be764f2986d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577802369739114543, guid: f412280541e2b614c9c93be764f2986d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577802369739114545, guid: f412280541e2b614c9c93be764f2986d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577802369739114547, guid: f412280541e2b614c9c93be764f2986d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4787,9 +5425,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1730076154}
     m_Modifications:
+    - target: {fileID: 1553533633199898, guid: e465c9371e8be4e4e9d16cbc3c21e629, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1981085733426200, guid: e465c9371e8be4e4e9d16cbc3c21e629, type: 3}
       propertyPath: m_Name
       value: Conifer3 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1981085733426200, guid: e465c9371e8be4e4e9d16cbc3c21e629, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4780209478670262, guid: e465c9371e8be4e4e9d16cbc3c21e629, type: 3}
       propertyPath: m_LocalScale.x
@@ -4843,6 +5489,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5913337963185274148, guid: e465c9371e8be4e4e9d16cbc3c21e629, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913337963185274168, guid: e465c9371e8be4e4e9d16cbc3c21e629, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913337963185274170, guid: e465c9371e8be4e4e9d16cbc3c21e629, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4861,9 +5519,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1730076154}
     m_Modifications:
+    - target: {fileID: 1071206640338986, guid: f589e0d8823945644bbc909b51bbc389, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1087329658325304, guid: f589e0d8823945644bbc909b51bbc389, type: 3}
       propertyPath: m_Name
       value: Conifer2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087329658325304, guid: f589e0d8823945644bbc909b51bbc389, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4864179076299986, guid: f589e0d8823945644bbc909b51bbc389, type: 3}
       propertyPath: m_LocalScale.x
@@ -4916,6 +5582,22 @@ PrefabInstance:
     - target: {fileID: 4864179076299986, guid: f589e0d8823945644bbc909b51bbc389, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812625238981303180, guid: f589e0d8823945644bbc909b51bbc389, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812625238981303182, guid: f589e0d8823945644bbc909b51bbc389, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812625238981303184, guid: f589e0d8823945644bbc909b51bbc389, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812625238981303186, guid: f589e0d8823945644bbc909b51bbc389, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4987,9 +5669,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2046558377, guid: 04147bd68b7abde45aacbc82f97a5910, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2046558380, guid: 04147bd68b7abde45aacbc82f97a5910, type: 3}
       propertyPath: m_Name
       value: Conifer1-mobile
+      objectReference: {fileID: 0}
+    - target: {fileID: 2046558380, guid: 04147bd68b7abde45aacbc82f97a5910, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 844733336600053771, guid: 04147bd68b7abde45aacbc82f97a5910, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6568398382915247070, guid: 04147bd68b7abde45aacbc82f97a5910, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7625277878997097408, guid: 04147bd68b7abde45aacbc82f97a5910, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8915348096159240046, guid: 04147bd68b7abde45aacbc82f97a5910, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5079,6 +5785,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Conifer5 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1485974044819222, guid: cda9aea6042cc244fa1fe94646e89c6b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1547870354431928, guid: cda9aea6042cc244fa1fe94646e89c6b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4559749527086504, guid: cda9aea6042cc244fa1fe94646e89c6b, type: 3}
       propertyPath: m_LocalScale.x
       value: 3
@@ -5131,6 +5845,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3664314758773664072, guid: cda9aea6042cc244fa1fe94646e89c6b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3664314758773664074, guid: cda9aea6042cc244fa1fe94646e89c6b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3664314758773664084, guid: cda9aea6042cc244fa1fe94646e89c6b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3664314758773664086, guid: cda9aea6042cc244fa1fe94646e89c6b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5149,9 +5879,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1730076154}
     m_Modifications:
+    - target: {fileID: 1553533633199898, guid: e465c9371e8be4e4e9d16cbc3c21e629, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1981085733426200, guid: e465c9371e8be4e4e9d16cbc3c21e629, type: 3}
       propertyPath: m_Name
       value: Conifer3 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1981085733426200, guid: e465c9371e8be4e4e9d16cbc3c21e629, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4780209478670262, guid: e465c9371e8be4e4e9d16cbc3c21e629, type: 3}
       propertyPath: m_LocalScale.x
@@ -5205,6 +5943,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5913337963185274148, guid: e465c9371e8be4e4e9d16cbc3c21e629, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913337963185274168, guid: e465c9371e8be4e4e9d16cbc3c21e629, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5913337963185274170, guid: e465c9371e8be4e4e9d16cbc3c21e629, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5224,7 +5974,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1730076154}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Forest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5335,9 +6085,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 10931560358615022, guid: 537cec58cf7862f4c9175274eb56f588, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6521047793271394585, guid: 537cec58cf7862f4c9175274eb56f588, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7404380556786805220, guid: 537cec58cf7862f4c9175274eb56f588, type: 3}
       propertyPath: m_Name
       value: Conifer6 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7404380556786805220, guid: 537cec58cf7862f4c9175274eb56f588, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7714669376319876666, guid: 537cec58cf7862f4c9175274eb56f588, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7883173945320138158, guid: 537cec58cf7862f4c9175274eb56f588, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5360,6 +6130,10 @@ PrefabInstance:
     - target: {fileID: 729823921000206890, guid: 16bc5ab5bae2c2e4ba63caf5e78fe394, type: 3}
       propertyPath: m_Name
       value: Fern3
+      objectReference: {fileID: 0}
+    - target: {fileID: 729823921000206890, guid: 16bc5ab5bae2c2e4ba63caf5e78fe394, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8512383887686858280, guid: 16bc5ab5bae2c2e4ba63caf5e78fe394, type: 3}
       propertyPath: m_LocalScale.x
@@ -5475,6 +6249,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8015239126032462401, guid: 715ec04a093b7384fad2be5b3d6f98e6, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5489,7 +6267,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1823368455}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Terrains
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5513,23 +6291,6 @@ Transform:
   - {fileID: 250824815}
   m_Father: {fileID: 1907770319}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1824692686 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 488072790063054919, guid: 715ec04a093b7384fad2be5b3d6f98e6, type: 3}
-  m_PrefabInstance: {fileID: 2022891890}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1824692690
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1824692686}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a23c686ae590f1409b5a4ad81209cd7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1842085551
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5581,6 +6342,10 @@ PrefabInstance:
     - target: {fileID: 4429658713488268408, guid: 317c67e191d228a48adb1920c235c42f, type: 3}
       propertyPath: m_Name
       value: PileOfTwigs4 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4429658713488268408, guid: 317c67e191d228a48adb1920c235c42f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6749,9 +7514,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 352104271, guid: 1c329e9912bc46240b1dfbd279670517, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 352104274, guid: 1c329e9912bc46240b1dfbd279670517, type: 3}
       propertyPath: m_Name
       value: Conifer2-mobile
+      objectReference: {fileID: 0}
+    - target: {fileID: 352104274, guid: 1c329e9912bc46240b1dfbd279670517, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1897580725285285547, guid: 1c329e9912bc46240b1dfbd279670517, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2644109978525563534, guid: 1c329e9912bc46240b1dfbd279670517, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3841273704182361391, guid: 1c329e9912bc46240b1dfbd279670517, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6794634135790070749, guid: 1c329e9912bc46240b1dfbd279670517, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6772,8 +7561,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1907770319}
-  m_Layer: 0
-  m_Name: GameObject
+  m_Layer: 6
+  m_Name: Entertainment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6808,9 +7597,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 700008633}
     m_Modifications:
+    - target: {fileID: 1027797064177948, guid: 74db6d999812f7a4e88df15f70ffe04b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1206863370534204, guid: 74db6d999812f7a4e88df15f70ffe04b, type: 3}
       propertyPath: m_Name
       value: Juniper1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1206863370534204, guid: 74db6d999812f7a4e88df15f70ffe04b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1262574025317580, guid: 74db6d999812f7a4e88df15f70ffe04b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1286718772302728, guid: 74db6d999812f7a4e88df15f70ffe04b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1371023426238764, guid: 74db6d999812f7a4e88df15f70ffe04b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935226978996410, guid: 74db6d999812f7a4e88df15f70ffe04b, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4998099937044784, guid: 74db6d999812f7a4e88df15f70ffe04b, type: 3}
       propertyPath: m_LocalScale.x
@@ -6938,9 +7751,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2046558377, guid: 04147bd68b7abde45aacbc82f97a5910, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2046558380, guid: 04147bd68b7abde45aacbc82f97a5910, type: 3}
       propertyPath: m_Name
       value: Conifer1-mobile
+      objectReference: {fileID: 0}
+    - target: {fileID: 2046558380, guid: 04147bd68b7abde45aacbc82f97a5910, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 844733336600053771, guid: 04147bd68b7abde45aacbc82f97a5910, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6568398382915247070, guid: 04147bd68b7abde45aacbc82f97a5910, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7625277878997097408, guid: 04147bd68b7abde45aacbc82f97a5910, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8915348096159240046, guid: 04147bd68b7abde45aacbc82f97a5910, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6963,6 +7800,26 @@ PrefabInstance:
     - target: {fileID: 1232859710026472, guid: eabe2b83f5f933b428085f822f42e372, type: 3}
       propertyPath: m_Name
       value: Juniper2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232859710026472, guid: eabe2b83f5f933b428085f822f42e372, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1527769773489584, guid: eabe2b83f5f933b428085f822f42e372, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1558262374843882, guid: eabe2b83f5f933b428085f822f42e372, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1585033248239402, guid: eabe2b83f5f933b428085f822f42e372, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1710027309827736, guid: eabe2b83f5f933b428085f822f42e372, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4425493690549636, guid: eabe2b83f5f933b428085f822f42e372, type: 3}
       propertyPath: m_LocalScale.x
@@ -7034,9 +7891,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 700008633}
     m_Modifications:
+    - target: {fileID: 1027797064177948, guid: 74db6d999812f7a4e88df15f70ffe04b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1206863370534204, guid: 74db6d999812f7a4e88df15f70ffe04b, type: 3}
       propertyPath: m_Name
       value: Juniper1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1206863370534204, guid: 74db6d999812f7a4e88df15f70ffe04b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1262574025317580, guid: 74db6d999812f7a4e88df15f70ffe04b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1286718772302728, guid: 74db6d999812f7a4e88df15f70ffe04b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1371023426238764, guid: 74db6d999812f7a4e88df15f70ffe04b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935226978996410, guid: 74db6d999812f7a4e88df15f70ffe04b, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4998099937044784, guid: 74db6d999812f7a4e88df15f70ffe04b, type: 3}
       propertyPath: m_LocalScale.x
@@ -7108,9 +7989,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 700008633}
     m_Modifications:
+    - target: {fileID: 1027797064177948, guid: 74db6d999812f7a4e88df15f70ffe04b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1206863370534204, guid: 74db6d999812f7a4e88df15f70ffe04b, type: 3}
       propertyPath: m_Name
       value: Juniper1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1206863370534204, guid: 74db6d999812f7a4e88df15f70ffe04b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1262574025317580, guid: 74db6d999812f7a4e88df15f70ffe04b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1286718772302728, guid: 74db6d999812f7a4e88df15f70ffe04b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1371023426238764, guid: 74db6d999812f7a4e88df15f70ffe04b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935226978996410, guid: 74db6d999812f7a4e88df15f70ffe04b, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4998099937044784, guid: 74db6d999812f7a4e88df15f70ffe04b, type: 3}
       propertyPath: m_LocalScale.x
@@ -7230,13 +8135,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4734143286424264567, guid: 715ec04a093b7384fad2be5b3d6f98e6, type: 3}
+      propertyPath: dmg
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8015239126032462401, guid: 715ec04a093b7384fad2be5b3d6f98e6, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 488072790063054919, guid: 715ec04a093b7384fad2be5b3d6f98e6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1824692690}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 715ec04a093b7384fad2be5b3d6f98e6, type: 3}
 --- !u!1001 &2034724639
 PrefabInstance:
@@ -7253,6 +8163,22 @@ PrefabInstance:
     - target: {fileID: 285547568457951415, guid: 4cb5850228e30814f8ca59cebcc067a3, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 1757790153238192317, guid: 4cb5850228e30814f8ca59cebcc067a3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2492709986093569433, guid: 4cb5850228e30814f8ca59cebcc067a3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2730189261437506863, guid: 4cb5850228e30814f8ca59cebcc067a3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6921311100546125198, guid: 4cb5850228e30814f8ca59cebcc067a3, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8309248726803061924, guid: 4cb5850228e30814f8ca59cebcc067a3, type: 3}
       propertyPath: m_LocalScale.x
@@ -7310,6 +8236,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Conifer9
       objectReference: {fileID: 0}
+    - target: {fileID: 8654705850487064094, guid: 4cb5850228e30814f8ca59cebcc067a3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7331,6 +8261,14 @@ PrefabInstance:
     - target: {fileID: 1485974044819222, guid: cda9aea6042cc244fa1fe94646e89c6b, type: 3}
       propertyPath: m_Name
       value: Conifer5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1485974044819222, guid: cda9aea6042cc244fa1fe94646e89c6b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1547870354431928, guid: cda9aea6042cc244fa1fe94646e89c6b, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4559749527086504, guid: cda9aea6042cc244fa1fe94646e89c6b, type: 3}
       propertyPath: m_LocalScale.x
@@ -7388,6 +8326,22 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.51
       objectReference: {fileID: 0}
+    - target: {fileID: 3664314758773664072, guid: cda9aea6042cc244fa1fe94646e89c6b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3664314758773664074, guid: cda9aea6042cc244fa1fe94646e89c6b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3664314758773664084, guid: cda9aea6042cc244fa1fe94646e89c6b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3664314758773664086, guid: cda9aea6042cc244fa1fe94646e89c6b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7398,67 +8352,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4559749527086504, guid: cda9aea6042cc244fa1fe94646e89c6b, type: 3}
   m_PrefabInstance: {fileID: 2044107512}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &2048225012
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1717954561962503725, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_Name
-      value: XR Origin (XR Rig)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1717954561962503725, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 171
-      objectReference: {fileID: 0}
-    - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.937961
-      objectReference: {fileID: 0}
-    - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.3467409
-      objectReference: {fileID: 0}
-    - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 40.576
-      objectReference: {fileID: 0}
-    - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
 --- !u!1001 &2083172698
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7467,9 +8360,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 700008633}
     m_Modifications:
+    - target: {fileID: 1027797064177948, guid: 74db6d999812f7a4e88df15f70ffe04b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1206863370534204, guid: 74db6d999812f7a4e88df15f70ffe04b, type: 3}
       propertyPath: m_Name
       value: Juniper1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1206863370534204, guid: 74db6d999812f7a4e88df15f70ffe04b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1262574025317580, guid: 74db6d999812f7a4e88df15f70ffe04b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1286718772302728, guid: 74db6d999812f7a4e88df15f70ffe04b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1371023426238764, guid: 74db6d999812f7a4e88df15f70ffe04b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935226978996410, guid: 74db6d999812f7a4e88df15f70ffe04b, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4998099937044784, guid: 74db6d999812f7a4e88df15f70ffe04b, type: 3}
       propertyPath: m_LocalScale.x
@@ -7549,6 +8466,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fern4
       objectReference: {fileID: 0}
+    - target: {fileID: 224075075166134309, guid: 0bca27e0f676a6341b9766e8312d6f47, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3206999725751231674, guid: 0bca27e0f676a6341b9766e8312d6f47, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -7623,6 +8544,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fern2
       objectReference: {fileID: 0}
+    - target: {fileID: 2285882559147214474, guid: 19465306755a123419f0adfaff289872, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8911194016663647460, guid: 19465306755a123419f0adfaff289872, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -7691,13 +8616,11 @@ SceneRoots:
   m_Roots:
   - {fileID: 851250033}
   - {fileID: 57724148}
-  - {fileID: 2048225012}
   - {fileID: 1652775570}
   - {fileID: 1410018831}
   - {fileID: 2022891890}
   - {fileID: 1785272951}
   - {fileID: 1653568754}
-  - {fileID: 119570789}
   - {fileID: 821800162}
   - {fileID: 1842570176}
   - {fileID: 358289606}
@@ -7706,3 +8629,4 @@ SceneRoots:
   - {fileID: 504789079}
   - {fileID: 471497511}
   - {fileID: 1907770319}
+  - {fileID: 119570789}

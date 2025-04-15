@@ -1,29 +1,28 @@
 using System.Text.RegularExpressions;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class Creature : MonoBehaviour
 {
     int hp = 100;
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.TryGetComponent(out Weapon weapon))
+        if (other.gameObject.TryGetComponent(out Weapon weapon))
         {
-            this.transform.position += new Vector3(0.3f, 0, 0);
-
             this.hp -= weapon.Dmg;
+            Debug.Log($"HP: {hp}");
             Dead();
         }
 
         void Dead()
         {
-            if(this.hp <= 0)
+            if (this.hp <= 0)
             {
                 Destroy(this.gameObject);
             }
         }
-
     }
 
 }
