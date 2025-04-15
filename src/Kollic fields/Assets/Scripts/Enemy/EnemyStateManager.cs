@@ -16,6 +16,7 @@ public class EnemyStateManager : MonoBehaviour
 
     public float walkSpeed;
     public float agroDistance;
+    public float attackDistance;
 
     public void SwitchState(AState state) 
     {

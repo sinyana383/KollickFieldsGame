@@ -3461,6 +3461,7 @@ MonoBehaviour:
   target: {fileID: 0}
   walkSpeed: 5
   agroDistance: 15
+  attackDistance: 6.66
 --- !u!1001 &1225630145
 PrefabInstance:
   m_ObjectHideFlags: 0
