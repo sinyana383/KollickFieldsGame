@@ -23,7 +23,7 @@ public class WalkState : AState
             enemyManager.animator.SetBool("is_Angry", false);
             enemyManager.SwitchState(enemyManager.idleState);
         }
-        Debug.Log($"Distance {enemyManager.CheckOnTarget()} {enemyManager.attackDistance}");
+        //Debug.Log($"Distance {enemyManager.CheckOnTarget()} {enemyManager.attackDistance}");
         if (enemyManager.CheckOnTarget() <= enemyManager.attackDistance)
         {
             enemyManager.animator.SetBool("is_Angry", true);

@@ -14,6 +14,7 @@ public class EnemyStateManager : MonoBehaviour
     public IdleState idleState = new IdleState();
     public WalkState walkState = new WalkState();
     public AttackState attackState = new AttackState();
+    public DeadState deadState = new DeadState();
 
     public float walkSpeed;
     public float agroDistance;
@@ -66,7 +67,7 @@ public class EnemyStateManager : MonoBehaviour
     public void RotateTowards(Vector3 direction) 
     {
         var q = Quaternion.LookRotation(CheckOnTargetRotation());
-        transform.rotation = Quaternion.RotateTowards(transform.rotation, q, 100f * Time.deltaTime);
+        transform.rotation = Quaternion.Lerp(transform.rotation, q, 3f * Time.deltaTime);
     }
 
     public float CheckOnTarget()
