@@ -85459,7 +85459,7 @@ AnimationClip:
     intParameter: 1
     messageOptions: 0
   - time: 1.2
-    functionName: OnOffDamager
+    functionName: OnOffDamager1
     data: 
     objectReferenceParameter: {fileID: 11500000, guid: 12ba8fd852b91a543b3656ea267f46a7, type: 3}
     floatParameter: 0
