@@ -6,8 +6,8 @@ public class AttackState: AState
     {
         // начало анимации атаки
         Debug.Log("Attack Enetered");
-        enemyManager.SetSpeed(0);
         enemyManager.animator.SetBool("is_Attacking", true);
+        enemyManager.SetSpeed(0);
     }
     public override void ExitState(EnemyStateManager enemyManager)
     {
@@ -16,12 +16,11 @@ public class AttackState: AState
     }
     public override void UpdateState(EnemyStateManager enemyManager)
     {
-        /*if (enemyManager.CheckOnTarget() > enemyManager.attackDistance)
+        if (enemyManager.CheckOnTarget() > enemyManager.attackDistance)
         {
             enemyManager.SwitchState(enemyManager.walkState);
-            //enemyManager.animator.SetBool("is_Attacking", false);
-        } */
-
+        }
+        enemyManager.RotateTowards(enemyManager.CheckOnTargetRotation());
         Debug.Log("Аттака!");
     }
 }

@@ -6,9 +6,9 @@ using UnityEngine.AI;
 public class EnemyStateManager : MonoBehaviour
 {
     [SerializeField] public Animator animator;
-    [SerializeField] NavMeshAgent agent;
+    [SerializeField] public NavMeshAgent agent;
     [SerializeField] Transform player;
-    [SerializeField] Transform target;
+    //[SerializeField] Transform target;
 
     AState currentState;
     public IdleState idleState = new IdleState();
@@ -44,10 +44,8 @@ public class EnemyStateManager : MonoBehaviour
         if (!player)
             player = FindAnyObjectByType<XROrigin>().transform;
 
-        //agent.SetDestination(player.position);
-
-        SetDistination(player);
-        agent.destination = target.position;
+        agent.SetDestination(player.position);
+        agent.destination = player.position;
         if (currentState != null)
             currentState.UpdateState(this);
     }
@@ -55,26 +53,30 @@ public class EnemyStateManager : MonoBehaviour
     {
         agent.speed = newSpeed;
     }
-    public void SetDistination(Transform newDestination)
+    //public void SetDistination(Transform newDestination)
+    //{
+    //    target = newDestination;
+    //}
+
+    public Vector3 CheckOnTargetRotation()
     {
-        target = newDestination;
+        return (player.position - transform.position);
+    }
+
+    public void RotateTowards(Vector3 direction) 
+    {
+        var q = Quaternion.LookRotation(CheckOnTargetRotation());
+        transform.rotation = Quaternion.RotateTowards(transform.rotation, q, 100f * Time.deltaTime);
     }
 
     public float CheckOnTarget()
     {
-        return (transform.position - target.position).magnitude;
+        return (transform.position - player.position).magnitude;
     }
 
     public void CheckPlayerDistance()
     {
-        if (currentState==attackState) 
-        {
-            if (CheckOnTarget() > attackDistance)
-            {
-                SwitchState(walkState);
-                //enemyManager.animator.SetBool("is_Attacking", false);
-            }
-        }
+        
     
     }
 }
