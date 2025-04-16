@@ -19,7 +19,7 @@ public class EnemyStateManager : MonoBehaviour
     public float agroDistance;
     public float attackDistance;
 
-    public void SwitchState(AState state) 
+    public void SwitchState(AState state)
     {
         if (currentState != null)
             currentState.ExitState(this);
@@ -51,17 +51,30 @@ public class EnemyStateManager : MonoBehaviour
         if (currentState != null)
             currentState.UpdateState(this);
     }
-    public void SetSpeed(float newSpeed) 
+    public void SetSpeed(float newSpeed)
     {
         agent.speed = newSpeed;
     }
-    public void SetDistination(Transform newDestination) 
+    public void SetDistination(Transform newDestination)
     {
         target = newDestination;
     }
 
-    public float CheckOnTarget() 
+    public float CheckOnTarget()
     {
         return (transform.position - target.position).magnitude;
+    }
+
+    public void CheckPlayerDistance()
+    {
+        if (currentState==attackState) 
+        {
+            if (CheckOnTarget() > attackDistance)
+            {
+                SwitchState(walkState);
+                //enemyManager.animator.SetBool("is_Attacking", false);
+            }
+        }
+    
     }
 }

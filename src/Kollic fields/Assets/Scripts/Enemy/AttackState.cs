@@ -16,11 +16,12 @@ public class AttackState: AState
     }
     public override void UpdateState(EnemyStateManager enemyManager)
     {
-        if (enemyManager.CheckOnTarget() > enemyManager.attackDistance)
+        /*if (enemyManager.CheckOnTarget() > enemyManager.attackDistance)
         {
             enemyManager.SwitchState(enemyManager.walkState);
             //enemyManager.animator.SetBool("is_Attacking", false);
-        }
+        } */
+
         Debug.Log("Аттака!");
     }
 }
