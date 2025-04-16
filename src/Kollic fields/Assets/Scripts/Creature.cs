@@ -5,20 +5,20 @@ using UnityEngine.Audio;
 
 public class Creature : MonoBehaviour
 {
-    int hp = 100;
+    int enemyhp = 100;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.TryGetComponent(out Weapon weapon))
         {
-            this.hp -= weapon.Dmg;
-            Debug.Log($"HP: {hp}");
+            this.enemyhp -= weapon.Dmg;
+            Debug.Log($"HP: {enemyhp}");
             Dead();
         }
 
         void Dead()
         {
-            if (this.hp <= 0)
+            if (this.enemyhp <= 0)
             {
                 Destroy(this.gameObject);
             }

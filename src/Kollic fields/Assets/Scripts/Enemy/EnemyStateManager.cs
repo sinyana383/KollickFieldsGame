@@ -10,7 +10,7 @@ public class EnemyStateManager : MonoBehaviour
     [SerializeField] Transform player;
     [SerializeField] Transform target;
 
-    AState currentState;
+    public AState currentState;
     public IdleState idleState = new IdleState();
     public WalkState walkState = new WalkState();
     public AttackState attackState = new AttackState();
@@ -65,9 +65,9 @@ public class EnemyStateManager : MonoBehaviour
         return (transform.position - target.position).magnitude;
     }
 
-    public void CheckPlayerDistance()
+    /*public void CheckPlayerDistance()
     {
-        if (currentState==attackState) 
+        if (currentState == attackState)
         {
             if (CheckOnTarget() > attackDistance)
             {
@@ -75,6 +75,7 @@ public class EnemyStateManager : MonoBehaviour
                 //enemyManager.animator.SetBool("is_Attacking", false);
             }
         }
-    
-    }
+
+    }*/
 }
+
