@@ -85454,35 +85454,28 @@ AnimationClip:
   - time: 0.7
     functionName: OnOffDamager1
     data: 
-    objectReferenceParameter: {fileID: 11500000, guid: 12ba8fd852b91a543b3656ea267f46a7, type: 3}
+    objectReferenceParameter: {fileID: 11500000, guid: ca062aa266d02494baf4701cfb04f7a6, type: 3}
     floatParameter: 0
     intParameter: 1
     messageOptions: 0
   - time: 1.2
     functionName: OnOffDamager1
     data: 
-    objectReferenceParameter: {fileID: 11500000, guid: 12ba8fd852b91a543b3656ea267f46a7, type: 3}
+    objectReferenceParameter: {fileID: 11500000, guid: ca062aa266d02494baf4701cfb04f7a6, type: 3}
     floatParameter: 0
-    intParameter: 0
+    intParameter: 2
     messageOptions: 0
   - time: 1.5
     functionName: OnOffDamager2
     data: 
-    objectReferenceParameter: {fileID: 11500000, guid: 12ba8fd852b91a543b3656ea267f46a7, type: 3}
+    objectReferenceParameter: {fileID: 11500000, guid: ca062aa266d02494baf4701cfb04f7a6, type: 3}
     floatParameter: 0
     intParameter: 1
     messageOptions: 0
   - time: 1.8
     functionName: OnOffDamager2
     data: 
-    objectReferenceParameter: {fileID: 11500000, guid: 12ba8fd852b91a543b3656ea267f46a7, type: 3}
+    objectReferenceParameter: {fileID: 11500000, guid: ca062aa266d02494baf4701cfb04f7a6, type: 3}
     floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 2.1666667
-    functionName: CheckPlayerDistance
-    data: 
-    objectReferenceParameter: {fileID: 11500000, guid: 12ba8fd852b91a543b3656ea267f46a7, type: 3}
-    floatParameter: 0
-    intParameter: 0
+    intParameter: 2
     messageOptions: 0

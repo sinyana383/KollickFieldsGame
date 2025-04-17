@@ -10,7 +10,7 @@ public class PlayerHP : MonoBehaviour
         if (other.gameObject.TryGetComponent(out EnemyDamager enemyDamager))
         {
             this.hp -= enemyDamager.enemyDmg;
-            Debug.Log($"я словил {enemyDamager.enemyDmg} урона");
+            Debug.Log("8888888888888888");
             PlayerDead();
         }
 
@@ -18,7 +18,7 @@ public class PlayerHP : MonoBehaviour
         {
             if (this.hp <= 0)
             {
-                Debug.Log("я откис(((");
+                Debug.Log("77777777777777777777777777777");
             }
         }
     }

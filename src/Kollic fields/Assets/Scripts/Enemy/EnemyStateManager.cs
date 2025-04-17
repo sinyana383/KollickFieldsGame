@@ -50,6 +50,8 @@ public class EnemyStateManager : MonoBehaviour
         if (currentState != null)
             currentState.UpdateState(this);
     }
+
+
     public void SetSpeed(float newSpeed)
     {
         agent.speed = newSpeed;

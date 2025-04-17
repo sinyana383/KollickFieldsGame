@@ -16,7 +16,7 @@ public class AnimationEventSripts : MonoBehaviour
     {
         enemyStateManager = this.GetComponent<EnemyStateManager>();
     }
-
+    /*
     public void CheckPlayerDistance()
     {
         if (enemyStateManager.currentState == attackState)
@@ -28,30 +28,37 @@ public class AnimationEventSripts : MonoBehaviour
             }
         }
     }
+    */
 
     public void OnOffDamager1(int onoff)
     {
-        if (onoff == 0)
+        if (onoff == 2)
         {
             damager1.enabled = false;
+            //Debug.Log("000");
         }
         else if (onoff == 1) 
         {
             damager1.enabled = true;
+            //Debug.Log("111");
         }
     }
 
     public void OnOffDamager2(int onoff)
     {
-        if (onoff == 0)
+        if (onoff == 2)
         {
             damager2.enabled = false;
+            //Debug.Log("222");
         }
         else if (onoff == 1)
         {
             damager2.enabled = true;
+            //Debug.Log("333");
         }
     }
 
+    
+    
 
 }
