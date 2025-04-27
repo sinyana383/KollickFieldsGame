@@ -8,9 +8,8 @@ public class EnemyStateManager : MonoBehaviour
     [SerializeField] public Animator animator;
     [SerializeField] public NavMeshAgent agent;
     [SerializeField] Transform player;
-    //[SerializeField] Transform target;
 
-    AState currentState;
+    public AState currentState;
     public IdleState idleState = new IdleState();
     public WalkState walkState = new WalkState();
     public AttackState attackState = new AttackState();
@@ -54,10 +53,6 @@ public class EnemyStateManager : MonoBehaviour
     {
         agent.speed = newSpeed;
     }
-    //public void SetDistination(Transform newDestination)
-    //{
-    //    target = newDestination;
-    //}
 
     public Vector3 CheckOnTargetRotation()
     {
@@ -74,10 +69,9 @@ public class EnemyStateManager : MonoBehaviour
     {
         return (transform.position - player.position).magnitude;
     }
-
-    public void CheckPlayerDistance()
-    {
-        
+   
     
     }
-}
+
+
+

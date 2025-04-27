@@ -1,13 +1,13 @@
 using UnityEngine;
 
-public class AttackState: AState
+public class AttackState : AState
 {
     public override void EnterState(EnemyStateManager enemyManager)
     {
-        // начало анимации атаки
+        // пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
         Debug.Log("Attack Enetered");
-        enemyManager.animator.SetBool("is_Attacking", true);
         enemyManager.SetSpeed(0);
+        enemyManager.animator.SetBool("is_Attacking", true);
     }
     public override void ExitState(EnemyStateManager enemyManager)
     {
@@ -18,9 +18,19 @@ public class AttackState: AState
     {
         if (enemyManager.CheckOnTarget() > enemyManager.attackDistance)
         {
+            enemyManager.animator.SetBool("is_Angry", true);
+            enemyManager.animator.SetBool("is_Attacking", false);
             enemyManager.SwitchState(enemyManager.walkState);
+            
         }
+        else if (enemyManager.CheckOnTarget() <= enemyManager.attackDistance)
+        {
+            enemyManager.animator.SetBool("is_Angry", true);
+            enemyManager.animator.SetBool("is_Attacking", true);
+            enemyManager.SwitchState(enemyManager.attackState);
+            
+        
         enemyManager.RotateTowards(enemyManager.CheckOnTargetRotation());
-        Debug.Log("Аттака!");
+        Debug.Log("пїЅпїЅпїЅпїЅпїЅпїЅ!");
     }
 }
