@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e89ca199-47df-482e-8c1b-70ac6a228fc8" name="Changes" comment="" />
+    <list default="true" id="e89ca199-47df-482e-8c1b-70ac6a228fc8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Kollic fields/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kollic fields/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Starter_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Starter_1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,7 +94,7 @@
       <workItem from="1742918103893" duration="302000" />
       <workItem from="1742921716429" duration="351000" />
       <workItem from="1745744081794" duration="181000" />
-      <workItem from="1745745014444" duration="5283000" />
+      <workItem from="1745745014444" duration="6960000" />
     </task>
     <servers />
   </component>
