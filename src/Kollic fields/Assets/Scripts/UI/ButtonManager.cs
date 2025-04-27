@@ -4,28 +4,36 @@ using UnityEngine.UI;
 
 public class ButtonManager : MonoBehaviour
 {
+    [SerializeField] private LoadManager loadManager;
+    
+    [Header("Panels")]
     public Transform mainPanel;
     public Transform controlsPanel;
     public Transform settingsPanel;
 
-    
+    [Header("Buttons")]
     public Button playButton;
     public Button controlsButton;
     public Button settingsButton;
     public Button exitButton;
     
-    void Start () {
-        playButton.onClick.AddListener(TaskOnClick);
-        controlsButton.onClick.AddListener(OpenControls);
+    void Start ()
+    {
+        playButton.onClick.AddListener(loadManager.LoadLevel);
+        controlsButton.onClick.AddListener(() => OpenPanel(controlsPanel));
+        settingsButton.onClick.AddListener(() => OpenPanel(settingsPanel));
+        exitButton.onClick.AddListener(QuitGame);
     }
 
-    void TaskOnClick(){
-        Debug.Log ("You have clicked the button!");
-    }
-
-    void OpenControls()
+    void OpenPanel(Transform panel)
     {
         mainPanel.gameObject.SetActive (false);
-        controlsPanel.gameObject.SetActive (true);
+        panel.gameObject.SetActive (true);
+    }
+
+    void QuitGame()
+    {
+        Debug.Log("Quit");
+        Application.Quit();
     }
 }
