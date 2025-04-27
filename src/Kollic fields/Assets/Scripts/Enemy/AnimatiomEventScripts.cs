@@ -14,7 +14,14 @@ public class AnimationEventSripts : MonoBehaviour
 
     private void Awake()
     {
-        enemyStateManager = this.GetComponent<EnemyStateManager>();
+        if (enemyStateManager == null)
+            enemyStateManager = this.GetComponent<EnemyStateManager>();
+        // if (damager1 == null || damager2 == null)
+        // {
+        //     EnemyDamager[] damagers = this.GetComponentsInChildren<EnemyDamager>();
+        //     damager1 = damagers[0].GetComponent<Collider>();
+        //     damager2 = damagers[1].GetComponent<Collider>();
+        // }
     }
     /*
     public void CheckPlayerDistance()
@@ -35,12 +42,12 @@ public class AnimationEventSripts : MonoBehaviour
         if (onoff == 2)
         {
             damager1.enabled = false;
-            //Debug.Log("000");
+            Debug.Log("000");
         }
         else if (onoff == 1) 
         {
             damager1.enabled = true;
-            //Debug.Log("111");
+            Debug.Log("111");
         }
     }
 
@@ -49,12 +56,12 @@ public class AnimationEventSripts : MonoBehaviour
         if (onoff == 2)
         {
             damager2.enabled = false;
-            //Debug.Log("222");
+            Debug.Log("222");
         }
         else if (onoff == 1)
         {
             damager2.enabled = true;
-            //Debug.Log("333");
+            Debug.Log("333");
         }
     }
 
