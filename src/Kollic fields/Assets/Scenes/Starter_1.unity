@@ -3601,7 +3601,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4638873546731360, guid: cb39455407de9a446a98945562d6f61d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9.18
+      value: -6.82
       objectReference: {fileID: 0}
     - target: {fileID: 4638873546731360, guid: cb39455407de9a446a98945562d6f61d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5613,8 +5613,8 @@ MonoBehaviour:
   m_FillRect: {fileID: 734053034}
   m_HandleRect: {fileID: 719768482}
   m_Direction: 0
-  m_MinValue: -1
-  m_MaxValue: 1
+  m_MinValue: -3
+  m_MaxValue: 3
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -6267,6 +6267,79 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1820168008}
   m_CullTransparentMesh: 1
+--- !u!1001 &1856338012
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4208411713699368509, guid: 07636c37c54eb99458cb4153b149078f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4208411713699368509, guid: 07636c37c54eb99458cb4153b149078f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4208411713699368509, guid: 07636c37c54eb99458cb4153b149078f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4208411713699368509, guid: 07636c37c54eb99458cb4153b149078f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 4208411713699368509, guid: 07636c37c54eb99458cb4153b149078f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 4208411713699368509, guid: 07636c37c54eb99458cb4153b149078f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 17.494076
+      objectReference: {fileID: 0}
+    - target: {fileID: 4208411713699368509, guid: 07636c37c54eb99458cb4153b149078f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4208411713699368509, guid: 07636c37c54eb99458cb4153b149078f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4208411713699368509, guid: 07636c37c54eb99458cb4153b149078f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4208411713699368509, guid: 07636c37c54eb99458cb4153b149078f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4208411713699368509, guid: 07636c37c54eb99458cb4153b149078f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4208411713699368509, guid: 07636c37c54eb99458cb4153b149078f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4208411713699368509, guid: 07636c37c54eb99458cb4153b149078f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4208411713699368509, guid: 07636c37c54eb99458cb4153b149078f, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4212505239592008663, guid: 07636c37c54eb99458cb4153b149078f, type: 3}
+      propertyPath: m_Name
+      value: Conifer2-snowy
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 07636c37c54eb99458cb4153b149078f, type: 3}
 --- !u!1 &1870106746 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: aa5dca12325b3be439a8462c50f9e7b4, type: 3}
@@ -6638,3 +6711,4 @@ SceneRoots:
   - {fileID: 646717707}
   - {fileID: 728076562}
   - {fileID: 1089315567}
+  - {fileID: 1856338012}
