@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class SliderManager : MonoBehaviour
 {
     [SerializeField] private Volume volume;
+    [SerializeField] private AudioSource BackgroundAudioSource;
     private ColorAdjustments colorAdjustments;
     
     [SerializeField] Slider soundSlider;
@@ -17,10 +18,16 @@ public class SliderManager : MonoBehaviour
     {
         volume.profile.TryGet(out colorAdjustments);
         brightnessSlider.onValueChanged.AddListener(ChangeBrightness);
+        musicSlider.onValueChanged.AddListener(ChangeMusic);
     }
 
     void ChangeBrightness(float value)
     {
         colorAdjustments.postExposure.value = value;
+    }
+
+    void ChangeMusic(float value) 
+    {
+        BackgroundAudioSource.volume = value;
     }
 }
