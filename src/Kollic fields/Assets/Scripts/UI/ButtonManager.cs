@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class ButtonManager : MonoBehaviour
 {
     [SerializeField] private LoadManager loadManager;
+    [SerializeField] private AudioManager audioManager;
     
     [Header("Panels")]
     public Transform mainPanel;
@@ -23,6 +24,17 @@ public class ButtonManager : MonoBehaviour
         controlsButton.onClick.AddListener(() => OpenPanel(controlsPanel));
         settingsButton.onClick.AddListener(() => OpenPanel(settingsPanel));
         exitButton.onClick.AddListener(QuitGame);
+
+        
+        playButton.onClick.AddListener(ButtonPressEffect);
+        controlsButton.onClick.AddListener(ButtonPressEffect);
+        settingsButton.onClick.AddListener(ButtonPressEffect);
+        exitButton.onClick.AddListener(ButtonPressEffect);
+    }
+
+    public void ButtonPressEffect() 
+    {
+        audioManager.PlayButtonPress(audioManager.buttonPress);
     }
 
     void OpenPanel(Transform panel)

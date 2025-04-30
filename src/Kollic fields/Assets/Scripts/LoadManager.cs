@@ -16,6 +16,6 @@ public class LoadManager : MonoBehaviour
 
     public void LoadLevel()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadSceneAsync(1);
     }
 }
