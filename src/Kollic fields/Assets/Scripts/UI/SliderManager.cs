@@ -8,6 +8,7 @@ public class SliderManager : MonoBehaviour
 {
     [SerializeField] private Volume volume;
     [SerializeField] private AudioSource BackgroundAudioSource;
+    [SerializeField] private AudioSource soundAudioSource;
     private ColorAdjustments colorAdjustments;
     
     [SerializeField] Slider soundSlider;
@@ -19,6 +20,12 @@ public class SliderManager : MonoBehaviour
         volume.profile.TryGet(out colorAdjustments);
         brightnessSlider.onValueChanged.AddListener(ChangeBrightness);
         musicSlider.onValueChanged.AddListener(ChangeMusic);
+        soundSlider.onValueChanged.AddListener(ChangeSound);
+
+        soundSlider.value = soundAudioSource.volume;
+        musicSlider.value = BackgroundAudioSource.volume;
+        brightnessSlider.value = colorAdjustments.postExposure.value;
+
     }
 
     void ChangeBrightness(float value)
@@ -29,5 +36,10 @@ public class SliderManager : MonoBehaviour
     void ChangeMusic(float value) 
     {
         BackgroundAudioSource.volume = value;
+    }
+
+    void ChangeSound(float value)
+    {
+        soundAudioSource.volume = value;
     }
 }

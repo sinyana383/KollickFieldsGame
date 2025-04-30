@@ -7,11 +7,17 @@ public class AudioManager : MonoBehaviour
     [SerializeField] AudioSource sfxSource;
 
     [Header("Audio Clips")]
-    [SerializeField] AudioClip startLocationBackground;
+    [SerializeField] public AudioClip startLocationBackground;
+    [SerializeField] public AudioClip buttonPress;
 
     private void Start()
     {
         musicSource.clip = startLocationBackground;
         musicSource.Play();
+    }
+
+    public void PlayButtonPress(AudioClip audioClip) 
+    {
+        sfxSource.PlayOneShot(audioClip);
     }
 }

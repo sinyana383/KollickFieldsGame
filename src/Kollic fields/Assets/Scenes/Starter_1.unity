@@ -294,7 +294,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -719,7 +719,7 @@ Transform:
   m_GameObject: {fileID: 111676906}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.78, y: 0, z: 1.18}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -742,6 +742,7 @@ MonoBehaviour:
   musicSource: {fileID: 1364451310}
   sfxSource: {fileID: 613999719}
   startLocationBackground: {fileID: 8300000, guid: e699a53745ae04d4d948bf0af84f3725, type: 3}
+  buttonPress: {fileID: 8300000, guid: 53070333818ee87479ddfa529b02a9bf, type: 3}
 --- !u!1 &144263017
 GameObject:
   m_ObjectHideFlags: 0
@@ -831,6 +832,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4fc4083da774a64eb7a8d7970002096, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioManager: {fileID: 111676908}
   mainPanel: {fileID: 1304618382}
   closeButton: {fileID: 0}
 --- !u!114 &171918762
@@ -2661,6 +2663,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadManager: {fileID: 728076563}
+  audioManager: {fileID: 111676908}
   mainPanel: {fileID: 1304618382}
   controlsPanel: {fileID: 1704055444}
   settingsPanel: {fileID: 171918760}
@@ -4664,7 +4667,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   volume: {fileID: 1989894855}
   BackgroundAudioSource: {fileID: 1364451310}
-  soundSlider: {fileID: 0}
+  soundAudioSource: {fileID: 613999719}
+  soundSlider: {fileID: 1133326696}
   musicSlider: {fileID: 389157999}
   brightnessSlider: {fileID: 1615599372}
 --- !u!1 &1176842536
@@ -6124,6 +6128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4fc4083da774a64eb7a8d7970002096, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioManager: {fileID: 111676908}
   mainPanel: {fileID: 1304618382}
   closeButton: {fileID: 0}
 --- !u!1 &1706246770 stripped
