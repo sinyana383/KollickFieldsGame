@@ -9,7 +9,7 @@ public class WalkState : AState
         enemyManager.animator.SetBool("is_Angry", true);
         //Debug.Log("Walk Enetered");
         enemyManager.SetSpeed(enemyManager.walkSpeed);
-        
+
 
     }
     public override void ExitState(EnemyStateManager enemyManager)

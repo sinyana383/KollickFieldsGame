@@ -8,13 +8,12 @@ public class EnemyStateManager : MonoBehaviour
     [SerializeField] public Animator animator;
     [SerializeField] public NavMeshAgent agent;
     [SerializeField] Transform player;
-    //[SerializeField] Transform target;
 
     public AState currentState;
     public IdleState idleState = new IdleState();
     public WalkState walkState = new WalkState();
     public AttackState attackState = new AttackState();
-    //public DeadState deadState = new DeadState();
+    public DeadState deadState = new DeadState();
 
     public float walkSpeed;
     public float agroDistance;
@@ -50,16 +49,10 @@ public class EnemyStateManager : MonoBehaviour
         if (currentState != null)
             currentState.UpdateState(this);
     }
-
-
     public void SetSpeed(float newSpeed)
     {
         agent.speed = newSpeed;
     }
-    //public void SetDistination(Transform newDestination)
-    //{
-    //    target = newDestination;
-    //}
 
     public Vector3 CheckOnTargetRotation()
     {
