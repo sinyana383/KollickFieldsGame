@@ -45,7 +45,7 @@ public class EnemyStateManager : MonoBehaviour
             player = FindAnyObjectByType<XROrigin>().transform;
 
         agent.SetDestination(player.position);
-        agent.destination = player.position;
+        //agent.destination = player.position; // вроде ненужен
         if (currentState != null)
             currentState.UpdateState(this);
     }
