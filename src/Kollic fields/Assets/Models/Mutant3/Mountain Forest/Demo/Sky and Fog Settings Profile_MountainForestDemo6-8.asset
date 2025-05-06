@@ -189,16 +189,15 @@ MonoBehaviour:
   m_Name: LiftGammaGain
   m_EditorClassIdentifier: 
   active: 1
-  m_AdvancedMode: 0
   lift:
     m_OverrideState: 1
-    m_Value: {x: 0.9736478, y: 0.9607706, z: 1, w: 0}
+    m_Value: {x: 0.94344115, y: 0.95943534, z: 1, w: 0}
   gamma:
     m_OverrideState: 0
-    m_Value: {x: 1, y: 1, z: 1, w: 0}
+    m_Value: {x: 0.96162343, y: 0.98300874, z: 1, w: 0}
   gain:
     m_OverrideState: 1
-    m_Value: {x: 1, y: 0.9995833, z: 0.9025088, w: 0.192}
+    m_Value: {x: 0.8692461, y: 0.94175035, z: 1, w: 0.192}
 --- !u!114 &-4264181461964926019
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -399,31 +398,21 @@ MonoBehaviour:
   m_Name: ColorAdjustments
   m_EditorClassIdentifier: 
   active: 1
-  m_AdvancedMode: 0
   postExposure:
     m_OverrideState: 1
     m_Value: 0.2
   contrast:
     m_OverrideState: 1
-    m_Value: 20
-    min: -100
-    max: 100
+    m_Value: 28
   colorFilter:
-    m_OverrideState: 0
-    m_Value: {r: 1, g: 1, b: 1, a: 1}
-    hdr: 1
-    showAlpha: 0
-    showEyeDropper: 1
+    m_OverrideState: 1
+    m_Value: {r: 0.065859735, g: 0.11292636, b: 0.3773585, a: 1}
   hueShift:
-    m_OverrideState: 0
-    m_Value: 0
-    min: -180
-    max: 180
+    m_OverrideState: 1
+    m_Value: 23
   saturation:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0
-    min: -100
-    max: 100
 --- !u!114 &-551044021135902733
 MonoBehaviour:
   m_ObjectHideFlags: 3
