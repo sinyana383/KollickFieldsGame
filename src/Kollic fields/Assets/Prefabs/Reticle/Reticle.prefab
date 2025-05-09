@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6015818582946811386}
   - component: {fileID: 666333592401955010}
   - component: {fileID: 401541891955204012}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Reticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
