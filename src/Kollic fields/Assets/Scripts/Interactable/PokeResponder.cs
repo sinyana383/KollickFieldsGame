@@ -8,11 +8,12 @@ public class PokeResponder : MonoBehaviour
 
     void Awake()
     {
-        interactable.activated.AddListener(OnPoked);
+        interactable = GetComponent<XRSimpleInteractable>();
+        interactable.selectEntered.AddListener(OnPoked);
     }
 
-    private void OnPoked(ActivateEventArgs args)
+    private void OnPoked(SelectEnterEventArgs args)
     {
-        Debug.Log("GameObject poked with trigger!");
+        Debug.Log($"{this.gameObject.name} found!");
     }
 }
