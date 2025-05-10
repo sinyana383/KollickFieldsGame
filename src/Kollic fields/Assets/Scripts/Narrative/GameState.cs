@@ -24,6 +24,19 @@ public class GameState : MonoBehaviour
         Injuried,
         Destroyed
     }
+
+    public SubjectState GetSubjectState(SubjectType subjectType)
+    {
+        switch (subjectType)
+        {
+            case SubjectType.Bodies: return bodies;
+            case SubjectType.Akratit: return akratit;
+            case SubjectType.Idol: return idol;
+            case SubjectType.MainCharacter: return mainCharacter;
+        }
+        return SubjectState.None;
+    }
+    
     private void OnEnable()
     {
         EventManager.Idol.OnIdolFound += () => ChangeState(out idol, SubjectState.Found);

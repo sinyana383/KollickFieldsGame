@@ -4833,6 +4833,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2add8178dfa39a745ad6383f49807a21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameState: {fileID: 1052560558}
   tasksPool:
   - {fileID: 11400000, guid: 1819c469d4b5439449d453ccce41c448, type: 2}
   - {fileID: 11400000, guid: c9bddc188801d104b825963f913545ee, type: 2}
