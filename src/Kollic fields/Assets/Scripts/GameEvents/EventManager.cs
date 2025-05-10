@@ -7,6 +7,7 @@ public static class EventManager
     public static readonly AkratitEv Akratit = new AkratitEv();
     public static readonly BodiesEv Bodies = new BodiesEv();
     public static readonly IdolEv Idol = new IdolEv();
+    public static readonly TasksEv Tasks = new TasksEv();
     public class PlayerEv
     {
         public UnityAction OnHealthChanged;
@@ -25,5 +26,10 @@ public static class EventManager
     {
         public UnityAction OnIdolFound;
         public UnityAction OnIdolDestroyed;
+    }
+    
+    public class TasksEv
+    {
+        
     }
 }
