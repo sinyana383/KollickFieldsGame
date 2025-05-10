@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Breakable : MonoBehaviour
+public class Breakable : Interactable
 {
     [SerializeField] GameObject hitEffectPrefab;
     int toughness = 150;

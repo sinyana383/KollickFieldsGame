@@ -5,7 +5,7 @@ public static class EventManager
 {
     public static readonly PlayerEv Player = new PlayerEv();
     public static readonly AkratitEv Akratit = new AkratitEv();
-    public static readonly PeopleEv People = new PeopleEv();
+    public static readonly BodiesEv Bodies = new BodiesEv();
     public static readonly IdolEv Idol = new IdolEv();
     public class PlayerEv
     {
@@ -17,9 +17,9 @@ public static class EventManager
         public UnityAction OnAkratitFound;
     }
     
-    public class PeopleEv
+    public class BodiesEv
     {
-        public UnityAction OnPeopleFound;
+        public UnityAction OnBodiesFound;
     }
     public class IdolEv
     {

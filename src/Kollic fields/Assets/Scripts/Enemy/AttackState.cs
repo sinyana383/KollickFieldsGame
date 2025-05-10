@@ -4,7 +4,8 @@ public class AttackState : AState
 {
     public override void EnterState(EnemyStateManager enemyManager)
     {
-        // ������ �������� �����
+        EventManager.Akratit.OnAkratitFound?.Invoke();
+        
         // Debug.Log("Attack Enetered");
         enemyManager.SetSpeed(0);
         enemyManager.animator.SetBool("is_Attacking", true);

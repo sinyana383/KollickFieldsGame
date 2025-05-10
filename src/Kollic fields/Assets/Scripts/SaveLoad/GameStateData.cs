@@ -11,8 +11,8 @@ public class GameStateData
 
     public GameStateData(GameState gameState) 
     {
-        missingPeople = (int)gameState.missingPeople;
-        mainEnemy = (int)gameState.mainEnemy;
+        missingPeople = (int)gameState.bodies;
+        mainEnemy = (int)gameState.akratit;
         idol = (int)gameState.idol;
         mainCharacter = (int)gameState.mainCharacter;
     }
