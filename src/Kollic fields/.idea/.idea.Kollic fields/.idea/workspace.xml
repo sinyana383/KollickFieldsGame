@@ -6,9 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="e89ca199-47df-482e-8c1b-70ac6a228fc8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Kollic fields/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kollic fields/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/USSR STENCIL WEBFONT SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/USSR STENCIL WEBFONT SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Samples/XR Interaction Toolkit/3.0.7/Starter Assets/DemoScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Samples/XR Interaction Toolkit/3.0.7/Starter Assets/DemoScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Field.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Field.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameState/GameEvents/GameEvent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameState/GameEvents/GameEvent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameState/GameEvents/GameEventListener.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameState/GameEvents/GameEventListener.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameState/GameEvents/OnPeopleFound.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameState/GameEvents/OnPeopleFound.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameState/GameState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameState/GameState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/PokeResponder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/PokeResponder.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +28,7 @@
     <setting file="file://$USER_HOME$/Downloads/ReticleType.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Downloads/unity-gaze-interaction-master/Assets/GazeInteraction/Scripts/GazeReticle.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameState/Task Graph.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Idol/Idol.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/PokeResponder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LoadManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.hands@b137b9cef9d8/Runtime/XRHandProviderUtility.cs" root0="SKIP_HIGHLIGHTING" />
@@ -113,7 +120,8 @@
       <workItem from="1746699010089" duration="3805000" />
       <workItem from="1746715181750" duration="7752000" />
       <workItem from="1746770029864" duration="12536000" />
-      <workItem from="1746805686922" duration="17000" />
+      <workItem from="1746805686922" duration="625000" />
+      <workItem from="1746848810495" duration="2861000" />
     </task>
     <servers />
   </component>
