@@ -17,8 +17,9 @@ MonoBehaviour:
     \u0440\u043E\u0434\u0441\u0442\u0432\u0435\u043D\u043D\u0438\u043A\u0430\u043C
     \u0441\u043E\u043E\u0431\u0449\u0438\u0442\u044C"
   voiceLine: {fileID: 0}
-  subjectsToCheck: 
+  subjectsToCheck: 0
   nextComments: []
-  taskState: 02000000
+  taskState: 0200000001000000
   tasksToChange:
   - {fileID: 11400000, guid: 1819c469d4b5439449d453ccce41c448, type: 2}
+  - {fileID: 11400000, guid: c9bddc188801d104b825963f913545ee, type: 2}

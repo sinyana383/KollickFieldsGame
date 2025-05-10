@@ -43,11 +43,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$USER_HOME$/Downloads/ReticleType.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/Downloads/unity-gaze-interaction-master/Assets/GazeInteraction/Scripts/GazeReticle.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameState/Task Graph.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Body.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LoadManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/TaskBox.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.hands@b137b9cef9d8/Runtime/XRHandProviderUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@3c62ab08b942/Runtime/AffordanceSystem/State/Provider/XRInteractableAffordanceStateProvider.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@3c62ab08b942/Runtime/Inputs/Haptics/HapticImpulseCommandChannelGroup.cs" root0="SKIP_HIGHLIGHTING" />
@@ -147,7 +145,7 @@
       <workItem from="1746770029864" duration="12536000" />
       <workItem from="1746805686922" duration="625000" />
       <workItem from="1746848810495" duration="15098000" />
-      <workItem from="1746871109974" duration="1237000" />
+      <workItem from="1746871109974" duration="7268000" />
     </task>
     <servers />
   </component>

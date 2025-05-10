@@ -7,7 +7,7 @@ public class GameState : MonoBehaviour
     public SubjectState bodies;
     public SubjectState akratit;
     public SubjectState idol;
-    public SubjectState mainCharacter;
+    public SubjectState mainCharacter; //???
 
     public enum SubjectType
     {
