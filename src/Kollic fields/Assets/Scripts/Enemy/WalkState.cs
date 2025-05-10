@@ -4,8 +4,8 @@ public class WalkState : AState
 {
     public override void EnterState(EnemyStateManager enemyManager)
     {
-        // начало анимации ходьбы
-
+        EventManager.Akratit.OnAkratitFound?.Invoke();
+        
         enemyManager.animator.SetBool("is_Angry", true);
         //Debug.Log("Walk Enetered");
         enemyManager.SetSpeed(enemyManager.walkSpeed);
