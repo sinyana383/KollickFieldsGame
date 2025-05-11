@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02a582532ad200a41b40195bf387a4b0, type: 3}
   m_Name: FindBodiesCom 21
   m_EditorClassIdentifier: 
-  textLine: "\u0421\u043B\u0435\u0434\u044B \u0440\u0430\u043D \u043E\u0434\u043D\u043E\u0437\u043D\u0430\u0447\u043D\u043E
-    \u043E\u0442 \u0410\u043A\u0440\u0430\u0442\u0438\u0442\u0430"
-  voiceLine: {fileID: 0}
+  textLine: "\u0421\u043A\u043E\u0440\u0435\u0435 \u0432\u0441\u0435\u0433\u043E,
+    \u043E\u043D\u0438 \u0432\u0441\u0442\u0440\u0435\u0442\u0438\u043B\u0438\u0441\u044C
+    \u0441 \u0430\u043A\u0440\u0430\u0442\u0438\u0442\u043E\u043C."
+  voiceLine: {fileID: 8300000, guid: a0add4bf0472bf5428a0073de82fa18d, type: 3}
   subjectsToCheck: 0
   nextComments:
   - {fileID: 11400000, guid: 4d4c602d56cd1fc46876c33e418cd70c, type: 2}

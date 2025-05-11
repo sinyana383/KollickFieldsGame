@@ -9,6 +9,7 @@ public class TaskManger : MonoBehaviour
 {
     public GameState gameState;
     public List<TaskBranch> tasksPool;
+    public AudioSource audioSource;
     
     [Header("UI")]
     public Transform tasksContainer;
@@ -73,8 +74,29 @@ public class TaskManger : MonoBehaviour
             Debug.Log(curComment.textLine);
             commentText.text = curComment.textLine;
 
-            yield return new WaitForSeconds(delayBetweenComments);
-
+            if (curComment.voiceLine != null && audioSource != null)
+            {
+                audioSource.clip = curComment.voiceLine;
+                audioSource.Play();
+                
+                while (audioSource.isPlaying)
+                {
+                    yield return null;
+                }
+                if (curComment.tasksToChange != null && curComment.tasksToChange.Count > 0)
+                {
+                    for (int i = 0; i < curComment.tasksToChange.Count; i++) // may be optimised
+                    {
+                        ChangeTaskList(curComment.tasksToChange[i], curComment.taskState[i]);
+                    }
+                }
+                RefreshActiveTasksDisplay();
+            }
+            else
+            {
+                yield return new WaitForSeconds(delayBetweenComments);
+            }
+            
             if (curComment.nextComments == null || curComment.nextComments.Count == 0)
             {
                 break;
@@ -86,14 +108,6 @@ public class TaskManger : MonoBehaviour
             }
         }
         commentText.text = "";
-        if (curComment.tasksToChange != null && curComment.tasksToChange.Count > 0) // TODO: wait till comments end
-        {
-            for (int i = 0; i < curComment.tasksToChange.Count; i++) // may be optimised
-            {
-                ChangeTaskList(curComment.tasksToChange[i], curComment.taskState[i]);
-            }
-        }
-        RefreshActiveTasksDisplay();
     }
 
 
