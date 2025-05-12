@@ -9242,11 +9242,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5188638160815250520, guid: 4562c902fd20fb8459b67599f36c0cac, type: 3}
       propertyPath: m_text
-      value: 'Commentary line so big '
+      value: Commentary text for several lines. Hope this is enough. Third line already.
+        Fourth line and etc.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5188638160815250520, guid: 4562c902fd20fb8459b67599f36c0cac, type: 3}
+      propertyPath: m_fontSize
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5188638160815250520, guid: 4562c902fd20fb8459b67599f36c0cac, type: 3}
       propertyPath: m_isRichText
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5188638160815250520, guid: 4562c902fd20fb8459b67599f36c0cac, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5188638160815250520, guid: 4562c902fd20fb8459b67599f36c0cac, type: 3}
       propertyPath: m_overflowMode
@@ -9262,7 +9271,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5188638160815250520, guid: 4562c902fd20fb8459b67599f36c0cac, type: 3}
       propertyPath: m_TextWrappingMode
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5188638160815250520, guid: 4562c902fd20fb8459b67599f36c0cac, type: 3}
       propertyPath: m_horizontalMapping
