@@ -16,6 +16,8 @@ public static class EventManager
     public class AkratitEv
     {
         public UnityAction OnAkratitFound;
+        
+        public UnityAction<int> OnAkratitHit;
     }
     
     public class BodiesEv
