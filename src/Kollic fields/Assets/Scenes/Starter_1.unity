@@ -8645,8 +8645,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0547715d777596649a86ed2fce52909f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missingPeople: 0
-  mainEnemy: 0
+  bodies: 0
+  akratit: 0
   idol: 0
   mainCharacter: 0
 --- !u!1 &1820168008
@@ -9115,7 +9115,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1989894855
 MonoBehaviour:
   m_ObjectHideFlags: 0
