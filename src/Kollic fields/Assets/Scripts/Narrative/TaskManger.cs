@@ -46,6 +46,7 @@ public class TaskManger : MonoBehaviour
         EventManager.Zone.OnFieldEntered += () => PlayComments(tasksPool[(int)TasksNames.EnterField]);
         EventManager.Bodies.OnBodiesFound += () => PlayComments(tasksPool[(int)TasksNames.FindPeople]);
         EventManager.Akratit.OnAkratitDeath += () => PlayComments(tasksPool[(int)TasksNames.KillAkratit]);
+        EventManager.Idol.OnIdolFound += () => PlayComments(tasksPool[(int)TasksNames.FindIdol]);
     }
 
     private void OnDisable()
@@ -53,7 +54,7 @@ public class TaskManger : MonoBehaviour
         EventManager.Zone.OnFieldEntered -= () => PlayComments(tasksPool[(int)TasksNames.EnterField]);
         EventManager.Bodies.OnBodiesFound -= () => PlayComments(tasksPool[(int)TasksNames.FindPeople]);
         EventManager.Akratit.OnAkratitDeath -= () => PlayComments(tasksPool[(int)TasksNames.KillAkratit]);
-
+        EventManager.Idol.OnIdolFound -= () => PlayComments(tasksPool[(int)TasksNames.FindIdol]);
     }
 
     public void ChangeTaskList(TaskBranch task, TaskBranch.TaskState state)

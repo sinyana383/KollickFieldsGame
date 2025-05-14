@@ -4,23 +4,21 @@ public class Breakable : Interactable
 {
     [SerializeField] GameObject hitEffectPrefab;
     int toughness = 150;
-    private void OnCollisionEnter(Collision collision)
+
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.TryGetComponent(out Weapon weapon))
+        if (other.gameObject.TryGetComponent(out Weapon weapon))
         {
             this.toughness -= weapon.Dmg;
             if (hitEffectPrefab != null)
-                Instantiate(hitEffectPrefab, collision.contacts[0].point, Quaternion.identity);
-            Broken();
+                Instantiate(hitEffectPrefab, other.ClosestPoint(transform.position), Quaternion.identity);
+            if (this.toughness <= 0)
+                Broken();
         }
-
     }
-    void Broken()
+    protected virtual void Broken()
     {
-        if (this.toughness <= 0)
-        {
-            Destroy(gameObject);
-        }
+        Destroy(gameObject);
     }
 
 }
