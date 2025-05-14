@@ -2320,6 +2320,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HitPlace (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6797957528991134823, guid: a702abcc7f3455645b53b33b1e7c302a, type: 3}
+      propertyPath: hitEffectPrefab
+      value: 
+      objectReference: {fileID: 5238538877814813142, guid: eb66fca25358d094782c74f9964081b3, type: 3}
     - target: {fileID: 8814773746834904178, guid: a702abcc7f3455645b53b33b1e7c302a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.117
@@ -3763,6 +3767,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HitPlace
       objectReference: {fileID: 0}
+    - target: {fileID: 6797957528991134823, guid: a702abcc7f3455645b53b33b1e7c302a, type: 3}
+      propertyPath: hitEffectPrefab
+      value: 
+      objectReference: {fileID: 5238538877814813142, guid: eb66fca25358d094782c74f9964081b3, type: 3}
     - target: {fileID: 8814773746834904178, guid: a702abcc7f3455645b53b33b1e7c302a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.128
@@ -7308,15 +7316,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6680152610213412567, guid: 989d909146f76f7448c4c3cabfd4cd6b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 292.79
+      value: 273.97
       objectReference: {fileID: 0}
     - target: {fileID: 6680152610213412567, guid: 989d909146f76f7448c4c3cabfd4cd6b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.63856
+      value: 0.41
       objectReference: {fileID: 0}
     - target: {fileID: 6680152610213412567, guid: 989d909146f76f7448c4c3cabfd4cd6b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 249.86
+      value: 237.8
       objectReference: {fileID: 0}
     - target: {fileID: 6680152610213412567, guid: 989d909146f76f7448c4c3cabfd4cd6b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -11227,6 +11235,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HitPlace
       objectReference: {fileID: 0}
+    - target: {fileID: 6797957528991134823, guid: a702abcc7f3455645b53b33b1e7c302a, type: 3}
+      propertyPath: hitEffectPrefab
+      value: 
+      objectReference: {fileID: 5238538877814813142, guid: eb66fca25358d094782c74f9964081b3, type: 3}
     - target: {fileID: 8814773746834904178, guid: a702abcc7f3455645b53b33b1e7c302a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.096
@@ -11291,15 +11303,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3295150574954951697, guid: 715ec04a093b7384fad2be5b3d6f98e6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 292.48
+      value: 273.86
       objectReference: {fileID: 0}
     - target: {fileID: 3295150574954951697, guid: 715ec04a093b7384fad2be5b3d6f98e6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.52
+      value: 1.22
       objectReference: {fileID: 0}
     - target: {fileID: 3295150574954951697, guid: 715ec04a093b7384fad2be5b3d6f98e6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 252.11
+      value: 239.96
       objectReference: {fileID: 0}
     - target: {fileID: 3295150574954951697, guid: 715ec04a093b7384fad2be5b3d6f98e6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -11331,7 +11343,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4734143286424264567, guid: 715ec04a093b7384fad2be5b3d6f98e6, type: 3}
       propertyPath: dmg
-      value: 100
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8015239126032462401, guid: 715ec04a093b7384fad2be5b3d6f98e6, type: 3}
       propertyPath: m_UseGravity
@@ -13398,6 +13410,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HitPlace
       objectReference: {fileID: 0}
+    - target: {fileID: 6797957528991134823, guid: a702abcc7f3455645b53b33b1e7c302a, type: 3}
+      propertyPath: hitEffectPrefab
+      value: 
+      objectReference: {fileID: 5238538877814813142, guid: eb66fca25358d094782c74f9964081b3, type: 3}
     - target: {fileID: 8814773746834904178, guid: a702abcc7f3455645b53b33b1e7c302a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.034
