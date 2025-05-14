@@ -9,7 +9,7 @@ public class DeadState : AState
         enemyManager.animator.SetBool("is_Attacking", false);
         enemyManager.animator.SetBool("is_Angry", false);
         Debug.Log("Dead Enetered");
-        enemyManager.SetSpeed(0);
+        enemyManager.agent.isStopped = true;
 
         EventManager.Akratit.OnAkratitDeath?.Invoke();  // TODO: поставить Event в анимации, когда Акратит упадет
     }
