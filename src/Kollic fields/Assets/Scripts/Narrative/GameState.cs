@@ -21,7 +21,6 @@ public class GameState : MonoBehaviour
     {
         None,
         Found,
-        Injuried,
         Destroyed
     }
 
@@ -42,6 +41,7 @@ public class GameState : MonoBehaviour
         EventManager.Idol.OnIdolFound += () => ChangeState(out idol, SubjectState.Found);
         EventManager.Akratit.OnAkratitFound += () => ChangeState(out akratit, SubjectState.Found);
         EventManager.Bodies.OnBodiesFound += () => ChangeState(out bodies, SubjectState.Found);
+        EventManager.Akratit.OnAkratitDeath += () => ChangeState(out akratit, SubjectState.Destroyed);
     }
 
     private void OnDisable()
@@ -49,7 +49,7 @@ public class GameState : MonoBehaviour
         EventManager.Idol.OnIdolFound -= () => ChangeState(out idol, SubjectState.Found);
         EventManager.Akratit.OnAkratitFound -= () => ChangeState(out akratit, SubjectState.Found);
         EventManager.Bodies.OnBodiesFound -= () => ChangeState(out bodies, SubjectState.Found);
-
+        EventManager.Akratit.OnAkratitDeath -= () => ChangeState(out akratit, SubjectState.Destroyed);
     }
 
     private void ChangeState(out SubjectState state, SubjectState newState) => state = newState;

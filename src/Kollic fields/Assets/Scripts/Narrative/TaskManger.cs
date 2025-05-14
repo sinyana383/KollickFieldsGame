@@ -7,8 +7,19 @@ using UnityEngine.UI;
 
 public class TaskManger : MonoBehaviour
 {
-    public GameState gameState;
     public List<TaskBranch> tasksPool;
+    enum TasksNames 
+    {
+        EnterField,
+        FindPeople,
+        KillAkratit,
+        FindIdol,
+        DestroyIdol,
+        RunHome,
+        GoHome
+    }
+
+    public GameState gameState;
     public AudioSource audioSource;
     
     [Header("UI")]
@@ -19,18 +30,29 @@ public class TaskManger : MonoBehaviour
     
     private void Start()
     {
+        NotStartedAllTasks();
         tasksPool[0].taskState = TaskBranch.TaskState.Started;
         RefreshActiveTasksDisplay();
     }
 
+    private void NotStartedAllTasks() 
+    {
+        foreach (var task in tasksPool)
+            task.taskState = TaskBranch.TaskState.NotStarted;
+    }
+
     private void OnEnable()
     {
-        EventManager.Bodies.OnBodiesFound += () => PlayComments(tasksPool[0]);
+        EventManager.Zone.OnFieldEntered += () => PlayComments(tasksPool[(int)TasksNames.EnterField]);
+        EventManager.Bodies.OnBodiesFound += () => PlayComments(tasksPool[(int)TasksNames.FindPeople]);
+        EventManager.Akratit.OnAkratitDeath += () => PlayComments(tasksPool[(int)TasksNames.KillAkratit]);
     }
 
     private void OnDisable()
     {
-        EventManager.Bodies.OnBodiesFound -= () => PlayComments(tasksPool[0]);
+        EventManager.Zone.OnFieldEntered -= () => PlayComments(tasksPool[(int)TasksNames.EnterField]);
+        EventManager.Bodies.OnBodiesFound -= () => PlayComments(tasksPool[(int)TasksNames.FindPeople]);
+        EventManager.Akratit.OnAkratitDeath -= () => PlayComments(tasksPool[(int)TasksNames.KillAkratit]);
 
     }
 
@@ -62,8 +84,19 @@ public class TaskManger : MonoBehaviour
     
     public void PlayComments(TaskBranch task)
     {
+        if (task.taskState != TaskBranch.TaskState.Started && task.taskState != TaskBranch.TaskState.NotStarted)
+            return;
+
+        task.taskState = TaskBranch.TaskState.InProcess;
         Debug.Log($"Starting comments on task {task}");
+
         Comment curComment = task.startComment;
+        if (curComment == null) 
+        {
+            Debug.Log($"No start comments found");
+            return;
+        }
+
         StartCoroutine(DisplayComments(curComment));
     }
     

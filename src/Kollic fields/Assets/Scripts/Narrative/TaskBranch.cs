@@ -8,6 +8,7 @@ public class TaskBranch : ScriptableObject
     {
         NotStarted,
         Started,
+        InProcess,
         Completed,
         Failed
     }

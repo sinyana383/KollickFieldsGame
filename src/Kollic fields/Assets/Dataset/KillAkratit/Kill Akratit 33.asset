@@ -9,9 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0835178b4b40fc499b88f0bb4434508, type: 3}
-  m_Name: KillAkratit
+  m_Script: {fileID: 11500000, guid: 02a582532ad200a41b40195bf387a4b0, type: 3}
+  m_Name: Kill Akratit 33
   m_EditorClassIdentifier: 
-  title: "\u0423\u0441\u0442\u0440\u0430\u043D\u0438\u0442\u044C \u0410\u043A\u0440\u0430\u0442\u0438\u0442\u0430"
-  taskState: 0
-  startComment: {fileID: 0}
+  textLine: 
+  voiceLine: {fileID: 0}
+  subjectsToCheck: 0
+  nextComments: []
+  taskState: 03000000
+  tasksToChange:
+  - {fileID: 11400000, guid: c9bddc188801d104b825963f913545ee, type: 2}

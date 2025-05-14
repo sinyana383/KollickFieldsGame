@@ -11,6 +11,7 @@ public class DeadState : AState
         Debug.Log("Dead Enetered");
         enemyManager.SetSpeed(0);
 
+        EventManager.Akratit.OnAkratitDeath?.Invoke();  // TODO: поставить Event в анимации, когда Акратит упадет
     }
     public override void ExitState(EnemyStateManager enemyManager)
     {

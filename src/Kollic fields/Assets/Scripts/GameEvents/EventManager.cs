@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using static EventManager;
 
 public static class EventManager
 {
@@ -7,7 +8,7 @@ public static class EventManager
     public static readonly AkratitEv Akratit = new AkratitEv();
     public static readonly BodiesEv Bodies = new BodiesEv();
     public static readonly IdolEv Idol = new IdolEv();
-    public static readonly TasksEv Tasks = new TasksEv();
+    public static readonly ZoneEv Zone = new ZoneEv();
     public class PlayerEv
     {
         public UnityAction OnHealthChanged;
@@ -18,6 +19,7 @@ public static class EventManager
         public UnityAction OnAkratitFound;
         
         public UnityAction<int> OnAkratitHit;
+        public UnityAction OnAkratitDeath;
     }
     
     public class BodiesEv
@@ -30,8 +32,8 @@ public static class EventManager
         public UnityAction OnIdolDestroyed;
     }
     
-    public class TasksEv
+    public class ZoneEv
     {
-        
+        public UnityAction OnFieldEntered;
     }
 }

@@ -13,7 +13,7 @@ public class PlayerHP : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log($"Trigger enter: {other.name}");
+        //Debug.Log($"Trigger enter: {other.name}");
         if (other.gameObject.TryGetComponent(out EnemyDamager enemyDamager))
         {
             this.hp -= enemyDamager.enemyDmg;
