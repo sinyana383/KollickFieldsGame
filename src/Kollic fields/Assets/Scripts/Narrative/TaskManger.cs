@@ -47,6 +47,7 @@ public class TaskManger : MonoBehaviour
         EventManager.Bodies.OnBodiesFound += () => PlayComments(tasksPool[(int)TasksNames.FindPeople]);
         EventManager.Akratit.OnAkratitDeath += () => PlayComments(tasksPool[(int)TasksNames.KillAkratit]);
         EventManager.Idol.OnIdolFound += () => PlayComments(tasksPool[(int)TasksNames.FindIdol]);
+        EventManager.Idol.OnIdolDestroyed += () => PlayComments(tasksPool[(int)TasksNames.DestroyIdol]);
     }
 
     private void OnDisable()
@@ -55,6 +56,7 @@ public class TaskManger : MonoBehaviour
         EventManager.Bodies.OnBodiesFound -= () => PlayComments(tasksPool[(int)TasksNames.FindPeople]);
         EventManager.Akratit.OnAkratitDeath -= () => PlayComments(tasksPool[(int)TasksNames.KillAkratit]);
         EventManager.Idol.OnIdolFound -= () => PlayComments(tasksPool[(int)TasksNames.FindIdol]);
+        EventManager.Idol.OnIdolDestroyed -= () => PlayComments(tasksPool[(int)TasksNames.DestroyIdol]);
     }
 
     public void ChangeTaskList(TaskBranch task, TaskBranch.TaskState state)
@@ -126,7 +128,7 @@ public class TaskManger : MonoBehaviour
                 }
                 RefreshActiveTasksDisplay();
             }
-            else
+            else if (!string.IsNullOrEmpty(curComment.textLine))
             {
                 yield return new WaitForSeconds(delayBetweenComments);
             }
@@ -138,6 +140,7 @@ public class TaskManger : MonoBehaviour
             else
             {
                 int index = (int)gameState.GetSubjectState(curComment.subjectsToCheck);
+                Debug.Log($"{curComment}");
                 curComment = curComment.nextComments[index];
             }
         }
