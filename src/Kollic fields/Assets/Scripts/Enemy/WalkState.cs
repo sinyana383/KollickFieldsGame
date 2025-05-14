@@ -7,6 +7,8 @@ public class WalkState : AState
         EventManager.Akratit.OnAkratitFound?.Invoke();
         
         enemyManager.animator.SetBool("is_Angry", true);
+        enemyManager.animator.SetBool("is_Attacking", false);
+        
         //Debug.Log("Walk Enetered");
         enemyManager.SetSpeed(enemyManager.walkSpeed);
 
@@ -16,18 +18,23 @@ public class WalkState : AState
     {
         //Debug.Log("Walk Exit");
         enemyManager.animator.SetBool("is_Angry", false);
+        //enemyManager.animator.SetBool("is_Attacking", false);
     }
     public override void UpdateState(EnemyStateManager enemyManager)
     {
         if (enemyManager.CheckOnTarget() > enemyManager.agroDistance)
         {
+            //Debug.Log("enemyManager.CheckOnTarget() > enemyManager.agroDistance");
             enemyManager.animator.SetBool("is_Angry", false);
+            enemyManager.animator.SetBool("is_Attacking", false);
             enemyManager.SwitchState(enemyManager.idleState);
         }
 
         if (enemyManager.CheckOnTarget() <= enemyManager.agroDistance && enemyManager.CheckOnTarget() <= enemyManager.attackDistance)
         {
+            //Debug.Log("enemyManager.CheckOnTarget() <= enemyManager.agroDistance && enemyManager.CheckOnTarget() <= enemyManager.attackDistance");
             enemyManager.animator.SetBool("is_Angry", true);
+            //enemyManager.animator.SetBool("is_Angry", false);
             enemyManager.animator.SetBool("is_Attacking", true);
             enemyManager.SwitchState(enemyManager.attackState);
         }
@@ -37,6 +44,7 @@ public class WalkState : AState
         if (enemyManager.CheckOnTarget() <= enemyManager.agroDistance && enemyManager.CheckOnTarget() > enemyManager.attackDistance)
         {
             enemyManager.animator.SetBool("is_Angry", true);
+            enemyManager.animator.SetBool("is_Attacking", false);
             enemyManager.SwitchState(enemyManager.walkState);
         }
 
