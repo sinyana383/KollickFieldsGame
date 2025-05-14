@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0835178b4b40fc499b88f0bb4434508, type: 3}
   m_Name: DestroyIdol
   m_EditorClassIdentifier: 
-  title: 
-  taskState: 0
+  title: "\u0423\u043D\u0438\u0447\u0442\u043E\u0436\u0438\u0442\u044C \u0438\u0434\u043E\u043B"
+  taskState: 1
   startComment: {fileID: 0}

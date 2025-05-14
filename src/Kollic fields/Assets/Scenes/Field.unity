@@ -42,8 +42,7 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 13
-  m_BakeOnSceneLoad: 0
+  serializedVersion: 12
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -4763,7 +4762,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6723,9 +6722,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2a80f941499fd15449bb540b4b2bde4c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1330191410}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2a80f941499fd15449bb540b4b2bde4c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1330191414}
   m_SourcePrefab: {fileID: 100100000, guid: 2a80f941499fd15449bb540b4b2bde4c, type: 3}
 --- !u!1 &1330191398 stripped
 GameObject:
@@ -6841,19 +6837,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ab809c861ff4b1744a1bd10745401478, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactable: {fileID: 0}
---- !u!114 &1330191414
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1330191398}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 802c4f92c4b06d34ea0ae7d156c6251a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: {fileID: 0}
@@ -14609,6 +14592,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 797682672}
     m_Modifications:
+    - target: {fileID: 5336827961862898679, guid: 99ec53104ab84f24d904a9966683d192, type: 3}
+      propertyPath: m_Spacing
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6236386704051847580, guid: 99ec53104ab84f24d904a9966683d192, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

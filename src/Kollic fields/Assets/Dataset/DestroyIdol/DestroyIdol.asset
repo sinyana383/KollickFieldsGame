@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 02a582532ad200a41b40195bf387a4b0, type: 3}
-  m_Name: FindIdol 0
+  m_Name: DestroyIdol
   m_EditorClassIdentifier: 
-  textLine: 
+  textLine: "\u0422\u0430\u043A\u043E\u0435 \u0441\u0430\u043C\u043E \u043F\u043E
+    \u0441\u0435\u0431\u0435 \u043D\u0435 \u043F\u043E\u044F\u0432\u043B\u044F\u0435\u0442\u0441\u044F"
   voiceLine: {fileID: 0}
-  subjectsToCheck: 2
-  nextComments:
-  - {fileID: 11400000, guid: fa85b7b4f4182694f98c661a3355935b, type: 2}
-  - {fileID: 11400000, guid: 88516155757225f429931c3d7a3db5aa, type: 2}
-  taskState: 
-  tasksToChange: []
+  subjectsToCheck: 0
+  nextComments: []
+  taskState: 03000000
+  tasksToChange:
+  - {fileID: 11400000, guid: 73f1ddb95e265ee4b87d33f2d4fc996b, type: 2}
