@@ -20,5 +20,7 @@ MonoBehaviour:
   subjectsToCheck: 0
   nextComments:
   - {fileID: 11400000, guid: 054aa34b34f84284a9da5f1021d4c319, type: 2}
-  taskState: 
-  tasksToChange: []
+  taskState: 0300000001000000
+  tasksToChange:
+  - {fileID: 11400000, guid: 3a76bd5a3eaca3546a894f2968541224, type: 2}
+  - {fileID: 11400000, guid: 73f1ddb95e265ee4b87d33f2d4fc996b, type: 2}

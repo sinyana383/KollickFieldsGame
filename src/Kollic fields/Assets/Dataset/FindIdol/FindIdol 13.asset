@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 02a582532ad200a41b40195bf387a4b0, type: 3}
-  m_Name: FindIdol 11
+  m_Name: FindIdol 13
   m_EditorClassIdentifier: 
-  textLine: "\u0418\u0434\u043E\u043B\u0430 \u0437\u0434\u0435\u0441\u044C \u0435\u0449\u0451
-    \u043D\u0435 \u0445\u0432\u0430\u0442\u0430\u043B\u043E"
-  voiceLine: {fileID: 8300000, guid: 7009482cf9201ed4eae323fb17ff0449, type: 3}
+  textLine: "\u0410\u043A\u0440\u0430\u0442\u0438\u0442, \u0438\u0434\u043E\u043B...
+    \u043C\u043D\u043E\u0433\u043E\u0432\u0430\u0442\u043E \u043D\u0430 \u0441\u0435\u0433\u043E\u0434\u043D\u044F"
+  voiceLine: {fileID: 0}
   subjectsToCheck: 0
   nextComments:
   - {fileID: 11400000, guid: 054aa34b34f84284a9da5f1021d4c319, type: 2}
