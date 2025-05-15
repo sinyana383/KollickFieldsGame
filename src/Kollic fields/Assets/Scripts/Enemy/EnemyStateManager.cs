@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class EnemyStateManager : MonoBehaviour
 {
     [SerializeField] public Animator animator;
-    [SerializeField] public NavMeshAgent agent;
+    [SerializeField] private NavMeshAgent agent;
     [SerializeField] Transform player;
 
     public AState currentState;
@@ -18,6 +18,11 @@ public class EnemyStateManager : MonoBehaviour
     public float walkSpeed;
     public float agroDistance;
     public float attackDistance;
+
+    public void DisableAgent() 
+    {
+        agent.enabled = false;
+    }
 
     public void SwitchState(AState state)
     {
@@ -43,15 +48,15 @@ public class EnemyStateManager : MonoBehaviour
     {
         if (!player)
             player = FindAnyObjectByType<XROrigin>().transform;
-
-        agent.SetDestination(player.position);
-        //agent.destination = player.position; // вроде ненужен
+        if (currentState != deadState)
+            agent.SetDestination(player.position);
         if (currentState != null)
             currentState.UpdateState(this);
     }
     public void SetSpeed(float newSpeed)
     {
-        agent.speed = newSpeed;
+        if (currentState != deadState)
+            agent.speed = newSpeed;
     }
 
     public Vector3 CheckOnTargetRotation()
