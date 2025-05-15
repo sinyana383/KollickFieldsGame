@@ -3063,7 +3063,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &507571734
 Transform:
   m_ObjectHideFlags: 0
@@ -5392,6 +5392,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4425493690549636, guid: eabe2b83f5f933b428085f822f42e372, type: 3}
   m_PrefabInstance: {fileID: 944435789}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &944864640 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 359915589831698280, guid: 989d909146f76f7448c4c3cabfd4cd6b, type: 3}
+  m_PrefabInstance: {fileID: 1410018831}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &944864649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 944864640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e495b59d322a8954ba6c532ca7c57462, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &947639647
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7721,6 +7738,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1878124243076423614, guid: 989d909146f76f7448c4c3cabfd4cd6b, type: 3}
+      propertyPath: m_MoveSpeed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2851284610808062539, guid: 989d909146f76f7448c4c3cabfd4cd6b, type: 3}
       propertyPath: m_AllowHoveredActivate
       value: 1
@@ -7808,7 +7829,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4859672493135488533, guid: 989d909146f76f7448c4c3cabfd4cd6b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8280834941042562054}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 359915589831698280, guid: 989d909146f76f7448c4c3cabfd4cd6b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 944864649}
   m_SourcePrefab: {fileID: 100100000, guid: 989d909146f76f7448c4c3cabfd4cd6b, type: 3}
 --- !u!4 &1410018832 stripped
 Transform:

@@ -2,6 +2,7 @@ using Unity.VisualScripting;
 using Unity.XR.CoreUtils;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.InputSystem;
 
 public class EnemyStateManager : MonoBehaviour
 {
@@ -74,6 +75,7 @@ public class EnemyStateManager : MonoBehaviour
     public float CheckOnTarget()
     {
         return (transform.position - player.position).magnitude;
+        
     }
    
     
