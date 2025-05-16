@@ -6,6 +6,9 @@ using UnityEngine.InputSystem;
 
 public class EnemyStateManager : MonoBehaviour
 {
+    public Transform[] points;
+    private int destPoint = 0;
+    
     [SerializeField] public Animator animator;
     [SerializeField] private NavMeshAgent agent;
     [SerializeField] Transform player;
@@ -23,6 +26,11 @@ public class EnemyStateManager : MonoBehaviour
     public void DisableAgent() 
     {
         agent.enabled = false;
+    }
+
+    public void SetAutoBreaking(bool autoBreaking)
+    {
+        agent.autoBraking = autoBreaking;
     }
 
     public void SwitchState(AState state)
@@ -49,7 +57,7 @@ public class EnemyStateManager : MonoBehaviour
     {
         if (!player)
             player = FindAnyObjectByType<XROrigin>().transform;
-        if (currentState != deadState)
+        if (currentState != deadState && currentState != idleState)
             agent.SetDestination(player.position);
         if (currentState != null)
             currentState.UpdateState(this);
@@ -78,6 +86,23 @@ public class EnemyStateManager : MonoBehaviour
         
     }
    
+    public float GetRemainingDistance()
+    {
+       return agent.remainingDistance;
+    }
+    
+    public void GotoNextPoint() {
+        // Returns if no points have been set up
+        if (points.Length == 0)
+            return;
+    
+        // Set the agent to go to the currently selected destination.
+        agent.destination = points[destPoint].position;
+    
+        // Choose the next point in the array as the destination,
+        // cycling to the start if necessary.
+        destPoint = (destPoint + 1) % points.Length;
+    }
     
     }
 

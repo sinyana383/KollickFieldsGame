@@ -38,6 +38,9 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@3c62ab08b942/Runtime/Interaction/XRInteractionManager.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="false" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="Toolset" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -131,6 +134,7 @@
       <workItem from="1746848810495" duration="15098000" />
       <workItem from="1746871109974" duration="7268000" />
       <workItem from="1747379302763" duration="618000" />
+      <workItem from="1747407527663" duration="1908000" />
     </task>
     <servers />
   </component>

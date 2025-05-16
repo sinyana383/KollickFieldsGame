@@ -2,24 +2,22 @@ using UnityEngine;
 
 public class IdleState : AState
 {
-    public override void EnterState(EnemyStateManager enemyManager) 
+    public override void EnterState(EnemyStateManager enemyStateManager)
     {
-        // начало анимации idle
-        //Debug.Log("Idle Enetered");
-        enemyManager.SetSpeed(0);
-        enemyManager.animator.SetBool("is_Attacking", false);
-        enemyManager.animator.SetBool("is_Angry", false);
+        enemyStateManager.SetAutoBreaking(true);
+    }
 
-    }
-    public override void ExitState(EnemyStateManager enemyManager) 
+    public override void ExitState(EnemyStateManager enemyStateManager)
     {
-        //Debug.Log("Idle Exit");
     }
-    public override void UpdateState(EnemyStateManager enemyManager) 
+
+    public override void UpdateState(EnemyStateManager enemyStateManager)
     {
-        if (enemyManager.CheckOnTarget() < enemyManager.agroDistance) 
+        if (enemyStateManager.GetRemainingDistance() < 0.5f)
+                 enemyStateManager.GotoNextPoint();
+        if (enemyStateManager.CheckOnTarget() < enemyStateManager.agroDistance) 
         {
-            enemyManager.SwitchState(enemyManager.walkState);
+            enemyStateManager.SwitchState(enemyStateManager.walkState);
         }
     }
 }
