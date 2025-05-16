@@ -20,3 +20,10 @@
 |Stamina system| 2|
 |Run from acratit branch | 2|
 |Dead branch| 2
+
+#### Yulya tasks
+|Task name|Priority|Status|Description|
+|---|---|---|---|
+|Level design| 1
+|Blood effect| 4
+|Patrol points| 2
