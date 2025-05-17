@@ -8,14 +8,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Kollic fields/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kollic fields/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Fonts/USSR STENCIL WEBFONT SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/USSR STENCIL WEBFONT SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Field.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Field.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Narrative/TaskManger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Narrative/TaskManger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Narrative/Tasks/FindBodiesComments/FindBodiesCom 11.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Narrative/Tasks/FindBodiesComments/FindBodiesCom 11.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Narrative/Tasks/FindBodiesComments/FindBodiesCom 21.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Narrative/Tasks/FindBodiesComments/FindBodiesCom 21.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Narrative/Tasks/FindBodiesComments/FindBodiesCom 22.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Narrative/Tasks/FindBodiesComments/FindBodiesCom 22.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Narrative/Tasks/FindBodiesComments/FindBodiesCom 23.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Narrative/Tasks/FindBodiesComments/FindBodiesCom 23.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Narrative/Tasks/FindBodiesComments/FindBodiesCom 31.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Narrative/Tasks/FindBodiesComments/FindBodiesCom 31.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Narrative/Tasks/FindPeople.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Narrative/Tasks/FindPeople.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Narrative/Tasks/KillAkratit.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Narrative/Tasks/KillAkratit.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +20,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Body.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LoadManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/LayoutFixer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/TaskBox.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.hands@b137b9cef9d8/Runtime/XRHandProviderUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@3c62ab08b942/Runtime/AffordanceSystem/State/Provider/XRInteractableAffordanceStateProvider.cs" root0="SKIP_HIGHLIGHTING" />
@@ -70,9 +63,6 @@
       <option name="WORKING_DIRECTORY" value="D:\YanaWork\CourseWork\src\Kollic fields" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <option name="ENV_FILE_PATHS" value="" />
-      <option name="REDIRECT_INPUT_PATH" value="" />
-      <option name="PTY_MODE" value="Auto" />
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
@@ -81,9 +71,6 @@
       <option name="WORKING_DIRECTORY" value="D:\YanaWork\CourseWork\src\Kollic fields" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <option name="ENV_FILE_PATHS" value="" />
-      <option name="REDIRECT_INPUT_PATH" value="" />
-      <option name="PTY_MODE" value="Auto" />
       <method v="2" />
     </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -97,7 +84,6 @@
       <option name="selectedOptions">
         <list />
       </option>
-      <option name="useMixedMode" value="false" />
       <method v="2" />
     </configuration>
     <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -111,7 +97,6 @@
       <option name="selectedOptions">
         <list />
       </option>
-      <option name="useMixedMode" value="false" />
       <method v="2" />
     </configuration>
   </component>
@@ -136,6 +121,7 @@
       <workItem from="1747379302763" duration="618000" />
       <workItem from="1747407527663" duration="2489000" />
       <workItem from="1747460002341" duration="3001000" />
+      <workItem from="1747480026406" duration="6847000" />
     </task>
     <servers />
   </component>
