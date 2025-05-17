@@ -9,6 +9,11 @@ namespace ChristinaCreatesGames.Typography.Typewriter
     [RequireComponent(typeof(TMP_Text))]
     public class TypewriterEffect : MonoBehaviour
     {
+        [Header("Audio Settings")]
+        [SerializeField] private AudioClip[] typeSounds;
+        [SerializeField] private AudioSource audioSource;
+        
+        [SerializeField]
         private TMP_Text _textBox;
 
         // Basic Typewriter Functionality
@@ -40,7 +45,18 @@ namespace ChristinaCreatesGames.Typography.Typewriter
         public static event Action CompleteTextRevealed;
         public static event Action<char> CharacterRevealed;
 
+        public void SetText(string text)
+        {
+            if (_typewriterCoroutine != null)
+                StopCoroutine(_typewriterCoroutine);
+            
+            _textBox.text = text;
+            _textBox.maxVisibleCharacters = 0;
+            _currentVisibleCharacterIndex = 0;
 
+            _typewriterCoroutine = StartCoroutine(Typewriter());
+        }
+        
         private void Awake()
         {
             _textBox = GetComponent<TMP_Text>();
@@ -121,6 +137,11 @@ namespace ChristinaCreatesGames.Typography.Typewriter
                 char character = textInfo.characterInfo[_currentVisibleCharacterIndex].character;
 
                 _textBox.maxVisibleCharacters++;
+                if (typeSounds != null && typeSounds.Length > 0 && audioSource != null)
+                {
+                    var clip = typeSounds[UnityEngine.Random.Range(0, typeSounds.Length)];
+                    audioSource.PlayOneShot(clip);
+                }
                 
                 if (!CurrentlySkipping &&
                     (character == '?' || character == '.' || character == ',' || character == ':' ||
