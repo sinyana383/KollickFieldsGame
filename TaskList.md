@@ -4,8 +4,9 @@
 | Task name              |Priority|Status|Description|
 |------------------------|---|---|---|
 | Task system            | 1| Almost done
-| End  system            | 1| None
-| Game over system       | 1| None
+| End  system            | 1|
+| Game over system       | 1|
+| Stamina system         | 2| 
 | Pause menu             | 1| Started
 | Main menu              | 1| Partly done
 | Save\Load system       | 2| Started
@@ -21,7 +22,6 @@
 | Switch flashlight                        | 4
 | No UI on gaze interactor                 | 2| Done
 | Patruling state for Akratit              | 2 | Done
-| Stamina system                           | 2|
 | Run from acratit branch                  | 2|
 | Dead branch                              | 2
 
