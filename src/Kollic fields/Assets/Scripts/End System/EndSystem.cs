@@ -1,5 +1,5 @@
 using System;
-using ChristinaCreatesGames.Typography.Typewriter;
+using End_System;
 using UnityEngine;
 
 public class EndSystem : MonoBehaviour

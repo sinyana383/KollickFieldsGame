@@ -6,10 +6,9 @@ public class PlayerHP : MonoBehaviour
 
     void PlayerDead()
     {
-        if (this.hp <= 0)
-        {
+        
             Debug.Log("Player is dead");
-        }
+        
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -18,7 +17,10 @@ public class PlayerHP : MonoBehaviour
         {
             this.hp -= enemyDamager.enemyDmg;
             Debug.Log($"Player hp: {hp}");
-            PlayerDead();
+            if (this.hp <= 0)
+            {
+                PlayerDead();
+            }
         }
     }
 }

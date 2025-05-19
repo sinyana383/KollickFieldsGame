@@ -65,5 +65,5 @@ public class GameState : MonoBehaviour
         akratit = (SubjectState)gameStateData.mainEnemy;
         idol = (SubjectState)gameStateData.idol;
         mainCharacter = (SubjectState)gameStateData.mainCharacter;
-    }
+    } 
 }

@@ -1,10 +1,10 @@
 using System;
 using System.Collections;
-using UnityEngine;
 using TMPro;
+using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace ChristinaCreatesGames.Typography.Typewriter
+namespace End_System
 {
     [RequireComponent(typeof(TMP_Text))]
     public class TypewriterEffect : MonoBehaviour
