@@ -23,7 +23,7 @@ public class AttackState : AState
         {
             enemyManager.animator.SetBool("is_Angry", true);
             enemyManager.animator.SetBool("is_Attacking", false);
-            enemyManager.SwitchState(enemyManager.walkState);
+            enemyManager.SwitchState(enemyManager.AgroState);
 
         }
         else if (enemyManager.CheckOnTarget() <= enemyManager.attackDistance)

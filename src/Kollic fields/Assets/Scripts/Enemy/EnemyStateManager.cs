@@ -14,8 +14,8 @@ public class EnemyStateManager : MonoBehaviour
     [SerializeField] Transform player;
 
     public AState currentState;
-    public IdleState idleState = new IdleState();
-    public WalkState walkState = new WalkState();
+    public PatrolState PatrolState = new PatrolState();
+    public AgroState AgroState = new AgroState();
     public AttackState attackState = new AttackState();
     public DeadState deadState = new DeadState();
 
@@ -49,7 +49,7 @@ public class EnemyStateManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        SwitchState(idleState);
+        SwitchState(PatrolState);
     }
 
     // Update is called once per frame
@@ -57,7 +57,7 @@ public class EnemyStateManager : MonoBehaviour
     {
         if (!player)
             player = FindAnyObjectByType<XROrigin>().transform;
-        if (currentState != deadState && currentState != idleState)
+        if (currentState != deadState && currentState != PatrolState)
             agent.SetDestination(player.position);
         if (currentState != null)
             currentState.UpdateState(this);

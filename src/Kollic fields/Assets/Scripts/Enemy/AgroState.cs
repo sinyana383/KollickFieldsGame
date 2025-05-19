@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class WalkState : AState
+public class AgroState : AState
 {
     public override void EnterState(EnemyStateManager enemyManager)
     {
@@ -27,7 +27,7 @@ public class WalkState : AState
             //Debug.Log("enemyManager.CheckOnTarget() > enemyManager.agroDistance");
             enemyManager.animator.SetBool("is_Angry", false);
             enemyManager.animator.SetBool("is_Attacking", false);
-            enemyManager.SwitchState(enemyManager.idleState);
+            enemyManager.SwitchState(enemyManager.PatrolState);
         }
 
         if (enemyManager.CheckOnTarget() <= enemyManager.agroDistance && enemyManager.CheckOnTarget() <= enemyManager.attackDistance)
@@ -45,7 +45,7 @@ public class WalkState : AState
         {
             enemyManager.animator.SetBool("is_Angry", true);
             enemyManager.animator.SetBool("is_Attacking", false);
-            enemyManager.SwitchState(enemyManager.walkState);
+            enemyManager.SwitchState(enemyManager.AgroState);
         }
 
     }

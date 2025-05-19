@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class IdleState : AState
+public class PatrolState : AState
 {
     public override void EnterState(EnemyStateManager enemyStateManager)
     {
@@ -19,7 +19,7 @@ public class IdleState : AState
                  enemyStateManager.GotoNextPoint();
         if (enemyStateManager.CheckOnTarget() < enemyStateManager.agroDistance) 
         {
-            enemyStateManager.SwitchState(enemyStateManager.walkState);
+            enemyStateManager.SwitchState(enemyStateManager.AgroState);
         }
     }
 }
