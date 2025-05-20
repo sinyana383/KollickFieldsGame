@@ -7,6 +7,8 @@ using UnityEngine.UI;
 
 public class TaskManger : MonoBehaviour
 {
+    [SerializeField] private Comment winComment;
+    [SerializeField] private bool wasWin = false;
     public List<TaskBranch> tasksPool;
     enum TasksNames 
     {
@@ -97,6 +99,7 @@ public class TaskManger : MonoBehaviour
         if (curComment == null) 
         {
             Debug.Log($"No start comments found");
+            task.taskState = TaskBranch.TaskState.Completed;
             return;
         }
 
@@ -114,23 +117,23 @@ public class TaskManger : MonoBehaviour
             {
                 audioSource.clip = curComment.voiceLine;
                 audioSource.Play();
-                
+
                 while (audioSource.isPlaying)
                 {
                     yield return null;
                 }
-                if (curComment.tasksToChange != null && curComment.tasksToChange.Count > 0)
-                {
-                    for (int i = 0; i < curComment.tasksToChange.Count; i++) // may be optimised
-                    {
-                        ChangeTaskList(curComment.tasksToChange[i], curComment.taskState[i]);
-                    }
-                }
-                RefreshActiveTasksDisplay();
             }
             else if (!string.IsNullOrEmpty(curComment.textLine))
             {
                 yield return new WaitForSeconds(delayBetweenComments);
+            }
+            if (curComment.tasksToChange != null && curComment.tasksToChange.Count > 0)
+            {
+                for (int i = 0; i < curComment.tasksToChange.Count; i++) // may be optimised
+                {
+                    ChangeTaskList(curComment.tasksToChange[i], curComment.taskState[i]);
+                }
+                RefreshActiveTasksDisplay();
             }
             
             if (curComment.nextComments == null || curComment.nextComments.Count == 0)
@@ -145,7 +148,17 @@ public class TaskManger : MonoBehaviour
             }
         }
         commentText.text = "";
+        CheckMainThingsDone();
     }
 
-
+    public void CheckMainThingsDone()
+    {
+        if (gameState.bodies == GameState.SubjectState.Found && gameState.akratit == GameState.SubjectState.Destroyed 
+                                                             && gameState.idol == GameState.SubjectState.Destroyed && !wasWin)
+        {
+            Debug.Log("Game win");
+            wasWin = true;
+            StartCoroutine(DisplayComments(winComment));
+        }
+    }
 }

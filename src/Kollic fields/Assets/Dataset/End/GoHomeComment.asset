@@ -10,14 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 02a582532ad200a41b40195bf387a4b0, type: 3}
-  m_Name: Kill Akratit 22
+  m_Name: GoHomeComment
   m_EditorClassIdentifier: 
-  textLine: 
+  textLine: "\u0412\u0441\u0451, \u0445\u0432\u0430\u0442\u0438\u0442 \u043D\u0430
+    \u0441\u0435\u0433\u043E\u0434\u043D\u044F"
   voiceLine: {fileID: 0}
-  subjectsToCheck: 3
-  nextComments:
-  - {fileID: 11400000, guid: 1881fc105798dd44483ab708f36ab038, type: 2}
-  - {fileID: 11400000, guid: 20e48407ac37fe948999023ac876704d, type: 2}
-  - {fileID: 11400000, guid: 4b1d14e4138340f41a934126cdfe7f78, type: 2}
-  taskState: 
-  tasksToChange: []
+  subjectsToCheck: 0
+  nextComments: []
+  taskState: 01000000
+  tasksToChange:
+  - {fileID: 11400000, guid: 39559d702a737b84593223444ee45976, type: 2}
