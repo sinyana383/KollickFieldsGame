@@ -21,6 +21,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/End System/EndSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/End System/EndTextNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Body.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LoadManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -140,6 +141,8 @@
       <workItem from="1747460002341" duration="3001000" />
       <workItem from="1747480026406" duration="12366000" />
       <workItem from="1747706434244" duration="13040000" />
+      <workItem from="1747723893047" duration="290000" />
+      <workItem from="1747724218066" duration="584000" />
     </task>
     <servers />
   </component>

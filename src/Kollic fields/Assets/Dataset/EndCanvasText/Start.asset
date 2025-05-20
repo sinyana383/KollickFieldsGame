@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c60629acaf1cb3749abfb8ec29fb9cfe, type: 3}
-  m_Name: StartEnd
+  m_Name: Start
   m_EditorClassIdentifier: 
   text: "25 \u043D\u043E\u044F\u0431\u0440\u044F \u0432\u0431\u043B\u0438\u0437\u0438
     \u0434\u0435\u0440\u0435\u0432\u043D\u0438 \u041A\u043E\u043B\u0438\u0446\u0430
@@ -29,8 +29,5 @@ MonoBehaviour:
     \u0441 \u0446\u0435\u043B\u044C\u044E \u0437\u0430\u0433\u043E\u0442\u043E\u0432\u043A\u0438
     \u0434\u0440\u043E\u0432, \u043F\u043E\u0441\u043B\u0435 \u0447\u0435\u0433\u043E
     \u0434\u043E\u043C\u043E\u0439 \u043D\u0435 \u0432\u0435\u0440\u043D\u0443\u043B\u0438\u0441\u044C."
-  subjectsToCheck: 1
-  nextNodes:
-  - {fileID: 11400000, guid: 89cfb1c43ad4b5c4ca78400433bda045, type: 2}
-  - {fileID: 11400000, guid: 66209545d77c09347871cb2a00901f30, type: 2}
-  - {fileID: 11400000, guid: 66209545d77c09347871cb2a00901f30, type: 2}
+  subjectsToCheck: 0
+  nextNodes: []

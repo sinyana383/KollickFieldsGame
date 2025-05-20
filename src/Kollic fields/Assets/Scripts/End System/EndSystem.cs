@@ -10,7 +10,10 @@ public class EndSystem : MonoBehaviour
     [SerializeField] Button nextButton;
     [SerializeField] Button skipButton;
     
+    
     [SerializeField] private EndTextNode curNode;
+    [SerializeField] private EndTextNode endNode;
+    [SerializeField] private EndTextNode startNode;
     [SerializeField]GameState gameState;
 
     private void OnEnable()
@@ -32,6 +35,12 @@ public class EndSystem : MonoBehaviour
 
     private void Start()
     {
+        if (gameState.gameOver)
+            curNode = endNode;
+        else
+        {
+            curNode = startNode;
+        }
         if (nextButton != null)
         {
             nextButton.onClick.AddListener(()=>PrintText(curNode));

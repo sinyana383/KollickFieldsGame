@@ -1292,6 +1292,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 7216379736912016212, guid: 02b1a5e064825af4289545ae72b54d6f, type: 3}
+      propertyPath: gameOver
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6585,9 +6589,17 @@ PrefabInstance:
       value: 8.2335
       objectReference: {fileID: 0}
     - target: {fileID: 7443045582763213105, guid: 6422c0515d3633c4bab7c5f9e2f645d4, type: 3}
+      propertyPath: endNode
+      value: 
+      objectReference: {fileID: 11400000, guid: 7159098f80fdc2f438e5a105bf57ef38, type: 2}
+    - target: {fileID: 7443045582763213105, guid: 6422c0515d3633c4bab7c5f9e2f645d4, type: 3}
       propertyPath: gameState
       value: 
       objectReference: {fileID: 920701267}
+    - target: {fileID: 7443045582763213105, guid: 6422c0515d3633c4bab7c5f9e2f645d4, type: 3}
+      propertyPath: startNode
+      value: 
+      objectReference: {fileID: 11400000, guid: d1a2787a77e630e45bdd3c2a1e8932f8, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

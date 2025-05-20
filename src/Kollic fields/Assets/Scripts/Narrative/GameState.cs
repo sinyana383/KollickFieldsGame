@@ -4,6 +4,8 @@ using UnityEngine.Serialization;
 using UnityEngine.XR;
 public class GameState : MonoBehaviour
 {
+    public bool gameOver;
+    
     public SubjectState bodies;
     public SubjectState akratit;
     public SubjectState idol;
