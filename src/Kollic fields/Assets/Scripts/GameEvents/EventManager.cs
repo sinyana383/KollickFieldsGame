@@ -14,6 +14,7 @@ public static class EventManager
     public class PlayerEv
     {
         public UnityAction OnHealthChanged;
+        public UnityAction OnFlashlightSwitch;
     }
     
     public class AkratitEv

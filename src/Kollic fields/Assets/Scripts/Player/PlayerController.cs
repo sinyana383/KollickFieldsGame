@@ -1,24 +1,31 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
 
 public class PlayerController : MonoBehaviour
 {
-    protected InputController input;
+    @XRIDefaultInputActions inputActionManager;
 
     protected void Awake()
     {
-
-        input = new InputController();
+        inputActionManager = new @XRIDefaultInputActions();
+        
     }
 
     protected virtual void OnEnable()
     {
-        input.Enable();
+       inputActionManager.Enable();
     }
 
 
     protected virtual void OnDisable()
     {
-        input.Disable();
+        inputActionManager.Disable();
+    }
+
+    private void FixedUpdate()
+    {
+        inputActionManager.XRILeftInteraction.ButtonInteraction.performed += context => EventManager.Player.OnFlashlightSwitch?.Invoke();
     }
 
 }
