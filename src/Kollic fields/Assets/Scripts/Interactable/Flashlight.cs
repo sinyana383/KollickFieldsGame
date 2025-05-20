@@ -2,15 +2,26 @@ using UnityEngine;
 
 public class Flashlight : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] Light light;
+    [SerializeField] bool isLightOn;
+
+    private void Awake()
     {
-        
+        light = GetComponent<Light>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnEnable()
     {
-        
+        EventManager.Player.OnFlashlightSwitch += SwitchFlashlight;
+    }
+    private void OnDisable()
+    {
+        EventManager.Player.OnFlashlightSwitch -= SwitchFlashlight;
+    }
+
+    public void SwitchFlashlight() 
+    {
+        isLightOn = !isLightOn;
+        light.enabled = isLightOn;
     }
 }

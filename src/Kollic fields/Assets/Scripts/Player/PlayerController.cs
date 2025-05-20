@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        inputActionManager.XRILeftInteraction.ButtonInteraction.performed += context => Debug.Log($"X started");
+        inputActionManager.XRILeftInteraction.ButtonInteraction.performed += context => EventManager.Player.OnFlashlightSwitch?.Invoke();
     }
 
 }
