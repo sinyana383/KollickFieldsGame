@@ -10,6 +10,7 @@ public static class EventManager
     public static readonly IdolEv Idol = new IdolEv();
     public static readonly ZoneEv Zone = new ZoneEv();
     public static readonly EndTextEv EndText = new EndTextEv();
+    public static readonly GameOverEv GameOver = new GameOverEv();
     public class PlayerEv
     {
         public UnityAction OnHealthChanged;
@@ -36,6 +37,7 @@ public static class EventManager
     public class ZoneEv
     {
         public UnityAction OnFieldEntered;
+        public UnityAction<string> OnWarningEntered;
         public UnityAction OnFieldExit;
         public UnityAction OnPlayerRelease;
     }
@@ -43,5 +45,10 @@ public static class EventManager
     public class EndTextEv
     {
         public UnityAction OnTextRevealed;
+    }
+
+    public class GameOverEv
+    {
+        public UnityAction OnGameOver;
     }
 }

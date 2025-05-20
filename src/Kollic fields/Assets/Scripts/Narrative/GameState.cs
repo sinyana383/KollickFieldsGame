@@ -45,6 +45,7 @@ public class GameState : MonoBehaviour
         EventManager.Bodies.OnBodiesFound += () => ChangeState(out bodies, SubjectState.Found);
         EventManager.Akratit.OnAkratitDeath += () => ChangeState(out akratit, SubjectState.Destroyed);
         EventManager.Idol.OnIdolDestroyed += () => ChangeState(out idol, SubjectState.Destroyed);
+        EventManager.GameOver.OnGameOver += () => gameOver = true;
     }
 
     private void OnDisable()
@@ -54,6 +55,7 @@ public class GameState : MonoBehaviour
         EventManager.Bodies.OnBodiesFound -= () => ChangeState(out bodies, SubjectState.Found);
         EventManager.Akratit.OnAkratitDeath -= () => ChangeState(out akratit, SubjectState.Destroyed);
         EventManager.Idol.OnIdolDestroyed -= () => ChangeState(out idol, SubjectState.Destroyed);
+        EventManager.GameOver.OnGameOver -= () => gameOver = true;
     }
 
     private void ChangeState(out SubjectState state, SubjectState newState) => state = newState;

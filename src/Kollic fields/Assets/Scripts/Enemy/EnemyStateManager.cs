@@ -75,7 +75,7 @@ public class EnemyStateManager : MonoBehaviour
     {
         var q = Quaternion.LookRotation(CheckOnTargetRotation());
         transform.rotation = Quaternion.Lerp(transform.rotation, q, 3f * Time.deltaTime);
-        Debug.Log("Rotation!");
+        // Debug.Log("Rotation!");
     }
 
     public float CheckOnTarget()

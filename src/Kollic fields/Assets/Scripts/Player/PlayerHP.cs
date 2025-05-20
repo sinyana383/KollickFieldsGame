@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHP : MonoBehaviour
 {
@@ -6,9 +7,9 @@ public class PlayerHP : MonoBehaviour
 
     void PlayerDead()
     {
-        
-            Debug.Log("Player is dead");
-        
+        EventManager.GameOver.OnGameOver?.Invoke();
+        SceneManager.LoadScene(0);
+        Debug.Log("Player is dead");
     }
     private void OnTriggerEnter(Collider other)
     {

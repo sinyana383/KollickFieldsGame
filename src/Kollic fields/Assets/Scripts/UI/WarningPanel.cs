@@ -1,6 +1,9 @@
+using System;
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class EnsurePanel : ClosablePanel
+public class WarningPanel : ClosablePanel
 {
     protected override void ClosePanel()
     {

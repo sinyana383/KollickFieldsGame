@@ -1,8 +1,11 @@
 using System;
+using TMPro;
 using UnityEngine;
 
 public class PanelManager : MonoBehaviour
 {
+    [SerializeField] private TextMeshProUGUI warningText;
+
     public enum PanelNames
     {
         Comments,
@@ -10,16 +13,23 @@ public class PanelManager : MonoBehaviour
         ExitZoneEnsure
     }
     [SerializeField] private Transform[] panels;
+    
     private void OnEnable()
     {
-        EventManager.Zone.OnFieldExit += (() => ShowPanel(PanelNames.ExitZoneEnsure));
+        EventManager.Zone.OnWarningEntered += PrepareWarningPanel;
     }
 
     private void OnDisable()
     {
-        EventManager.Zone.OnFieldExit -= (() => ShowPanel(PanelNames.ExitZoneEnsure));
+        EventManager.Zone.OnWarningEntered -= PrepareWarningPanel;
     }
 
+    public void PrepareWarningPanel(string warning)
+    {
+        warningText.text = warning;
+        ShowPanel(PanelNames.ExitZoneEnsure);
+    }
+    
     public void ShowPanel(PanelNames name)
     {
         Debug.Log($"PanelManager.ShowPanel(PanelNames.{name})");
