@@ -15,6 +15,11 @@ public class Zone : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        FunctionOnTriggerEnter(other);
+    }
+
+    protected virtual void FunctionOnTriggerEnter(Collider other)
+    {
         if (!enteredZone) 
         {
             if (audioSource != null)

@@ -6588,6 +6588,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 8.2335
       objectReference: {fileID: 0}
+    - target: {fileID: 6645337483465412772, guid: 6422c0515d3633c4bab7c5f9e2f645d4, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7443045582763213105, guid: 6422c0515d3633c4bab7c5f9e2f645d4, type: 3}
       propertyPath: endNode
       value: 

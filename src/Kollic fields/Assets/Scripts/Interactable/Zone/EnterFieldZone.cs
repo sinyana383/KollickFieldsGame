@@ -4,15 +4,16 @@ public class EnterFieldZone : Zone
 {
     private void OnTriggerEnter(Collider other)
     {
+        FunctionOnTriggerEnter(other);
+    }
+
+    protected override void FunctionOnTriggerEnter(Collider other)
+    {
         if (!enteredZone)
         {
-            enteredZone = true;
+            Debug.Log("EnterFieldZone FunctionOnTriggerEnter");
             EventManager.Zone.OnFieldEntered?.Invoke();
         }
-        else if (enteredZone)
-        {
-            Debug.Log($"EnterFieldZone.OnTriggerEnter({other.name})");
-            EventManager.Zone.OnFieldExit?.Invoke();
-        }
+        base.FunctionOnTriggerEnter(other);
     }
 }
