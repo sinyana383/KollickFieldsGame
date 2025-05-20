@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
 
-public class PlayerBounderies : MonoBehaviour
+public class PlayerMove : MonoBehaviour
 {
     DynamicMoveProvider moveProvider;
 
@@ -13,13 +13,13 @@ public class PlayerBounderies : MonoBehaviour
 
     private void OnEnable()
     {
-        EventManager.Zone.OnFieldExit += StopPlayer;
+        EventManager.Zone.OnWarningEntered += arg0 => StopPlayer();
         EventManager.Zone.OnPlayerRelease += ReleasePlayer;
     }
 
     private void OnDisable()
     {
-        EventManager.Zone.OnFieldExit -= StopPlayer;
+        EventManager.Zone.OnWarningEntered -= arg0 => StopPlayer();
         EventManager.Zone.OnPlayerRelease -= ReleasePlayer;
     }
 
@@ -30,6 +30,6 @@ public class PlayerBounderies : MonoBehaviour
 
     private void ReleasePlayer()
     {
-        moveProvider.moveSpeed = 5; //TODO: Make this class like player speed of something
+        moveProvider.moveSpeed = 5;
     }
 }
