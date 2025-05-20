@@ -4,8 +4,8 @@
 | Task name              |Priority|Status|Description|
 |------------------------|---|---|---|
 | Task system            | 1| Almost done
-| End  system            | 1|
-| Game over system       | 1|
+| End  system            | 1| Almost done
+| Game over system       | 1| Almost done
 | Stamina system         | 2| 
 | Pause menu             | 1| Started
 | Main menu              | 1| Partly done
@@ -22,7 +22,7 @@
 | Switch flashlight                        | 4
 | No UI on gaze interactor                 | 2| Done
 | Patruling state for Akratit              | 2 | Done
-| Run from acratit branch                  | 2|
+| Run from acratit branch                  | 2| 
 | Dead branch                              | 2
 
 #### Yulya tasks
