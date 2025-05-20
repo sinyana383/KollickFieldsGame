@@ -35,5 +35,7 @@ public static class EventManager
     public class ZoneEv
     {
         public UnityAction OnFieldEntered;
+        public UnityAction OnFieldExit;
+        public UnityAction OnPlayerRelease;
     }
 }

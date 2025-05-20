@@ -3,7 +3,7 @@ using UnityEngine;
 public class Zone : MonoBehaviour
 {
     [SerializeField] AudioSource audioSource;
-    protected bool enteredZone = false;
+    [SerializeField] protected bool enteredZone = false;
 
     private void Start()
     {

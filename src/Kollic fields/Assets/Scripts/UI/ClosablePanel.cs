@@ -18,10 +18,11 @@ public class ClosablePanel : MonoBehaviour
 
     public void ButtonPressEffect()
     {
-        audioManager.PlayButtonPress(audioManager.buttonPress);
+        if (audioManager != null)
+            audioManager.PlayButtonPress(audioManager.buttonPress);
     }
 
-    private void ClosePanel()
+    protected virtual void ClosePanel()
     {
         this.gameObject.SetActive(false);
         if (mainPanel != null)
