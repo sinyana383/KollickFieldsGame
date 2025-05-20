@@ -9,6 +9,7 @@ public static class EventManager
     public static readonly BodiesEv Bodies = new BodiesEv();
     public static readonly IdolEv Idol = new IdolEv();
     public static readonly ZoneEv Zone = new ZoneEv();
+    public static readonly EndTextEv EndText = new EndTextEv();
     public class PlayerEv
     {
         public UnityAction OnHealthChanged;
@@ -37,5 +38,10 @@ public static class EventManager
         public UnityAction OnFieldEntered;
         public UnityAction OnFieldExit;
         public UnityAction OnPlayerRelease;
+    }
+
+    public class EndTextEv
+    {
+        public UnityAction OnTextRevealed;
     }
 }

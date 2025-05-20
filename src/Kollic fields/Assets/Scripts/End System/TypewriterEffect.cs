@@ -129,6 +129,7 @@ namespace End_System
                 {
                     _textBox.maxVisibleCharacters++;
                     yield return _textboxFullEventDelay;
+                    EventManager.EndText.OnTextRevealed?.Invoke();
                     CompleteTextRevealed?.Invoke();
                     _readyForNewText = true;
                     yield break;
@@ -159,22 +160,23 @@ namespace End_System
             }
         }
 
-        private void Skip(bool quickSkipNeeded = false)
+        public void Skip(bool quickSkipNeeded = false)
         {
             if (CurrentlySkipping)
                 return;
             
             CurrentlySkipping = true;
 
-            if (!quickSkip || !quickSkipNeeded)
-            {
-                StartCoroutine(SkipSpeedupReset());
-                return;
-            }
+            // if (!quickSkip || !quickSkipNeeded)
+            // {
+            //     StartCoroutine(SkipSpeedupReset());
+            //     return;
+            // }
 
             StopCoroutine(_typewriterCoroutine);
             _textBox.maxVisibleCharacters = _textBox.textInfo.characterCount;
             _readyForNewText = true;
+            EventManager.EndText.OnTextRevealed?.Invoke();
             CompleteTextRevealed?.Invoke();
         }
 

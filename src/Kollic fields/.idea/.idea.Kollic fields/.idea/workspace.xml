@@ -27,6 +27,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/EnsurePanel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/LayoutFixer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/TaskBox.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@920b46832575/InputSystem/Utilities/DynamicBitfield.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@24b10291b18f/Runtime/TMP/TMP_Text.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.hands@b137b9cef9d8/Runtime/XRHandProviderUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@3c62ab08b942/Runtime/AffordanceSystem/State/Provider/XRInteractableAffordanceStateProvider.cs" root0="SKIP_HIGHLIGHTING" />
@@ -138,7 +139,7 @@
       <workItem from="1747407527663" duration="2489000" />
       <workItem from="1747460002341" duration="3001000" />
       <workItem from="1747480026406" duration="12366000" />
-      <workItem from="1747706434244" duration="5124000" />
+      <workItem from="1747706434244" duration="12833000" />
     </task>
     <servers />
   </component>

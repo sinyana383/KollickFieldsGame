@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c60629acaf1cb3749abfb8ec29fb9cfe, type: 3}
-  m_Name: BodiesEnd 1
+  m_Name: IdolState
   m_EditorClassIdentifier: 
   text: 
-  subjectsToCheck: 2
+  subjectsToCheck: 3
   nextNodes:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: adf969ca5aaac9c42ac6591a06a89cc5, type: 2}
+  - {fileID: 11400000, guid: 26e3088bf3ecec9458f907e3af28a2f4, type: 2}
+  - {fileID: 11400000, guid: 26e3088bf3ecec9458f907e3af28a2f4, type: 2}
