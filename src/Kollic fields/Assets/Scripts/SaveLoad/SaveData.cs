@@ -18,4 +18,19 @@ public class SaveData
             mainCharacter = (int)gameState.mainCharacter;
         }
     }
+    
+    [System.Serializable]
+    public class SettingsData
+    {
+        public float backgroundVolume;
+        public float soundVolume;
+        public float brightness;
+
+        public SettingsData(SliderManager sliderManager)
+        {
+            backgroundVolume = sliderManager.BackgroundVolume;
+            soundVolume = sliderManager.SoundVolume;
+            brightness = sliderManager.Brightness;
+        }
+    }
 }

@@ -4317,6 +4317,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 560231615}
     - target: {fileID: 5730055570798082392, guid: f6661a236ef9fde4ea6ae3890b3fb7d5, type: 3}
+      propertyPath: saveButton
+      value: 
+      objectReference: {fileID: 47174953}
+    - target: {fileID: 5730055570798082392, guid: f6661a236ef9fde4ea6ae3890b3fb7d5, type: 3}
       propertyPath: soundAudioSource
       value: 
       objectReference: {fileID: 1727911517}

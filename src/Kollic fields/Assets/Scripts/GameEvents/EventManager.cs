@@ -58,6 +58,7 @@ public static class EventManager
 
     public class SaveEv
     {
-        public UnityAction OnSaveAll;
+        public UnityAction OnSaveGame;
+        public UnityAction OnSaveSettings;
     }
 }

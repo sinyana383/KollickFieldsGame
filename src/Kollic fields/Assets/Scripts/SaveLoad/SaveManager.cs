@@ -4,47 +4,36 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 public static class SaveManager
 {
-    static string GetPath()
+    static string GetPath(string fileName)
     {
-        Debug.Log($"Get path {Application.persistentDataPath}");
-        return Application.persistentDataPath + "/gameState.save";
+        Debug.Log($"Get path {Application.persistentDataPath + $"/{fileName}.save"}");
+        return Application.persistentDataPath + $"/{fileName}.save";
     }
-    // public static void SaveGameState(GameState gameState) 
-    // {
-    //     BinaryFormatter formatter = new BinaryFormatter();
-    //     string path = GetPath();
-    //     FileStream fileStream = new FileStream(path, FileMode.Create);
-    //
-    //     SaveData.GameStateData data = new SaveData.GameStateData(gameState);
-    //
-    //     formatter.Serialize(fileStream, data);
-    //     fileStream.Close();
-    // }
-    public static void SaveData<T>(T data)
+
+    public static void SaveData<T>(T data, string fileName)
     {
         BinaryFormatter formatter = new BinaryFormatter();
-        string path = GetPath();
+        string path = GetPath(fileName);
         using (FileStream fileStream = new FileStream(path, FileMode.Create))
         {
             formatter.Serialize(fileStream, data);
         }
     }
 
-    public static SaveData.GameStateData LoadGameState()
+    public static T LoadData<T>(string fileName) where T : class
     {
-        string path = GetPath();
+        string path = GetPath(fileName);
         if (File.Exists(path))
-        { 
-            BinaryFormatter binaryFormatter = new BinaryFormatter();
-            FileStream fileStream = new FileStream(path, FileMode.Open);
-
-            SaveData.GameStateData gameStateData = binaryFormatter.Deserialize(fileStream) as SaveData.GameStateData;
-            fileStream.Close();
-            return gameStateData;
-        }
-        else 
         {
-            Debug.LogWarning("Save file not found in " +  path);
+            BinaryFormatter formatter = new BinaryFormatter();
+            using (FileStream fileStream = new FileStream(path, FileMode.Open))
+            {
+                return formatter.Deserialize(fileStream) as T;
+            }
+        }
+        else
+        {
+            Debug.LogWarning("Save file not found in " + path);
             return null;
         }
     }

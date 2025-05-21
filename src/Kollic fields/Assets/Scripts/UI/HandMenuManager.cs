@@ -29,7 +29,7 @@ public class HandMenuManager : MonoBehaviour
 
     private void Start()
     {
-        saveButton.onClick.AddListener(() =>EventManager.Save.OnSaveAll?.Invoke());
+        saveButton.onClick.AddListener(() =>EventManager.Save.OnSaveGame?.Invoke());
         saveButton.onClick.AddListener(() => savePanel.gameObject.SetActive(false));
         
         savePanelButton.onClick.AddListener(() => savePanel.gameObject.SetActive(true));

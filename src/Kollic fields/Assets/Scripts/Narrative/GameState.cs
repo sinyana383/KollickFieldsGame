@@ -4,6 +4,7 @@ using UnityEngine.Serialization;
 using UnityEngine.XR;
 public class GameState : MonoBehaviour
 {
+    [SerializeField] string savefileName = "gameState";
     public bool gameOver;
     
     public SubjectState bodies;
@@ -47,7 +48,7 @@ public class GameState : MonoBehaviour
         EventManager.Idol.OnIdolDestroyed += () => ChangeState(out idol, SubjectState.Destroyed);
         EventManager.GameOver.OnGameOver += () => gameOver = true;
 
-        EventManager.Save.OnSaveAll += SaveGameState;
+        EventManager.Save.OnSaveGame += SaveGameState;
     }
     private void OnDisable()
     {
@@ -58,7 +59,7 @@ public class GameState : MonoBehaviour
         EventManager.Idol.OnIdolDestroyed -= () => ChangeState(out idol, SubjectState.Destroyed);
         EventManager.GameOver.OnGameOver -= () => gameOver = true;
         
-        EventManager.Save.OnSaveAll -= SaveGameState;
+        EventManager.Save.OnSaveGame -= SaveGameState;
     }
 
     private void ChangeState(out SubjectState state, SubjectState newState)
@@ -66,10 +67,10 @@ public class GameState : MonoBehaviour
         state = newState;
     }
 
-    public void SaveGameState() => SaveManager.SaveData(new SaveData.GameStateData(this));
+    public void SaveGameState() => SaveManager.SaveData(new SaveData.GameStateData(this), savefileName);
     public void LoadGameState() 
     {
-        SaveData.GameStateData gameStateData = SaveManager.LoadGameState();
+        SaveData.GameStateData gameStateData = SaveManager.LoadData<SaveData.GameStateData>(savefileName);
 
         if (gameStateData == null)
         {
