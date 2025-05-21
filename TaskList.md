@@ -10,7 +10,6 @@
 | Pause menu             | 1| Started
 | Main menu              | 1| Partly done
 | Save\Load system       | 2| Started
-| Inventory              |2| Canceled
 | Music and Sound System | 3| Started
 
 #### Concreate tasks

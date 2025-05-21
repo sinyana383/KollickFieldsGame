@@ -31,7 +31,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/WarningPanel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@920b46832575/InputSystem/Utilities/DynamicBitfield.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@24b10291b18f/Runtime/TMP/TMP_Text.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.hands@b137b9cef9d8/Runtime/XRHandProviderUtility.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.arfoundation@b18f5959dab1/Runtime/ARFoundation/SubsystemLifecycleManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@3c62ab08b942/Runtime/AffordanceSystem/State/Provider/XRInteractableAffordanceStateProvider.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@3c62ab08b942/Runtime/Inputs/Haptics/HapticImpulseCommandChannelGroup.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@3c62ab08b942/Runtime/Interaction/Attachment/InteractionAttachController.cs" root0="SKIP_HIGHLIGHTING" />
@@ -40,6 +40,7 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@3c62ab08b942/Runtime/Interaction/Interactables/XRSimpleInteractable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@3c62ab08b942/Runtime/Interaction/Interactors/NearFarInteractor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@3c62ab08b942/Runtime/Interaction/XRInteractionManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.oculus@0d7d101b4114/Runtime/OculusLoader.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="false" />
   <component name="ProblemsViewState">
