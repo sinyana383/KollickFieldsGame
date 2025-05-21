@@ -42,10 +42,10 @@ public class SettingsManager : MonoBehaviour
         set
         {
             soundVolume = value;
-            if (backgroundAudioSource != null)
+            if (soundAudioSource != null)
             {
                 soundAudioSource.volume = soundVolume;
-                musicSlider.value = soundVolume;
+                soundSlider.value = soundVolume;
             }
         }
     }
