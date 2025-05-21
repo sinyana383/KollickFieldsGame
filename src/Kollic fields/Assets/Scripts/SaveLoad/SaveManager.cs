@@ -9,16 +9,25 @@ public static class SaveManager
         Debug.Log($"Get path {Application.persistentDataPath}");
         return Application.persistentDataPath + "/gameState.save";
     }
-    public static void SaveGameState(GameState gameState) 
+    // public static void SaveGameState(GameState gameState) 
+    // {
+    //     BinaryFormatter formatter = new BinaryFormatter();
+    //     string path = GetPath();
+    //     FileStream fileStream = new FileStream(path, FileMode.Create);
+    //
+    //     SaveData.GameStateData data = new SaveData.GameStateData(gameState);
+    //
+    //     formatter.Serialize(fileStream, data);
+    //     fileStream.Close();
+    // }
+    public static void SaveData<T>(T data)
     {
         BinaryFormatter formatter = new BinaryFormatter();
         string path = GetPath();
-        FileStream fileStream = new FileStream(path, FileMode.Create);
-
-        SaveData.GameStateData data = new SaveData.GameStateData(gameState);
-
-        formatter.Serialize(fileStream, data);
-        fileStream.Close();
+        using (FileStream fileStream = new FileStream(path, FileMode.Create))
+        {
+            formatter.Serialize(fileStream, data);
+        }
     }
 
     public static SaveData.GameStateData LoadGameState()

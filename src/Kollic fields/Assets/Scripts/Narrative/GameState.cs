@@ -66,7 +66,7 @@ public class GameState : MonoBehaviour
         state = newState;
     }
 
-    public void SaveGameState() => SaveManager.SaveGameState(this);
+    public void SaveGameState() => SaveManager.SaveData(new SaveData.GameStateData(this));
     public void LoadGameState() 
     {
         SaveData.GameStateData gameStateData = SaveManager.LoadGameState();
