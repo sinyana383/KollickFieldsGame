@@ -26,11 +26,11 @@ public class SaveData
         public float soundVolume;
         public float brightness;
 
-        public SettingsData(SliderManager sliderManager)
+        public SettingsData(SettingsManager settingsManager)
         {
-            backgroundVolume = sliderManager.BackgroundVolume;
-            soundVolume = sliderManager.SoundVolume;
-            brightness = sliderManager.Brightness;
+            backgroundVolume = settingsManager.BackgroundVolume;
+            soundVolume = settingsManager.SoundVolume;
+            brightness = settingsManager.Brightness;
         }
     }
 }

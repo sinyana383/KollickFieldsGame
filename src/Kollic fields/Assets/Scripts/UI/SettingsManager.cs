@@ -5,7 +5,7 @@ using UnityEngine.Rendering.Universal;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 
-public class SliderManager : MonoBehaviour
+public class SettingsManager : MonoBehaviour
 {
     [SerializeField] private string savefileName = "settingsManager";
     [SerializeField] private Button saveButton;
@@ -109,19 +109,16 @@ public class SliderManager : MonoBehaviour
 
     void ChangeBrightness(float value)
     {
-        if (colorAdjustments != null)
-            colorAdjustments.postExposure.value = value;
+        Brightness = value;
     }
 
     void ChangeMusic(float value) 
     {
-        if (backgroundAudioSource != null)
-            backgroundAudioSource.volume = value;
+        BackgroundVolume = value;
     }
 
     void ChangeSound(float value)
     {
-        if (soundAudioSource != null)
-            soundAudioSource.volume = value;
+        SoundVolume = value;
     }
 }
