@@ -15,6 +15,8 @@ public static class EventManager
     {
         public UnityAction OnHealthChanged;
         public UnityAction OnFlashlightSwitch;
+        public UnityAction OnStaminaUseEntered;
+        public UnityAction OnStaminaUseExited;
     }
     
     public class AkratitEv

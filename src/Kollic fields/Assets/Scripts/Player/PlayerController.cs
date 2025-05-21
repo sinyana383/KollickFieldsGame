@@ -23,9 +23,11 @@ public class PlayerController : MonoBehaviour
         inputActionManager.Disable();
     }
 
-    private void FixedUpdate()
+    private void Start()
     {
         inputActionManager.XRILeftInteraction.ButtonInteraction.performed += context => EventManager.Player.OnFlashlightSwitch?.Invoke();
+        inputActionManager.XRILeftInteraction.ButtonInteraction.performed += context => EventManager.Player.OnStaminaUseEntered?.Invoke();
+        inputActionManager.XRILeftInteraction.ButtonInteraction.canceled += context => EventManager.Player.OnStaminaUseExited?.Invoke();
     }
 
 }
