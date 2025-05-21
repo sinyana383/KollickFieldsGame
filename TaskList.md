@@ -3,10 +3,11 @@
 #### General tasks
 | Task name              |Priority|Status|Description|
 |------------------------|---|---|---|
+|MORE JUICY EFFECTS      |1|
 | Task system            | 1| Almost done
 | End  system            | 1| Almost done
 | Game over system       | 1| Almost done
-| Stamina system         | 2| 
+| Stamina system         | 2| Almost done
 | Pause menu             | 1| Started
 | Main menu              | 1| Partly done
 | Save\Load system       | 2| Started

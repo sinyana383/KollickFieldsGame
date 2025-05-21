@@ -1293,6 +1293,10 @@ PrefabInstance:
       value: GameManager
       objectReference: {fileID: 0}
     - target: {fileID: 7216379736912016212, guid: 02b1a5e064825af4289545ae72b54d6f, type: 3}
+      propertyPath: bodies
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7216379736912016212, guid: 02b1a5e064825af4289545ae72b54d6f, type: 3}
       propertyPath: gameOver
       value: 0
       objectReference: {fileID: 0}

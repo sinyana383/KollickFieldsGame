@@ -11,6 +11,7 @@ public static class EventManager
     public static readonly ZoneEv Zone = new ZoneEv();
     public static readonly EndTextEv EndText = new EndTextEv();
     public static readonly GameOverEv GameOver = new GameOverEv();
+    public static readonly SaveEv Save = new SaveEv();
     public class PlayerEv
     {
         public UnityAction OnHealthChanged;
@@ -53,5 +54,10 @@ public static class EventManager
     public class GameOverEv
     {
         public UnityAction OnGameOver;
+    }
+
+    public class SaveEv
+    {
+        public UnityAction OnSaveAll;
     }
 }

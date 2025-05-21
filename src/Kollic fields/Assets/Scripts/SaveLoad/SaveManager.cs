@@ -4,20 +4,24 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 public static class SaveManager
 {
-    static string GetPath() => Application.persistentDataPath + "/gameState.save";
+    static string GetPath()
+    {
+        Debug.Log($"Get path {Application.persistentDataPath}");
+        return Application.persistentDataPath + "/gameState.save";
+    }
     public static void SaveGameState(GameState gameState) 
     {
         BinaryFormatter formatter = new BinaryFormatter();
         string path = GetPath();
         FileStream fileStream = new FileStream(path, FileMode.Create);
 
-        GameStateData data = new GameStateData(gameState);
+        SaveData.GameStateData data = new SaveData.GameStateData(gameState);
 
         formatter.Serialize(fileStream, data);
         fileStream.Close();
     }
 
-    public static GameStateData LoadGameState()
+    public static SaveData.GameStateData LoadGameState()
     {
         string path = GetPath();
         if (File.Exists(path))
@@ -25,13 +29,13 @@ public static class SaveManager
             BinaryFormatter binaryFormatter = new BinaryFormatter();
             FileStream fileStream = new FileStream(path, FileMode.Open);
 
-            GameStateData gameStateData = binaryFormatter.Deserialize(fileStream) as GameStateData;
+            SaveData.GameStateData gameStateData = binaryFormatter.Deserialize(fileStream) as SaveData.GameStateData;
             fileStream.Close();
             return gameStateData;
         }
         else 
         {
-            Debug.LogError("Save file not found in " +  path);
+            Debug.LogWarning("Save file not found in " +  path);
             return null;
         }
     }

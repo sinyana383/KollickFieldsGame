@@ -46,8 +46,9 @@ public class GameState : MonoBehaviour
         EventManager.Akratit.OnAkratitDeath += () => ChangeState(out akratit, SubjectState.Destroyed);
         EventManager.Idol.OnIdolDestroyed += () => ChangeState(out idol, SubjectState.Destroyed);
         EventManager.GameOver.OnGameOver += () => gameOver = true;
-    }
 
+        EventManager.Save.OnSaveAll += SaveGameState;
+    }
     private void OnDisable()
     {
         EventManager.Idol.OnIdolFound -= () => ChangeState(out idol, SubjectState.Found);
@@ -56,18 +57,33 @@ public class GameState : MonoBehaviour
         EventManager.Akratit.OnAkratitDeath -= () => ChangeState(out akratit, SubjectState.Destroyed);
         EventManager.Idol.OnIdolDestroyed -= () => ChangeState(out idol, SubjectState.Destroyed);
         EventManager.GameOver.OnGameOver -= () => gameOver = true;
+        
+        EventManager.Save.OnSaveAll -= SaveGameState;
     }
 
-    private void ChangeState(out SubjectState state, SubjectState newState) => state = newState;
-    
+    private void ChangeState(out SubjectState state, SubjectState newState)
+    {
+        state = newState;
+    }
+
     public void SaveGameState() => SaveManager.SaveGameState(this);
     public void LoadGameState() 
     {
-        GameStateData gameStateData = SaveManager.LoadGameState();
+        SaveData.GameStateData gameStateData = SaveManager.LoadGameState();
 
+        if (gameStateData == null)
+        {
+            return;
+        }
+        
         bodies = (SubjectState)gameStateData.missingPeople;
         akratit = (SubjectState)gameStateData.mainEnemy;
         idol = (SubjectState)gameStateData.idol;
         mainCharacter = (SubjectState)gameStateData.mainCharacter;
-    } 
+    }
+
+    private void Start()
+    {
+        LoadGameState();
+    }
 }
