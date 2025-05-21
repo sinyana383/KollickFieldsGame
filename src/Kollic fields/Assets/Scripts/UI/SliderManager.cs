@@ -17,29 +17,36 @@ public class SliderManager : MonoBehaviour
 
     private void Start()
     {
-        volume.profile.TryGet(out colorAdjustments);
+        if (volume != null)
+            volume.profile.TryGet(out colorAdjustments);
         brightnessSlider.onValueChanged.AddListener(ChangeBrightness);
         musicSlider.onValueChanged.AddListener(ChangeMusic);
         soundSlider.onValueChanged.AddListener(ChangeSound);
-
-        soundSlider.value = soundAudioSource.volume;
-        musicSlider.value = BackgroundAudioSource.volume;
-        brightnessSlider.value = colorAdjustments.postExposure.value;
+        
+        if (soundAudioSource != null)
+            soundSlider.value = soundAudioSource.volume;
+        if (BackgroundAudioSource != null)
+            musicSlider.value = BackgroundAudioSource.volume;
+        if (colorAdjustments != null)
+            brightnessSlider.value = colorAdjustments.postExposure.value;
 
     }
 
     void ChangeBrightness(float value)
     {
-        colorAdjustments.postExposure.value = value;
+        if (colorAdjustments != null)
+            colorAdjustments.postExposure.value = value;
     }
 
     void ChangeMusic(float value) 
     {
-        BackgroundAudioSource.volume = value;
+        if (BackgroundAudioSource != null)
+            BackgroundAudioSource.volume = value;
     }
 
     void ChangeSound(float value)
     {
-        soundAudioSource.volume = value;
+        if (soundAudioSource != null)
+            soundAudioSource.volume = value;
     }
 }
