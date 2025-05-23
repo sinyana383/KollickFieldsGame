@@ -46,8 +46,6 @@ public class Player : MonoBehaviour
         
         Vector3 position = new Vector3(playerData.position[0], playerData.position[1], playerData.position[2]);
         this.transform.position = position;
-        Vector3 rotation = new Vector3(playerData.rotation[0], playerData.rotation[1], playerData.rotation[2]);
-        this.transform.rotation = Quaternion.Euler(rotation);
         HP = playerData.hp;
     }
     void PlayerDead()
