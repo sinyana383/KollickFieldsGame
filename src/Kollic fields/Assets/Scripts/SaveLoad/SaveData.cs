@@ -37,11 +37,16 @@ public class SaveData
     [System.Serializable]
     public class PlayerData
     {
-        public Vector3 position;
+        public float[] position = new float[3];
+        public int hp;
 
         public PlayerData(Player player)
         {
-            position = player.transform.position;
+            player.HP = hp;
+            
+            position[0] = player.transform.position.x;
+            position[1] = player.transform.position.y;
+            position[2] = player.transform.position.z;
         }
     }
 }
