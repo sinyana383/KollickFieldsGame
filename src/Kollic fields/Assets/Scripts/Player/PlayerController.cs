@@ -31,6 +31,7 @@ public class PlayerController : MonoBehaviour
         
         inputActionManager.XRIRight.YButton.performed += context => EventManager.Player.OnFlashlightSwitch?.Invoke();
         inputActionManager.XRILeft.AButton.performed += context => EventManager.Player.OnMenuSwitch?.Invoke();
+        inputActionManager.XRIRight.XButton.performed += context => EventManager.Player.OnTaskListSwitch?.Invoke();
     }
 
 }

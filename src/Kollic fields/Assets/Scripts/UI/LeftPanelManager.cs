@@ -2,7 +2,7 @@ using System;
 using TMPro;
 using UnityEngine;
 
-public class PanelManager : MonoBehaviour
+public class LeftPanelManager : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI warningText;
 

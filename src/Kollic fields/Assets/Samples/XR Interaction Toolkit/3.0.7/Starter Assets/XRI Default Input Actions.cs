@@ -1638,6 +1638,15 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""XButton"",
+                    ""type"": ""Button"",
+                    ""id"": ""3fd5a096-4025-40cd-9c94-abd6fbdbadb8"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -2056,6 +2065,17 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""YButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2d978ea9-6ee9-46be-a523-feccc107f5b4"",
+                    ""path"": ""<XRController>{RightHand}/{PrimaryButton}"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""XButton"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -3509,6 +3529,7 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
         m_XRIRight_GripRotation = m_XRIRight.FindAction("Grip Rotation", throwIfNotFound: true);
         m_XRIRight_Thumbstick = m_XRIRight.FindAction("Thumbstick", throwIfNotFound: true);
         m_XRIRight_YButton = m_XRIRight.FindAction("YButton", throwIfNotFound: true);
+        m_XRIRight_XButton = m_XRIRight.FindAction("XButton", throwIfNotFound: true);
         // XRI Right Interaction
         m_XRIRightInteraction = asset.FindActionMap("XRI Right Interaction", throwIfNotFound: true);
         m_XRIRightInteraction_Select = m_XRIRightInteraction.FindAction("Select", throwIfNotFound: true);
@@ -4447,6 +4468,7 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
     private readonly InputAction m_XRIRight_GripRotation;
     private readonly InputAction m_XRIRight_Thumbstick;
     private readonly InputAction m_XRIRight_YButton;
+    private readonly InputAction m_XRIRight_XButton;
     /// <summary>
     /// Provides access to input actions defined in input action map "XRI Right".
     /// </summary>
@@ -4519,6 +4541,10 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
         /// </summary>
         public InputAction @YButton => m_Wrapper.m_XRIRight_YButton;
         /// <summary>
+        /// Provides access to the underlying input action "XRIRight/XButton".
+        /// </summary>
+        public InputAction @XButton => m_Wrapper.m_XRIRight_XButton;
+        /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
         public InputActionMap Get() { return m_Wrapper.m_XRIRight; }
@@ -4589,6 +4615,9 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
             @YButton.started += instance.OnYButton;
             @YButton.performed += instance.OnYButton;
             @YButton.canceled += instance.OnYButton;
+            @XButton.started += instance.OnXButton;
+            @XButton.performed += instance.OnXButton;
+            @XButton.canceled += instance.OnXButton;
         }
 
         /// <summary>
@@ -4645,6 +4674,9 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
             @YButton.started -= instance.OnYButton;
             @YButton.performed -= instance.OnYButton;
             @YButton.canceled -= instance.OnYButton;
+            @XButton.started -= instance.OnXButton;
+            @XButton.performed -= instance.OnXButton;
+            @XButton.canceled -= instance.OnXButton;
         }
 
         /// <summary>
@@ -5845,6 +5877,13 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnYButton(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "XButton" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnXButton(InputAction.CallbackContext context);
     }
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "XRI Right Interaction" which allows adding and removing callbacks.

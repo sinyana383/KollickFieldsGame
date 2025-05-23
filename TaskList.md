@@ -10,6 +10,7 @@ secondaryButton     -  B    - hand menu
 
 Right:
 secondaryButton     -  Y    - switch fleshlight
+primaryButton       - 
 
 
 #### General tasks
@@ -27,22 +28,23 @@ secondaryButton     -  Y    - switch fleshlight
 | Controls Input System  | 1        |
 
 #### Concreate tasks
-| Task name                                |Priority|Status|Description|
-|------------------------------------------|---|---|---|
-| Kill Akratit done on animation event     | 2 |
-| UI. Main menu. Add new game and continue | 1 | Done
-| UI. Pause menu. Save, setting, controls  | 1 | Done
-| Switch flashlight                        | 4 | Done
-| No UI on gaze interactor                 | 2 | Done
-| Patruling state for Akratit              | 2 | Done
-| Run from acratit branch                  | 2 | 
-| Dead branch                              | 2 |
-| Save\Load. settings                      | 2 | Done
-| Save\Load. gameState                     | 2 | Done
-| Save\Load. tasklist                      | 2 | 
-| Save\Load. palyer                        | 2 | 
-| Save\Load. enemy                         | 2 | 
-| Save\Load. disable in fight              | 2 | 
+| Task name                                | Priority |Status|Description|
+|------------------------------------------|----------|---|---|
+| Controls. Weapon not cover UI            | 1        |
+| Run from acratit branch                  | 2        | 
+| Kill Akratit done on animation event     | 2        |
+| Dead branch                              | 2        |
+| Save\Load. tasklist                      | 2        | 
+| Save\Load. disable in fight              | 2        |
+| Save\Load. palyer                        | 2        |
+| Save\Load. enemy                         | 2        | 
+| UI. Main menu. Add new game and continue | 1        | Done
+| UI. Pause menu. Save, setting, controls  | 1        | Done
+| Switch flashlight                        | 4        | Done
+| No UI on gaze interactor                 | 2        | Done
+| Patruling state for Akratit              | 2        | Done
+| Save\Load. settings                      | 2        | Done
+| Save\Load. gameState                     | 2        | Done
 
 #### Yulya tasks
 |Task name|Priority|Status|Description|
