@@ -10,8 +10,9 @@
 | Stamina system         | 2        | Almost done
 | Hand menu              | 1        | Almost done
 | Main menu              | 1        | Almost done
-| Save\Load system       | 2        | Started
-| Music and Sound System | 3        | Started
+| Save\Load system       | 1        | Started
+| Music and Sound System | 1        | Started
+| Controls Input System  | 1        |
 
 #### Concreate tasks
 | Task name                                |Priority|Status|Description|
@@ -24,6 +25,12 @@
 | Patruling state for Akratit              | 2 | Done
 | Run from acratit branch                  | 2 | 
 | Dead branch                              | 2 |
+| Save\Load. settings                      | 2 | Done
+| Save\Load. gameState                     | 2 | Done
+| Save\Load. tasklist                      | 2 | 
+| Save\Load. palyer                        | 2 | 
+| Save\Load. enemy                         | 2 | 
+| Save\Load. disable in fight              | 2 | 
 
 #### Yulya tasks
 |Task name|Priority|Status|Description|

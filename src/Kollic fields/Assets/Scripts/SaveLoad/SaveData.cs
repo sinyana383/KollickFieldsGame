@@ -33,4 +33,15 @@ public class SaveData
             brightness = settingsManager.Brightness;
         }
     }
+
+    [System.Serializable]
+    public class PlayerData
+    {
+        public Vector3 position;
+
+        public PlayerData(Player player)
+        {
+            position = player.transform.position;
+        }
+    }
 }
