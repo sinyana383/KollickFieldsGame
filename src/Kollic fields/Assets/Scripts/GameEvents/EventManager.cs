@@ -16,6 +16,7 @@ public static class EventManager
     {
         public UnityAction OnHealthChanged;
         public UnityAction OnFlashlightSwitch;
+        public UnityAction OnMenuSwitch;
         public UnityAction OnStaminaUseEntered;
         public UnityAction OnStaminaUseExited;
     }

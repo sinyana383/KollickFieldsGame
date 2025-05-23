@@ -1,5 +1,17 @@
 ### All tasks
 
+#### Controls
+##### Left Controller
+https://docs.unity3d.com/6000.1/Documentation/Manual/xr_input.html
+Left:
+primary2DAxis       - joystick  - move
+primary2DAxisClick  -  —    - stamina speed up
+secondaryButton     -  B    - hand menu
+
+Right:
+secondaryButton     -  Y    - switch fleshlight
+
+
 #### General tasks
 | Task name              | Priority |Status|Description|
 |------------------------|----------|---|---|

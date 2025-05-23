@@ -25,9 +25,12 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
-        inputActionManager.XRILeftInteraction.ButtonInteraction.performed += context => EventManager.Player.OnFlashlightSwitch?.Invoke();
-        inputActionManager.XRILeftInteraction.ButtonInteraction.performed += context => EventManager.Player.OnStaminaUseEntered?.Invoke();
-        inputActionManager.XRILeftInteraction.ButtonInteraction.canceled += context => EventManager.Player.OnStaminaUseExited?.Invoke();
+        // change to thumbstick pressed
+        // inputActionManager.XRILeftInteraction.ButtonInteraction.performed += context => EventManager.Player.OnStaminaUseEntered?.Invoke();
+        // inputActionManager.XRILeftInteraction.ButtonInteraction.canceled += context => EventManager.Player.OnStaminaUseExited?.Invoke();
+        
+        inputActionManager.XRIRight.YButton.performed += context => EventManager.Player.OnFlashlightSwitch?.Invoke();
+        inputActionManager.XRILeft.AButton.performed += context => EventManager.Player.OnMenuSwitch?.Invoke();
     }
 
 }
