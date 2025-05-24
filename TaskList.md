@@ -10,7 +10,9 @@ secondaryButton     -  B    - hand menu
 
 Right:
 secondaryButton     -  Y    - switch fleshlight
-primaryButton       - 
+primaryButton       -  X    - switch Tasklist
+
+#### General systems for all scenes
 
 
 #### General tasks
@@ -25,7 +27,7 @@ primaryButton       -
 | Main menu              | 1        | Almost done
 | Save\Load system       | 1        | Started
 | Music and Sound System | 1        | Started
-| Controls Input System  | 1        |
+| Controls Input System  | 1        | AlmostDone
 
 #### Concreate tasks
 | Task name                                | Priority |Status|Description|

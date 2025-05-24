@@ -1017,19 +1017,19 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 728076562}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1902629019369115842, guid: 02b1a5e064825af4289545ae72b54d6f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.2425728
+      value: 25.451826
       objectReference: {fileID: 0}
     - target: {fileID: 1902629019369115842, guid: 02b1a5e064825af4289545ae72b54d6f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.3253722
+      value: 0.54618907
       objectReference: {fileID: 0}
     - target: {fileID: 1902629019369115842, guid: 02b1a5e064825af4289545ae72b54d6f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.19199753
+      value: 15.829353
       objectReference: {fileID: 0}
     - target: {fileID: 1902629019369115842, guid: 02b1a5e064825af4289545ae72b54d6f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1076,11 +1076,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02b1a5e064825af4289545ae72b54d6f, type: 3}
---- !u!4 &216396420 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1902629019369115842, guid: 02b1a5e064825af4289545ae72b54d6f, type: 3}
-  m_PrefabInstance: {fileID: 216396419}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &265111302
 GameObject:
   m_ObjectHideFlags: 0
@@ -2469,7 +2464,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 216396420}
   - {fileID: 541390576}
   - {fileID: 1989894856}
   - {fileID: 111676907}
@@ -7046,6 +7040,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Origin (XR Rig)
       objectReference: {fileID: 0}
+    - target: {fileID: 5131080085872907451, guid: 09e617c8104de4647acd8c8e5effd021, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7061,6 +7059,7 @@ SceneRoots:
   - {fileID: 8822035088041689836}
   - {fileID: 646717707}
   - {fileID: 1489344556}
+  - {fileID: 216396419}
   - {fileID: 728076562}
   - {fileID: 1755580950}
   - {fileID: 800289801}

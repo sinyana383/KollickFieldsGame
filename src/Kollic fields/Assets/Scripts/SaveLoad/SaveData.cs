@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class SaveData
 {
@@ -16,6 +17,23 @@ public class SaveData
             mainEnemy = (int)gameState.akratit;
             idol = (int)gameState.idol;
             mainCharacter = (int)gameState.mainCharacter;
+        }
+    }
+
+    [System.Serializable]
+    public class TaskManagerData
+    {
+        public int[] taskStates;
+        public bool wasWin;
+
+        public TaskManagerData(TaskManager taskManager)
+        {
+            this.wasWin = taskManager.wasWin;
+            taskStates = new int[taskManager.tasksPool.Count];
+            for (int i = 0; i < taskManager.tasksPool.Count; i++)
+            {
+                taskStates[i] = (int)taskManager.tasksPool[i].taskState;
+            }
         }
     }
     

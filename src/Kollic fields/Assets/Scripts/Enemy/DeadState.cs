@@ -10,7 +10,7 @@ public class DeadState : AState
         enemyManager.animator.SetBool("is_Angry", false);
         Debug.Log("Dead Enetered");
 
-        EventManager.Akratit.OnAkratitDeath?.Invoke();  // TODO: поставить Event в анимации, когда Акратит упадет
+        EventManager.Akratit.OnAkratitDeath?.Invoke(TaskManager.TasksNames.KillAkratit);  
     }
     public override void ExitState(EnemyStateManager enemyManager)
     {

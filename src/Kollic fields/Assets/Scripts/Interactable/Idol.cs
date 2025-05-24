@@ -7,7 +7,7 @@ public class Idol : Interactable
     public override void ActionOnDetection(SelectEnterEventArgs args)
     {
         base.ActionOnDetection(args);
-        EventManager.Idol.OnIdolFound?.Invoke();
+        EventManager.Idol.OnIdolFound?.Invoke(TaskManager.TasksNames.FindIdol);
     }
 
     //protected override void Broken() 

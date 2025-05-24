@@ -12,7 +12,7 @@ public class EnterFieldZone : Zone
         if (!enteredZone)
         {
             Debug.Log("EnterFieldZone FunctionOnTriggerEnter");
-            EventManager.Zone.OnFieldEntered?.Invoke();
+            EventManager.Zone.OnFieldEntered?.Invoke(TaskManager.TasksNames.EnterField);
         }
         base.FunctionOnTriggerEnter(other);
     }

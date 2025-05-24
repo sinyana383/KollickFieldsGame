@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.Events;
-using static EventManager;
 
 public static class EventManager
 {
@@ -27,22 +26,22 @@ public static class EventManager
         public UnityAction OnAkratitFound;
         
         public UnityAction<int> OnAkratitHit;
-        public UnityAction OnAkratitDeath;
+        public UnityAction<TaskManager.TasksNames> OnAkratitDeath;
     }
     
     public class BodiesEv
     {
-        public UnityAction OnBodiesFound;
+        public UnityAction<TaskManager.TasksNames> OnBodiesFound;
     }
     public class IdolEv
     {
-        public UnityAction OnIdolFound;
-        public UnityAction OnIdolDestroyed;
+        public UnityAction<TaskManager.TasksNames> OnIdolFound;
+        public UnityAction<TaskManager.TasksNames> OnIdolDestroyed;
     }
     
     public class ZoneEv
     {
-        public UnityAction OnFieldEntered;
+        public UnityAction<TaskManager.TasksNames> OnFieldEntered;
         public UnityAction<string> OnWarningEntered;
         public UnityAction OnFieldExit;
         public UnityAction OnPlayerRelease;

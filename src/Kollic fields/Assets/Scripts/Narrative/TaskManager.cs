@@ -5,12 +5,13 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TaskManger : MonoBehaviour
+public class TaskManager : MonoBehaviour
 {
+    [SerializeField] private string savefileName = "taskManager";
     [SerializeField] private Comment winComment;
-    [SerializeField] private bool wasWin = false;
+    [SerializeField] public bool wasWin = false;
     public List<TaskBranch> tasksPool;
-    enum TasksNames 
+    public enum TasksNames // Same order for tasksPool elements
     {
         EnterField,
         FindPeople,
@@ -30,6 +31,24 @@ public class TaskManger : MonoBehaviour
     public TextMeshProUGUI commentText;
     public float delayBetweenComments = 3f;
     
+    public void SaveTaskManager() => SaveManager.SaveData(new SaveData.TaskManagerData(this), savefileName);
+
+    public void LoadTaskManager()
+    {
+        SaveData.TaskManagerData taskManagerData = SaveManager.LoadData<SaveData.TaskManagerData>(savefileName);
+        
+        if (taskManagerData == null)
+        {
+            return;
+        }
+        
+        for (int i = 0; i < taskManagerData.taskStates.Length; i++)
+        {
+            tasksPool[i].taskState = (TaskBranch.TaskState)taskManagerData.taskStates[i];
+        }
+        wasWin = taskManagerData.wasWin;
+    }
+    
     private void Start()
     {
         NotStartedAllTasks();
@@ -43,22 +62,27 @@ public class TaskManger : MonoBehaviour
             task.taskState = TaskBranch.TaskState.NotStarted;
     }
 
+
+    void PlayTaskComments(TasksNames name)
+    {
+        PlayComments(tasksPool[(int)name]);
+    }
     private void OnEnable()
     {
-        EventManager.Zone.OnFieldEntered += () => PlayComments(tasksPool[(int)TasksNames.EnterField]);
-        EventManager.Bodies.OnBodiesFound += () => PlayComments(tasksPool[(int)TasksNames.FindPeople]);
-        EventManager.Akratit.OnAkratitDeath += () => PlayComments(tasksPool[(int)TasksNames.KillAkratit]);
-        EventManager.Idol.OnIdolFound += () => PlayComments(tasksPool[(int)TasksNames.FindIdol]);
-        EventManager.Idol.OnIdolDestroyed += () => PlayComments(tasksPool[(int)TasksNames.DestroyIdol]);
+        EventManager.Zone.OnFieldEntered += PlayTaskComments;
+        EventManager.Bodies.OnBodiesFound += PlayTaskComments;
+        EventManager.Akratit.OnAkratitDeath += PlayTaskComments;
+        EventManager.Idol.OnIdolFound += PlayTaskComments;
+        EventManager.Idol.OnIdolDestroyed += PlayTaskComments;
     }
 
     private void OnDisable()
     {
-        EventManager.Zone.OnFieldEntered -= () => PlayComments(tasksPool[(int)TasksNames.EnterField]);
-        EventManager.Bodies.OnBodiesFound -= () => PlayComments(tasksPool[(int)TasksNames.FindPeople]);
-        EventManager.Akratit.OnAkratitDeath -= () => PlayComments(tasksPool[(int)TasksNames.KillAkratit]);
-        EventManager.Idol.OnIdolFound -= () => PlayComments(tasksPool[(int)TasksNames.FindIdol]);
-        EventManager.Idol.OnIdolDestroyed -= () => PlayComments(tasksPool[(int)TasksNames.DestroyIdol]);
+        EventManager.Zone.OnFieldEntered -= PlayTaskComments;
+        EventManager.Bodies.OnBodiesFound -= PlayTaskComments;
+        EventManager.Akratit.OnAkratitDeath -= PlayTaskComments;
+        EventManager.Idol.OnIdolFound -= PlayTaskComments;
+        EventManager.Idol.OnIdolDestroyed -= PlayTaskComments;
     }
 
     public void ChangeTaskList(TaskBranch task, TaskBranch.TaskState state)

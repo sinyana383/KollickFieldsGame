@@ -34,7 +34,7 @@ public class Breakable : MonoBehaviour
     }
     protected virtual void Broken()
     {
-        EventManager.Idol.OnIdolDestroyed?.Invoke();
+        EventManager.Idol.OnIdolDestroyed?.Invoke(TaskManager.TasksNames.DestroyIdol);
         Destroy(gameObject);
     }
 

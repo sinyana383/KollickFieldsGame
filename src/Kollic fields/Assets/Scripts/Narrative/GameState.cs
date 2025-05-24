@@ -38,26 +38,40 @@ public class GameState : MonoBehaviour
         }
         return SubjectState.None;
     }
+
+    private void ChangeStateByTaskName(TaskManager.TasksNames name)
+    {
+        switch (name)
+        {
+            case TaskManager.TasksNames.DestroyIdol: ChangeState(out idol, SubjectState.Destroyed);return;
+            case TaskManager.TasksNames.FindIdol: ChangeState(out idol, SubjectState.Found);return;
+            case TaskManager.TasksNames.KillAkratit: ChangeState(out akratit, SubjectState.Destroyed);return;
+            case TaskManager.TasksNames.FindPeople: ChangeState(out bodies, SubjectState.Found); return;
+        }
+    }
+
+    public void AkratitFound() => ChangeState(out akratit, SubjectState.Found);
+    public void SetGameOver() => gameOver = true;
     
     private void OnEnable()
     {
-        EventManager.Idol.OnIdolFound += () => ChangeState(out idol, SubjectState.Found);
-        EventManager.Akratit.OnAkratitFound += () => ChangeState(out akratit, SubjectState.Found);
-        EventManager.Bodies.OnBodiesFound += () => ChangeState(out bodies, SubjectState.Found);
-        EventManager.Akratit.OnAkratitDeath += () => ChangeState(out akratit, SubjectState.Destroyed);
-        EventManager.Idol.OnIdolDestroyed += () => ChangeState(out idol, SubjectState.Destroyed);
-        EventManager.GameOver.OnGameOver += () => gameOver = true;
+        EventManager.Idol.OnIdolFound += ChangeStateByTaskName;
+        EventManager.Akratit.OnAkratitFound += AkratitFound;
+        EventManager.Bodies.OnBodiesFound += ChangeStateByTaskName;
+        EventManager.Akratit.OnAkratitDeath += ChangeStateByTaskName;
+        EventManager.Idol.OnIdolDestroyed += ChangeStateByTaskName;
+        EventManager.GameOver.OnGameOver += SetGameOver;
 
         EventManager.Save.OnSaveGame += SaveGameState;
     }
     private void OnDisable()
     {
-        EventManager.Idol.OnIdolFound -= () => ChangeState(out idol, SubjectState.Found);
-        EventManager.Akratit.OnAkratitFound -= () => ChangeState(out akratit, SubjectState.Found);
-        EventManager.Bodies.OnBodiesFound -= () => ChangeState(out bodies, SubjectState.Found);
-        EventManager.Akratit.OnAkratitDeath -= () => ChangeState(out akratit, SubjectState.Destroyed);
-        EventManager.Idol.OnIdolDestroyed -= () => ChangeState(out idol, SubjectState.Destroyed);
-        EventManager.GameOver.OnGameOver -= () => gameOver = true;
+        EventManager.Idol.OnIdolFound -= ChangeStateByTaskName;
+        EventManager.Akratit.OnAkratitFound -= AkratitFound;
+        EventManager.Bodies.OnBodiesFound -= ChangeStateByTaskName;
+        EventManager.Akratit.OnAkratitDeath -= ChangeStateByTaskName;
+        EventManager.Idol.OnIdolDestroyed -= ChangeStateByTaskName;
+        EventManager.GameOver.OnGameOver -= SetGameOver;
         
         EventManager.Save.OnSaveGame -= SaveGameState;
     }
