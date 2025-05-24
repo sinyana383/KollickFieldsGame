@@ -33,7 +33,6 @@ primaryButton       -  X    - switch Tasklist
 #### Concreate tasks
 | Task name                                      | Priority |Status|Description|
 |------------------------------------------------|----------|---|---|
-| Restart Game                                   | 1        |
 | LoadScreen from starter to main scene          | 1        |
 | Save\Load. palyer with weapon                  | 2        |
 | Save\Load. enemy                               | 2        |
@@ -43,6 +42,7 @@ primaryButton       -  X    - switch Tasklist
 | Dead branch                                    | 2        |
 | Run from acratit branch                        | 2        | 
 | Controls. Weapon not cover UI                  | 2        |
+| Restart Game                                   | 1        | Done
 | Save\Load. tasklist                            | 2        | Done
 | Save\Load. tasklist if no loadfile use default | 2        | Done
 | Save\Load. disable in fight                    | 2        | Done

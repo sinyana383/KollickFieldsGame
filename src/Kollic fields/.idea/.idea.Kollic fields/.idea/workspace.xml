@@ -7,11 +7,7 @@
     <list default="true" id="e89ca199-47df-482e-8c1b-70ac6a228fc8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../../TaskList.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../TaskList.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Kollic fields/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Kollic fields/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/USSR STENCIL WEBFONT SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/USSR STENCIL WEBFONT SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Starter_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Starter_1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveLoad/SaveManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SaveLoad/SaveManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ButtonManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MenuManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ButtonManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MenuManager.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,9 +18,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/afbf15ffe1d246139ee6c2134f885f72f33af443adbbbc75353ea8d178c1915/System.Runtime.Serialization.Formatters.Binary.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/End System/EndSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/End System/EndTextNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FadeScreen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Body.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Zone/GameOverZone.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LoadManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -151,7 +147,7 @@
       <workItem from="1748017308064" duration="357000" />
       <workItem from="1748079973876" duration="9946000" />
       <workItem from="1748092304061" duration="574000" />
-      <workItem from="1748113546754" duration="3001000" />
+      <workItem from="1748113546754" duration="7604000" />
     </task>
     <servers />
   </component>
