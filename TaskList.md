@@ -18,30 +18,32 @@ primaryButton       -  X    - switch Tasklist
 #### General tasks
 | Task name              | Priority |Status|Description|
 |------------------------|----------|---|---|
-| MORE JUICY EFFECTS     | 3        |
+| EFFECTS                | 3        |
+| Save\Load system       | 1        | Started
+| Music and Sound System | 1        | Started
 | Task system            | 1        | Almost done
 | End  system            | 1        | Almost done
 | Game over system       | 1        | Almost done
 | Stamina system         | 2        | Almost done
 | Hand menu              | 1        | Almost done
 | Main menu              | 1        | Almost done
-| Save\Load system       | 1        | Started
-| Music and Sound System | 1        | Started
-| Controls Input System  | 1        | AlmostDone
+| Controls Input System  | 1        | Almost done
 
 #### Concreate tasks
 | Task name                                      | Priority |Status|Description|
 |------------------------------------------------|----------|---|---|
-| Controls. Weapon not cover UI                  | 1        |
+| Restart Game                                   | 1        |
+| Controls. Weapon not cover UI                  | 2        |
 | Run from acratit branch                        | 2        | 
 | Kill Akratit done on animation event           | 2        |
 | Dead branch                                    | 2        |
-| Save\Load. tasklist                            | 2        | 
-| Save\Load. tasklist if no loadfile use default | 2        | 
-| Save\Load. disable in fight                    | 2        |
-| Save\Load. disable on comments                 | 2        |
-| Save\Load. palyer                              | 2        |
-| Save\Load. enemy                               | 2        | 
+| Save\Load. palyer with weapon                  | 2        |
+| Save\Load. enemy                               | 2        |
+| Effects. Die effect                            | 2        |
+| Save\Load. tasklist                            | 2        | Done
+| Save\Load. tasklist if no loadfile use default | 2        | Done
+| Save\Load. disable in fight                    | 2        | Done
+| Save\Load. disable on comments                 | 2        | Done
 | UI. Main menu. Add new game and continue       | 1        | Done
 | UI. Pause menu. Save, setting, controls        | 1        | Done
 | Switch flashlight                              | 4        | Done
