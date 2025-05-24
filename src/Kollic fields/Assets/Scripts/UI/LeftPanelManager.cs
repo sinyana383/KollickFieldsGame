@@ -1,9 +1,11 @@
 using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LeftPanelManager : MonoBehaviour
 {
+    [SerializeField] Button saveButton;
     [SerializeField] private TextMeshProUGUI warningText;
 
     public enum PanelNames
@@ -18,12 +20,26 @@ public class LeftPanelManager : MonoBehaviour
     {
         EventManager.Zone.OnWarningEntered += PrepareWarningPanel;
         EventManager.Player.OnMenuSwitch += SwitchMenu;
+        EventManager.Save.OnSaveAllDisable += DisableSaveButton;
+        EventManager.Save.OnSaveAllEnable += EnableSaveButton;
+    }
+
+    private void EnableSaveButton()
+    {
+        saveButton.interactable = true;
+    }
+
+    private void DisableSaveButton()
+    {
+        saveButton.interactable = false;
     }
 
     private void OnDisable()
     {
         EventManager.Zone.OnWarningEntered -= PrepareWarningPanel;
         EventManager.Player.OnMenuSwitch -= SwitchMenu;
+        EventManager.Save.OnSaveAllDisable -= DisableSaveButton;
+        EventManager.Save.OnSaveAllEnable -= EnableSaveButton;
     }
 
     public void PrepareWarningPanel(string warning)

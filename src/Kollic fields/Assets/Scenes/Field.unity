@@ -5723,6 +5723,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2add8178dfa39a745ad6383f49807a21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  savefileName: taskManager
   winComment: {fileID: 11400000, guid: 833f1df4742c6964191052ac4695d0eb, type: 2}
   wasWin: 0
   tasksPool:
@@ -7680,7 +7681,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 598186594946001042, guid: 989d909146f76f7448c4c3cabfd4cd6b, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1810795088302885285, guid: 989d909146f76f7448c4c3cabfd4cd6b, type: 3}
       propertyPath: m_Name
@@ -7692,7 +7693,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2499266693786008114, guid: 989d909146f76f7448c4c3cabfd4cd6b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2561009774162020619, guid: 989d909146f76f7448c4c3cabfd4cd6b, type: 3}
       propertyPath: m_AnchorMax.y
@@ -7754,6 +7755,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5801216119799341331, guid: 989d909146f76f7448c4c3cabfd4cd6b, type: 3}
+      propertyPath: saveButton
+      value: 
+      objectReference: {fileID: 672036350}
     - target: {fileID: 6384346568609706361, guid: 989d909146f76f7448c4c3cabfd4cd6b, type: 3}
       propertyPath: m_RendererIndex
       value: -1

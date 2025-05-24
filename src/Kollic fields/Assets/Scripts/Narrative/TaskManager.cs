@@ -33,13 +33,13 @@ public class TaskManager : MonoBehaviour
     
     public void SaveTaskManager() => SaveManager.SaveData(new SaveData.TaskManagerData(this), savefileName);
 
-    public void LoadTaskManager()
+    public bool LoadTaskManager()
     {
         SaveData.TaskManagerData taskManagerData = SaveManager.LoadData<SaveData.TaskManagerData>(savefileName);
         
         if (taskManagerData == null)
         {
-            return;
+            return false;
         }
         
         for (int i = 0; i < taskManagerData.taskStates.Length; i++)
@@ -47,12 +47,18 @@ public class TaskManager : MonoBehaviour
             tasksPool[i].taskState = (TaskBranch.TaskState)taskManagerData.taskStates[i];
         }
         wasWin = taskManagerData.wasWin;
+        return true;
     }
     
     private void Start()
     {
-        NotStartedAllTasks();
-        tasksPool[0].taskState = TaskBranch.TaskState.Started;
+        if (LoadTaskManager())
+            LoadTaskManager();
+        else
+        {
+            NotStartedAllTasks();
+            tasksPool[0].taskState = TaskBranch.TaskState.Started;
+        }
         RefreshActiveTasksDisplay();
     }
 
@@ -69,6 +75,7 @@ public class TaskManager : MonoBehaviour
     }
     private void OnEnable()
     {
+        EventManager.Save.OnSaveGame += SaveTaskManager;
         EventManager.Zone.OnFieldEntered += PlayTaskComments;
         EventManager.Bodies.OnBodiesFound += PlayTaskComments;
         EventManager.Akratit.OnAkratitDeath += PlayTaskComments;
@@ -78,6 +85,7 @@ public class TaskManager : MonoBehaviour
 
     private void OnDisable()
     {
+        EventManager.Save.OnSaveGame -= SaveTaskManager;
         EventManager.Zone.OnFieldEntered -= PlayTaskComments;
         EventManager.Bodies.OnBodiesFound -= PlayTaskComments;
         EventManager.Akratit.OnAkratitDeath -= PlayTaskComments;
@@ -115,7 +123,7 @@ public class TaskManager : MonoBehaviour
     {
         if (task.taskState != TaskBranch.TaskState.Started && task.taskState != TaskBranch.TaskState.NotStarted)
             return;
-
+        EventManager.Save.OnSaveAllDisable?.Invoke();
         task.taskState = TaskBranch.TaskState.InProcess;
         Debug.Log($"Starting comments on task {task}");
 
@@ -124,52 +132,63 @@ public class TaskManager : MonoBehaviour
         {
             Debug.Log($"No start comments found");
             task.taskState = TaskBranch.TaskState.Completed;
+            EventManager.Save.OnSaveAllEnable?.Invoke();
             return;
         }
+
 
         StartCoroutine(DisplayComments(curComment));
     }
     
     IEnumerator DisplayComments(Comment curComment)
     {
-        while (curComment)
+        try
         {
-            Debug.Log(curComment.textLine);
-            commentText.text = curComment.textLine;
+            while (curComment)
+            {
+                Debug.Log(curComment.textLine);
+                commentText.text = curComment.textLine;
 
-            if (curComment.voiceLine != null && audioSource != null)
-            {
-                audioSource.clip = curComment.voiceLine;
-                audioSource.Play();
+                if (curComment.voiceLine != null && audioSource != null)
+                {
+                    audioSource.clip = curComment.voiceLine;
+                    audioSource.Play();
 
-                while (audioSource.isPlaying)
-                {
-                    yield return null;
+                    while (audioSource.isPlaying)
+                    {
+                        yield return null;
+                    }
                 }
-            }
-            else if (!string.IsNullOrEmpty(curComment.textLine))
-            {
-                yield return new WaitForSeconds(delayBetweenComments);
-            }
-            if (curComment.tasksToChange != null && curComment.tasksToChange.Count > 0)
-            {
-                for (int i = 0; i < curComment.tasksToChange.Count; i++) // may be optimised
+                else if (!string.IsNullOrEmpty(curComment.textLine))
                 {
-                    ChangeTaskList(curComment.tasksToChange[i], curComment.taskState[i]);
+                    yield return new WaitForSeconds(delayBetweenComments);
                 }
-                RefreshActiveTasksDisplay();
-            }
+
+                if (curComment.tasksToChange != null && curComment.tasksToChange.Count > 0)
+                {
+                    for (int i = 0; i < curComment.tasksToChange.Count; i++)
+                    {
+                        ChangeTaskList(curComment.tasksToChange[i], curComment.taskState[i]);
+                    }
+                    RefreshActiveTasksDisplay();
+                }
             
-            if (curComment.nextComments == null || curComment.nextComments.Count == 0)
-            {
-                break;
+                if (curComment.nextComments == null || curComment.nextComments.Count == 0)
+                {
+                    break;
+                }
+                else
+                {
+                    int index = (int)gameState.GetSubjectState(curComment.subjectsToCheck);
+                    Debug.Log($"{curComment}");
+                    curComment = curComment.nextComments[index];
+                }
             }
-            else
-            {
-                int index = (int)gameState.GetSubjectState(curComment.subjectsToCheck);
-                Debug.Log($"{curComment}");
-                curComment = curComment.nextComments[index];
-            }
+        }
+        finally
+        {
+            // Ensure saving is re-enabled even if an error occurs
+            EventManager.Save.OnSaveAllEnable?.Invoke();
         }
         commentText.text = "";
         CheckMainThingsDone();
