@@ -4,6 +4,7 @@ public class AttackState : AState
 {
     public override void EnterState(EnemyStateManager enemyManager)
     {
+        EventManager.Save.OnSaveAllDisable?.Invoke();
         EventManager.Akratit.OnAkratitFound?.Invoke();
         
         // Debug.Log("Attack Enetered");
@@ -15,6 +16,7 @@ public class AttackState : AState
     {
         // Debug.Log("Attack Exit");
         enemyManager.animator.SetBool("is_Attacking", false);
+        EventManager.Save.OnSaveAllEnable?.Invoke();
     }
 
     public override void UpdateState(EnemyStateManager enemyManager)

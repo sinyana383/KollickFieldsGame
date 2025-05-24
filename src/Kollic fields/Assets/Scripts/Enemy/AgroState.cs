@@ -4,6 +4,7 @@ public class AgroState : AState
 {
     public override void EnterState(EnemyStateManager enemyManager)
     {
+        EventManager.Save.OnSaveAllDisable?.Invoke();
         EventManager.Akratit.OnAkratitFound?.Invoke();
         
         enemyManager.animator.SetBool("is_Angry", true);
@@ -18,6 +19,7 @@ public class AgroState : AState
     {
         //Debug.Log("Walk Exit");
         enemyManager.animator.SetBool("is_Angry", false);
+        EventManager.Save.OnSaveAllEnable?.Invoke();
         //enemyManager.animator.SetBool("is_Attacking", false);
     }
     public override void UpdateState(EnemyStateManager enemyManager)
