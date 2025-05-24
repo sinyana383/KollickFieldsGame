@@ -20,6 +20,7 @@ primaryButton       -  X    - switch Tasklist
 |------------------------|----------|---|---|
 | EFFECTS                | 3        |
 | Save\Load system       | 1        | Started
+| Load Screen            | 2        |
 | Music and Sound System | 1        | Started
 | Task system            | 1        | Almost done
 | End  system            | 1        | Almost done
@@ -33,13 +34,15 @@ primaryButton       -  X    - switch Tasklist
 | Task name                                      | Priority |Status|Description|
 |------------------------------------------------|----------|---|---|
 | Restart Game                                   | 1        |
-| Controls. Weapon not cover UI                  | 2        |
-| Run from acratit branch                        | 2        | 
-| Kill Akratit done on animation event           | 2        |
-| Dead branch                                    | 2        |
+| LoadScreen from starter to main scene          | 1        |
 | Save\Load. palyer with weapon                  | 2        |
 | Save\Load. enemy                               | 2        |
+| Audio manager                                  | 2        |
 | Effects. Die effect                            | 2        |
+| Kill Akratit done on animation event           | 2        |
+| Dead branch                                    | 2        |
+| Run from acratit branch                        | 2        | 
+| Controls. Weapon not cover UI                  | 2        |
 | Save\Load. tasklist                            | 2        | Done
 | Save\Load. tasklist if no loadfile use default | 2        | Done
 | Save\Load. disable in fight                    | 2        | Done
@@ -53,8 +56,10 @@ primaryButton       -  X    - switch Tasklist
 | Save\Load. gameState                           | 2        | Done
 
 #### Yulya tasks
-|Task name|Priority|Status|Description|
-|---|---|---|---|
-|Level design| 1
-|Blood effect| 4
-|Patrol points| 2
+| Task name                                             |Priority|Status|Description|
+|-------------------------------------------------------|---|---|---|
+| Level design. Starter scene. Hide and protect borders | 1
+| Level design. Main scene. Borders decor               | 1
+| Level design. Main scene. Borders decor               | 1
+| Blood effect                                          | 4
+| Patrol points                                         | 2

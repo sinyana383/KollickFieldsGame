@@ -1,9 +1,11 @@
+using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 
 public static class SaveManager
 {
+    private static string IndexPath => Application.persistentDataPath + "/save_index.txt";
     static string GetPath(string fileName)
     {
         Debug.Log($"Get path {Application.persistentDataPath + $"/{fileName}.save"}");
@@ -18,6 +20,8 @@ public static class SaveManager
         {
             formatter.Serialize(fileStream, data);
         }
+        if (!fileName.Equals("settingsManager"))
+            AddToIndex(fileName);
     }
 
     public static T LoadData<T>(string fileName) where T : class
@@ -35,6 +39,42 @@ public static class SaveManager
         {
             Debug.LogWarning("Save file not found in " + path);
             return null;
+        }
+    }
+    
+    public static void DeleteAllSaves()
+    {
+        if (File.Exists(IndexPath))
+        {
+            var allFiles = File.ReadAllLines(IndexPath);
+            foreach (var fileName in allFiles)
+            {
+                string path = GetPath(fileName);
+                if (File.Exists(path))
+                {
+                    File.Delete(path);
+                }
+            }
+
+            File.Delete(IndexPath);
+            Debug.Log("All saves deleted.");
+        }
+    }
+    
+    public static List<string> GetSavedFileNames()
+    {
+        if (File.Exists(IndexPath))
+            return new List<string>(File.ReadAllLines(IndexPath));
+        else
+            return new List<string>();
+    }
+
+    private static void AddToIndex(string fileName)
+    {
+        var list = GetSavedFileNames();
+        if (!list.Contains(fileName))
+        {
+            File.AppendAllLines(IndexPath, new[] { fileName });
         }
     }
 }

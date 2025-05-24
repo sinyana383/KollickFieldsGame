@@ -1,8 +1,9 @@
 using System;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
-public class ButtonManager : MonoBehaviour
+public class MenuManager : MonoBehaviour
 {
     [SerializeField] private LoadManager loadManager;
     [SerializeField] private AudioManager audioManager;
@@ -11,25 +12,42 @@ public class ButtonManager : MonoBehaviour
     public Transform mainPanel;
     public Transform controlsPanel;
     public Transform settingsPanel;
+    public Transform newGamePanel;
 
     [Header("Buttons")]
-    public Button playButton;
+    public Button continuePlayButton;
+    public Button newGameButton;
+    public Button clearButton;
     public Button controlsButton;
     public Button settingsButton;
     public Button exitButton;
     
     void Start ()
     {
-        playButton.onClick.AddListener(loadManager.LoadLevel);
+        if (SaveManager.GetSavedFileNames().Count == 0)
+        {
+            newGameButton.onClick.AddListener(loadManager.LoadLevel);
+            continuePlayButton.interactable = false;
+        }
+        else
+        {
+            newGameButton.onClick.AddListener(() => OpenPanel(newGamePanel));
+            clearButton.onClick.AddListener(SaveManager.DeleteAllSaves);
+            clearButton.onClick.AddListener(loadManager.LoadLevel);
+            continuePlayButton.interactable = true;
+        }
+        continuePlayButton.onClick.AddListener(loadManager.LoadLevel);
         controlsButton.onClick.AddListener(() => OpenPanel(controlsPanel));
         settingsButton.onClick.AddListener(() => OpenPanel(settingsPanel));
         exitButton.onClick.AddListener(QuitGame);
 
         
-        playButton.onClick.AddListener(ButtonPressEffect);
+        continuePlayButton.onClick.AddListener(ButtonPressEffect);
         controlsButton.onClick.AddListener(ButtonPressEffect);
         settingsButton.onClick.AddListener(ButtonPressEffect);
         exitButton.onClick.AddListener(ButtonPressEffect);
+        newGameButton.onClick.AddListener(ButtonPressEffect);
+        clearButton.onClick.AddListener(ButtonPressEffect);
     }
 
     public void ButtonPressEffect() 
