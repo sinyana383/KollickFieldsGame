@@ -20,8 +20,8 @@ primaryButton       -  X    - switch Tasklist
 |------------------------|----------|---|---|
 | EFFECTS                | 3        |
 | Save\Load system       | 1        | Started
-| Load Screen            | 2        |
 | Music and Sound System | 1        | Started
+| Load Screen            | 2        | Almost done
 | Task system            | 1        | Almost done
 | End  system            | 1        | Almost done
 | Game over system       | 1        | Almost done
@@ -33,7 +33,6 @@ primaryButton       -  X    - switch Tasklist
 #### Concreate tasks
 | Task name                                      | Priority |Status|Description|
 |------------------------------------------------|----------|---|---|
-| LoadScreen from starter to main scene          | 1        |
 | Save\Load. palyer with weapon                  | 2        |
 | Save\Load. enemy                               | 2        |
 | Audio manager                                  | 2        |
@@ -42,6 +41,7 @@ primaryButton       -  X    - switch Tasklist
 | Dead branch                                    | 2        |
 | Run from acratit branch                        | 2        | 
 | Controls. Weapon not cover UI                  | 2        |
+| LoadScreen from starter to main scene          | 1        | Done
 | Restart Game                                   | 1        | Done
 | Save\Load. tasklist                            | 2        | Done
 | Save\Load. tasklist if no loadfile use default | 2        | Done

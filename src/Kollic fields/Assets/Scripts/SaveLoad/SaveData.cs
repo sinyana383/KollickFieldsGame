@@ -67,4 +67,16 @@ public class SaveData
             position[2] = player.transform.position.z;
         }
     }
+    
+    [System.Serializable]
+    public class GrabInteractableData
+    {
+        public float[] position = new float[3];
+        public GrabInteractableData(GrabInteractable grabInteractable)
+        {
+            position[0] = grabInteractable.transform.position.x;
+            position[1] = grabInteractable.transform.position.y;
+            position[2] = grabInteractable.transform.position.z;
+        }
+    }
 }
