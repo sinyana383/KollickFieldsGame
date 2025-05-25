@@ -11,7 +11,6 @@ public class SettingsManager : MonoBehaviour
     [SerializeField] private Button saveButton;
     
     [SerializeField] private Volume volume;
-    [SerializeField] private AudioSource backgroundAudioSource;
     [SerializeField] private ColorAdjustments colorAdjustments;
     
     [SerializeField] Slider soundSlider;
@@ -28,10 +27,10 @@ public class SettingsManager : MonoBehaviour
         set
         {
             backgroundVolume = value;
-            if (backgroundAudioSource != null)
+            if (musicSlider != null)
             {
-                backgroundAudioSource.volume = backgroundVolume;
                 musicSlider.value = backgroundVolume;
+                EventManager.Game.OnMusicVolumeChanged?.Invoke(backgroundVolume);
             }
         }
     }
@@ -44,6 +43,7 @@ public class SettingsManager : MonoBehaviour
             if (soundSlider != null)
             {
                 soundSlider.value = soundVolume;
+                EventManager.Game.OnSoundVolumeChanged?.Invoke(soundVolume);
             }
         }
     }
@@ -118,6 +118,5 @@ public class SettingsManager : MonoBehaviour
     void ChangeSound(float value)
     {
         SoundVolume = value;
-        EventManager.Game.OnSoundVolumeChanged?.Invoke(value);
     }
 }

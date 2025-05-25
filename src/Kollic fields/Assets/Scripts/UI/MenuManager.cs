@@ -58,7 +58,7 @@ public class MenuManager : MonoBehaviour
 
     public void ButtonPressEffect() 
     {
-        audioSetting.PlayOneShot((int)Sounds.ButtonClick);
+        audioSetting.AudioPlayOneShot((int)Sounds.ButtonClick);
     }
 
     void OpenPanel(Transform panel)
