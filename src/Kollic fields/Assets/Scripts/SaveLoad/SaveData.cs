@@ -79,4 +79,26 @@ public class SaveData
             position[2] = grabInteractable.transform.position.z;
         }
     }
+    
+    [System.Serializable]
+    public class AkratitData
+    {
+        public float[] position = new float[3];
+        public float[] rotation = new float[3];
+        public int hp;
+        public bool isDead;
+        public AkratitData(Akratit akratit)
+        {
+            hp = akratit.hp;
+            isDead = akratit.isDead;
+            
+            position[0] = akratit.transform.position.x;
+            position[1] = akratit.transform.position.y;
+            position[2] = akratit.transform.position.z;
+            
+            rotation[0] = akratit.transform.rotation.x;
+            rotation[1] = akratit.transform.rotation.y;
+            rotation[2] = akratit.transform.rotation.z;
+        }
+    }
 }
