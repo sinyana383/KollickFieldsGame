@@ -59,7 +59,7 @@ primaryButton       -  X    - switch Tasklist
 | Task name                                             |Priority|Status|Description|
 |-------------------------------------------------------|---|---|---|
 | Level design. Starter scene. Hide and protect borders | 1
-| Level design. Main scene. Borders decor               | 1
-| Level design. Main scene. Borders decor               | 1
-| Blood effect                                          | 4
-| Patrol points                                         | 2
+| Level design. Main scene. Borders decor               | 1 | Done
+| Level design. Main scene. Borders decor               | 1 | Done
+| Blood effect                                          | 4 | Done
+| Patrol points                                         | 2 | Done
