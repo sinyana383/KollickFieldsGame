@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class LeftPanelManager : MonoBehaviour
 {
+    [SerializeField] AudioSourceSetting audioSettings;
     [SerializeField] Button saveButton;
     [SerializeField] private TextMeshProUGUI warningText;
 
@@ -15,7 +16,26 @@ public class LeftPanelManager : MonoBehaviour
         ExitZoneEnsure
     }
     [SerializeField] private Transform[] panels;
-    
+
+    private void Awake()
+    {
+        audioSettings = GetComponentInChildren<AudioSourceSetting>();
+    }
+
+    private void Start()
+    {
+        Button[] buttons = GetComponentsInChildren<Button>(true);
+        foreach (var button in buttons)
+        {
+            button.onClick.AddListener(ButtonClickSound);
+        }
+    }
+
+    public void ButtonClickSound()
+    {
+        audioSettings.AudioPlayOneShot(0);
+    }
+
     private void OnEnable()
     {
         EventManager.Zone.OnWarningEntered += PrepareWarningPanel;

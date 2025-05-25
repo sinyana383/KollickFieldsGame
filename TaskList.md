@@ -19,8 +19,8 @@ primaryButton       -  X    - switch Tasklist
 | Task name              | Priority |Status|Description|
 |------------------------|----------|---|---|
 | EFFECTS                | 3        |
-| Save\Load system       | 1        | Started
-| Music and Sound System | 1        | Started
+| Save\Load system       | 1        | Almost done
+| Music and Sound System | 1        | Partly done
 | Load Screen            | 2        | Almost done
 | Task system            | 1        | Almost done
 | End  system            | 1        | Almost done
@@ -31,30 +31,33 @@ primaryButton       -  X    - switch Tasklist
 | Controls Input System  | 1        | Almost done
 
 #### Concreate tasks
-| Task name                                           | Priority |Status|Description|
-|-----------------------------------------------------|----------|---|---|
-| Audio manager                                       | 2        |
-| Effects. Die effect                                 | 2        |
-| Kill Akratit done on animation event                | 2        |
-| Dead branch                                         | 2        |
-| Run from acratit branch                             | 2        | 
-| Controls. Weapon not cover UI                       | 2        |
-| Don'tDestroyOnLoad. GameManager                     | 1        | Done
-| Save\Load. enemy                                    | 2        | Done
-| Save\Load. palyer with weapon                       | 2        | Done
-| LoadScreen from starter to main scene               | 1        | Done
-| Restart Game                                        | 1        | Done
-| Save\Load. tasklist                                 | 2        | Done
-| Save\Load. tasklist if no loadfile use default      | 2        | Done
-| Save\Load. disable in fight                         | 2        | Done
-| Save\Load. disable on comments                      | 2        | Done
-| UI. Main menu. Add new game and continue            | 1        | Done
-| UI. Pause menu. Save, setting, controls             | 1        | Done
-| Switch flashlight                                   | 4        | Done
-| No UI on gaze interactor                            | 2        | Done
-| Patruling state for Akratit                         | 2        | Done
-| Save\Load. settings                                 | 2        | Done
-| Save\Load. gameState                                | 2        | Done
+| Task name                                      | Priority |Status|Description|
+|------------------------------------------------|----------|---|---|
+| Effects. Die effect                            | 2        |
+| Kill Akratit done on animation event           | 2        |
+| Dead branch                                    | 2        |
+| Run from acratit branch                        | 2        | 
+| Controls. Weapon not cover UI                  | 2        |
+| Audio manager. Akratit sound                   | 3        |
+| Audio manager. Akratit hit sound               | 3        |
+| Audio manager. Idol hit sound                  | 3        |
+| Audio manager. Voice setting                   | 4        |
+| Don'tDestroyOnLoad. GameManager                | 1        | Done
+| Save\Load. enemy                               | 2        | Done
+| Save\Load. palyer with weapon                  | 2        | Done
+| LoadScreen from starter to main scene          | 1        | Done
+| Restart Game                                   | 1        | Done
+| Save\Load. tasklist                            | 2        | Done
+| Save\Load. tasklist if no loadfile use default | 2        | Done
+| Save\Load. disable in fight                    | 2        | Done
+| Save\Load. disable on comments                 | 2        | Done
+| UI. Main menu. Add new game and continue       | 1        | Done
+| UI. Pause menu. Save, setting, controls        | 1        | Done
+| Switch flashlight                              | 4        | Done
+| No UI on gaze interactor                       | 2        | Done
+| Patruling state for Akratit                    | 2        | Done
+| Save\Load. settings                            | 2        | Done
+| Save\Load. gameState                           | 2        | Done
 
 #### Yulya tasks
 | Task name                                             |Priority|Status|Description|
