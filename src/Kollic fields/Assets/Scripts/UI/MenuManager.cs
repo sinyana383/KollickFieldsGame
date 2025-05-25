@@ -5,7 +5,11 @@ using UnityEngine.UI;
 
 public class MenuManager : MonoBehaviour
 {
-    [SerializeField] private AudioManager audioManager;
+    enum Sounds
+    {
+        ButtonClick,
+    }
+    [SerializeField] private AudioSourceSetting audioSetting;
     
     [Header("Panels")]
     public Transform mainPanel;
@@ -20,7 +24,12 @@ public class MenuManager : MonoBehaviour
     public Button controlsButton;
     public Button settingsButton;
     public Button exitButton;
-    
+
+    private void Awake()
+    {
+        audioSetting = GetComponentInChildren<AudioSourceSetting>();
+    }
+
     void Start ()
     {
         if (SaveManager.GetSavedFileNames().Count == 0)
@@ -40,18 +49,16 @@ public class MenuManager : MonoBehaviour
         settingsButton.onClick.AddListener(() => OpenPanel(settingsPanel));
         exitButton.onClick.AddListener(QuitGame);
 
-        
-        continuePlayButton.onClick.AddListener(ButtonPressEffect);
-        controlsButton.onClick.AddListener(ButtonPressEffect);
-        settingsButton.onClick.AddListener(ButtonPressEffect);
-        exitButton.onClick.AddListener(ButtonPressEffect);
-        newGameButton.onClick.AddListener(ButtonPressEffect);
-        clearButton.onClick.AddListener(ButtonPressEffect);
+        Button[] buttons = this.GetComponentsInChildren<Button>(true);
+        foreach (var button in buttons)
+        {
+            button.onClick.AddListener(ButtonPressEffect);
+        }
     }
 
     public void ButtonPressEffect() 
     {
-        audioManager.PlayButtonPress(audioManager.buttonPress);
+        audioSetting.PlayOneShot((int)Sounds.ButtonClick);
     }
 
     void OpenPanel(Transform panel)

@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class SceneTransitionManager : MonoBehaviour
 {
-    LoadManager loadManager;
     public FadeScreen fadeScreen;
 
     private void Awake()
