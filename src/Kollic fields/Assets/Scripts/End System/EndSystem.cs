@@ -14,8 +14,6 @@ public class EndSystem : MonoBehaviour
     [SerializeField] private EndTextNode curNode;
     [SerializeField] private EndTextNode endNode;
     [SerializeField] private EndTextNode startNode;
-    [SerializeField]GameState gameState;
-
     private void OnEnable()
     {
         EventManager.EndText.OnTextRevealed += ShowButton;
@@ -35,7 +33,7 @@ public class EndSystem : MonoBehaviour
 
     private void Start()
     {
-        if (gameState.gameOver)
+        if (GameState.Instance.gameOver)
             curNode = endNode;
         else
         {
@@ -72,7 +70,7 @@ public class EndSystem : MonoBehaviour
             return;
         while (curNode != null && curNode.nextNodes != null && curNode.nextNodes.Length != 0)
         {
-            int index = (int)gameState.GetSubjectState(curNode.subjectsToCheck);
+            int index = (int)GameState.Instance.GetSubjectState(curNode.subjectsToCheck);
             Debug.Log($"{curNode} {index}");
             curNode = curNode.nextNodes[index];
             if (!string.IsNullOrEmpty(curNode.text))

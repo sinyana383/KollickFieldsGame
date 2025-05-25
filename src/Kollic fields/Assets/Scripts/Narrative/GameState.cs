@@ -4,13 +4,15 @@ using UnityEngine.Serialization;
 using UnityEngine.XR;
 public class GameState : MonoBehaviour
 {
+    public static GameState Instance { get; private set; }
+
     [SerializeField] string savefileName = "gameState";
     public bool gameOver;
-    
+
     public SubjectState bodies;
     public SubjectState akratit;
     public SubjectState idol;
-    public SubjectState mainCharacter; //???
+    public SubjectState mainCharacter;
 
     public enum SubjectType
     {
@@ -20,11 +22,26 @@ public class GameState : MonoBehaviour
         Idol,
         MainCharacter,
     }
+
     public enum SubjectState 
     {
         None,
         Found,
         Destroyed
+    }
+
+    private void Awake()
+    {
+        Debug.Log("GameState Awake: " + GetInstanceID());
+        // Singleton logic: preserve one instance
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject); // destroy duplicates
+            return;
+        }
+
+        Instance = this;
+        DontDestroyOnLoad(gameObject); // persist across scenes
     }
 
     public SubjectState GetSubjectState(SubjectType subjectType)
@@ -51,7 +68,12 @@ public class GameState : MonoBehaviour
     }
 
     public void AkratitFound() => ChangeState(out akratit, SubjectState.Found);
-    public void SetGameOver() => gameOver = true;
+
+    public void SetGameOver()
+    {
+        Debug.Log("Game Over");
+        gameOver = true;
+    }
     
     private void OnEnable()
     {
@@ -99,6 +121,7 @@ public class GameState : MonoBehaviour
 
     private void Start()
     {
+        if (Instance != this) return; 
         LoadGameState();
     }
 }
