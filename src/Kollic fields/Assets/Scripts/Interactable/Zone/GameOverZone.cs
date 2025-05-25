@@ -6,7 +6,7 @@ public class GameOverZone : Zone
 {
     protected override void FunctionOnTriggerEnter(Collider other)
     {
-        EventManager.GameOver.OnGameOver?.Invoke();
-        SceneManager.LoadScene(0);
+        EventManager.Game.OnGameOver?.Invoke();
+        EventManager.Game.OnSceneTransition?.Invoke(0);
     }
 }

@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class MenuManager : MonoBehaviour
 {
-    [SerializeField] private LoadManager loadManager;
     [SerializeField] private AudioManager audioManager;
     
     [Header("Panels")]
@@ -26,17 +25,17 @@ public class MenuManager : MonoBehaviour
     {
         if (SaveManager.GetSavedFileNames().Count == 0)
         {
-            newGameButton.onClick.AddListener(loadManager.LoadLevel);
+            newGameButton.onClick.AddListener(() => EventManager.Game.OnSceneTransition?.Invoke(1));
             continuePlayButton.interactable = false;
         }
         else
         {
             newGameButton.onClick.AddListener(() => OpenPanel(newGamePanel));
             clearButton.onClick.AddListener(SaveManager.DeleteAllSaves);
-            clearButton.onClick.AddListener(loadManager.LoadLevel);
+            clearButton.onClick.AddListener(() => EventManager.Game.OnSceneTransition?.Invoke(1));
             continuePlayButton.interactable = true;
         }
-        continuePlayButton.onClick.AddListener(loadManager.LoadLevel);
+        continuePlayButton.onClick.AddListener(() => EventManager.Game.OnSceneTransition?.Invoke(1));
         controlsButton.onClick.AddListener(() => OpenPanel(controlsPanel));
         settingsButton.onClick.AddListener(() => OpenPanel(settingsPanel));
         exitButton.onClick.AddListener(QuitGame);

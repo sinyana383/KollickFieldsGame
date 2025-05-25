@@ -9,7 +9,7 @@ public static class EventManager
     public static readonly IdolEv Idol = new IdolEv();
     public static readonly ZoneEv Zone = new ZoneEv();
     public static readonly EndTextEv EndText = new EndTextEv();
-    public static readonly GameOverEv GameOver = new GameOverEv();
+    public static readonly GameEv Game = new GameEv();
     public static readonly SaveEv Save = new SaveEv();
     public class PlayerEv
     {
@@ -52,9 +52,10 @@ public static class EventManager
         public UnityAction OnTextRevealed;
     }
 
-    public class GameOverEv
+    public class GameEv
     {
         public UnityAction OnGameOver;
+        public UnityAction<int> OnSceneTransition;
     }
 
     public class SaveEv

@@ -13,9 +13,4 @@ public class LoadManager : MonoBehaviour
     {
         DontDestroyOnLoad(this.gameObject);
     }
-
-    public void LoadLevel()
-    {
-        SceneManager.LoadSceneAsync(1);
-    }
 }

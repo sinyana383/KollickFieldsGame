@@ -50,9 +50,9 @@ public class Player : MonoBehaviour
     }
     void PlayerDead()
     {
-        EventManager.GameOver.OnGameOver?.Invoke();
-        SceneManager.LoadScene(0);
         Debug.Log("Player is dead");
+        EventManager.Game.OnGameOver?.Invoke();
+        EventManager.Game.OnSceneTransition?.Invoke(0);
     }
     private void OnTriggerEnter(Collider other)
     {

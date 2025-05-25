@@ -60,7 +60,7 @@ public class GameState : MonoBehaviour
         EventManager.Bodies.OnBodiesFound += ChangeStateByTaskName;
         EventManager.Akratit.OnAkratitDeath += ChangeStateByTaskName;
         EventManager.Idol.OnIdolDestroyed += ChangeStateByTaskName;
-        EventManager.GameOver.OnGameOver += SetGameOver;
+        EventManager.Game.OnGameOver += SetGameOver;
 
         EventManager.Save.OnSaveGame += SaveGameState;
     }
@@ -71,7 +71,7 @@ public class GameState : MonoBehaviour
         EventManager.Bodies.OnBodiesFound -= ChangeStateByTaskName;
         EventManager.Akratit.OnAkratitDeath -= ChangeStateByTaskName;
         EventManager.Idol.OnIdolDestroyed -= ChangeStateByTaskName;
-        EventManager.GameOver.OnGameOver -= SetGameOver;
+        EventManager.Game.OnGameOver -= SetGameOver;
         
         EventManager.Save.OnSaveGame -= SaveGameState;
     }

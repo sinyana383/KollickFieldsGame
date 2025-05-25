@@ -37,7 +37,7 @@ public class HandMenuManager : MonoBehaviour
         settingsButton.onClick.AddListener(() => settingsPanel.gameObject.SetActive(true));
         
         mainMenuPanelButton.onClick.AddListener(() => mainMenuPanel.gameObject.SetActive(true));
-        mainMenuButton.onClick.AddListener(() => SceneManager.LoadScene(0));
+        mainMenuButton.onClick.AddListener(() => EventManager.Game.OnSceneTransition?.Invoke(0));
         
         exitPanelButton.onClick.AddListener(() => exitPanel.gameObject.SetActive(true));
         exitButton.onClick.AddListener(() => Application.Quit());
