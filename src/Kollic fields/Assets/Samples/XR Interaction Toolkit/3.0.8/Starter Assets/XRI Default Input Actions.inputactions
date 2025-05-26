@@ -452,24 +452,6 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
-                },
-                {
-                    "name": "AButton",
-                    "type": "Button",
-                    "id": "2cee8da6-e036-4639-9de1-7ff0cc9d3751",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "JoystickButton",
-                    "type": "Button",
-                    "id": "622069bd-43ad-44f8-a877-d5d2cf9d83c7",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -877,28 +859,6 @@
                     "processors": "",
                     "groups": "",
                     "action": "Thumbstick",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "73d9ba4d-25c3-41ad-b150-18569b822ed8",
-                    "path": "<XRController>{LeftHand}/{PrimaryButton}",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "AButton",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "f27354d3-4079-4d73-8506-f3e791ae0a9c",
-                    "path": "<XRController>{LeftHand}/{Primary2DAxisClick}",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "JoystickButton",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -1563,24 +1523,6 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
-                },
-                {
-                    "name": "YButton",
-                    "type": "Button",
-                    "id": "388d753a-307c-4d81-9eef-e69d1b9f41da",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "XButton",
-                    "type": "Button",
-                    "id": "3fd5a096-4025-40cd-9c94-abd6fbdbadb8",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -1988,28 +1930,6 @@
                     "processors": "",
                     "groups": "",
                     "action": "Thumbstick",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "f69e4494-485e-4490-b12b-49dcc1385414",
-                    "path": "<XRController>{RightHand}/{SecondaryButton}",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "YButton",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "2d978ea9-6ee9-46be-a523-feccc107f5b4",
-                    "path": "<XRController>{RightHand}/{PrimaryButton}",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "XButton",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -3024,6 +2944,15 @@
                     "initialStateCheck": true
                 },
                 {
+                    "name": "Drag Start Position",
+                    "type": "Value",
+                    "id": "defa5165-8d03-4449-bdde-c0643730a763",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
                     "name": "Drag Current Position",
                     "type": "Value",
                     "id": "07fd51be-2a34-4531-939c-ff750fcf8e4d",
@@ -3099,7 +3028,7 @@
                     "name": "Spawn Object",
                     "type": "Button",
                     "id": "1415f3c5-fc5f-4f58-a044-4a69560151f2",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -3121,7 +3050,7 @@
                     "name": "One Modifier",
                     "id": "ccaca70d-b804-4cda-9dd1-ee9152fa6ec8",
                     "path": "OneModifier",
-                    "interactions": "Tap",
+                    "interactions": "Tap(duration=0.5)",
                     "processors": "",
                     "groups": "",
                     "action": "Tap Start Position",
@@ -3193,6 +3122,17 @@
                     "action": "Drag Current Position",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "f13815bd-33df-4670-9d5a-3295eafdda68",
+                    "path": "<TouchscreenGestureInputController>/dragStartPosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Drag Start Position",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 },
                 {
                     "name": "",
@@ -3351,8 +3291,8 @@
                 {
                     "name": "",
                     "id": "f0f27c2a-eef2-418a-986a-811bf690fd89",
-                    "path": "<Touchscreen>/Press",
-                    "interactions": "Tap",
+                    "path": "<TouchscreenGestureInputController>/tapStartPosition",
+                    "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Spawn Object",
@@ -3363,7 +3303,7 @@
                     "name": "One Modifier",
                     "id": "6f6c3123-8e3c-4f69-9ecc-2a605a5f8777",
                     "path": "OneModifier",
-                    "interactions": "Tap",
+                    "interactions": "Tap(duration=0.5)",
                     "processors": "",
                     "groups": "",
                     "action": "Spawn Object",
