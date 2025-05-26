@@ -58,7 +58,7 @@ primaryButton       -  X    - switch Tasklist
 #### Yulya tasks
 | Task name                                             |Priority|Status|Description|
 |-------------------------------------------------------|---|---|---|
-| Level design. Starter scene. Hide and protect borders | 1
+| Level design. Starter scene. Hide and protect borders | 1 | Done
 | Level design. Main scene. Borders decor               | 1 | Done
 | Level design. Main scene. Borders decor               | 1 | Done
 | Blood effect                                          | 4 | Done
