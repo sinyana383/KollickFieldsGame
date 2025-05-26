@@ -32,6 +32,12 @@ public class MenuManager : MonoBehaviour
 
     void Start ()
     {
+        Button[] buttons = this.GetComponentsInChildren<Button>(true);
+        foreach (var button in buttons)
+        {
+            button.onClick.AddListener(ButtonPressEffect);
+        }
+        
         if (SaveManager.GetSavedFileNames().Count == 0)
         {
             newGameButton.onClick.AddListener(() => EventManager.Game.OnSceneTransition?.Invoke(1));
@@ -48,12 +54,6 @@ public class MenuManager : MonoBehaviour
         controlsButton.onClick.AddListener(() => OpenPanel(controlsPanel));
         settingsButton.onClick.AddListener(() => OpenPanel(settingsPanel));
         exitButton.onClick.AddListener(QuitGame);
-
-        Button[] buttons = this.GetComponentsInChildren<Button>(true);
-        foreach (var button in buttons)
-        {
-            button.onClick.AddListener(ButtonPressEffect);
-        }
     }
 
     public void ButtonPressEffect() 
