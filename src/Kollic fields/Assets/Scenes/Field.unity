@@ -12298,6 +12298,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: SettingsButton
       objectReference: {fileID: 0}
+    - target: {fileID: 4493840492130023736, guid: 989d909146f76f7448c4c3cabfd4cd6b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.141
+      objectReference: {fileID: 0}
+    - target: {fileID: 4493840492130023736, guid: 989d909146f76f7448c4c3cabfd4cd6b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.012
+      objectReference: {fileID: 0}
+    - target: {fileID: 4493840492130023736, guid: 989d909146f76f7448c4c3cabfd4cd6b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.161
+      objectReference: {fileID: 0}
     - target: {fileID: 4499670504818023967, guid: 989d909146f76f7448c4c3cabfd4cd6b, type: 3}
       propertyPath: m_Name
       value: MainMenuButton
@@ -12342,6 +12354,18 @@ PrefabInstance:
       propertyPath: saveButton
       value: 
       objectReference: {fileID: 672036350}
+    - target: {fileID: 5911620101474260725, guid: 989d909146f76f7448c4c3cabfd4cd6b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911620101474260725, guid: 989d909146f76f7448c4c3cabfd4cd6b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.004
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911620101474260725, guid: 989d909146f76f7448c4c3cabfd4cd6b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.142
+      objectReference: {fileID: 0}
     - target: {fileID: 6384346568609706361, guid: 989d909146f76f7448c4c3cabfd4cd6b, type: 3}
       propertyPath: m_RendererIndex
       value: -1
