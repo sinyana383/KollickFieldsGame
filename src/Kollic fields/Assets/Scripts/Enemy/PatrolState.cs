@@ -1,7 +1,10 @@
 using UnityEngine;
+using UnityEngine.AI;
 
 public class PatrolState : AState
 {
+    
+
     public override void EnterState(EnemyStateManager enemyStateManager)
     {
         enemyStateManager.SetAutoBreaking(true);
@@ -15,11 +18,12 @@ public class PatrolState : AState
 
     public override void UpdateState(EnemyStateManager enemyStateManager)
     {
-        if (enemyStateManager.GetRemainingDistance() < 0.5f)
+        if (enemyStateManager.GetRemainingDistance() < 0.5f)                        
                  enemyStateManager.GotoNextPoint();
         if (enemyStateManager.CheckOnTarget() < enemyStateManager.agroDistance) 
         {
             enemyStateManager.SwitchState(enemyStateManager.AgroState);
+            
         }
     }
 }

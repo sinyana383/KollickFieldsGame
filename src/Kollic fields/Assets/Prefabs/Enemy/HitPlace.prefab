@@ -124,6 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d23e3c07f6211ce42a2b7d49ced40b26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitEffectPrefab: {fileID: 3578436150709861069, guid: ace1170f51cb98044b9d18c439f6c646, type: 3}
 --- !u!54 &2379304618738760788
 Rigidbody:
   m_ObjectHideFlags: 0
