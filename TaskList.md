@@ -41,7 +41,7 @@ primaryButton       -  X    - switch Tasklist
 | Audio manager. Akratit sound                   | 3        |
 | Audio manager. Akratit hit sound               | 3        |
 | Audio manager. Idol hit sound                  | 3        |
-| Audio manager. Voice setting                   | 4        |
+| Audio manager. Voice setting                   | 3        |
 | Save\Load. idol                                | 2        | Done
 | Controls. Weapon not cover UI                  | 2        | Done
 | Don'tDestroyOnLoad. GameManager                | 1        | Done

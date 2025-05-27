@@ -59,4 +59,6 @@ public class AudioSourceSetting : MonoBehaviour
         audioSource.clip = audioClips[index];
         audioSource.Play();
     }
+    
+    public int GetAudioClipCount() => audioClips.Length;
 }
