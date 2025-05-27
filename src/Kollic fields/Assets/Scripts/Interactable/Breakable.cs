@@ -3,7 +3,7 @@ using UnityEngine;
 public class Breakable : MonoBehaviour
 {
     [SerializeField] GameObject hitEffectPrefab;
-    int toughness = 150;
+    public int toughness = 150;
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -35,7 +35,7 @@ public class Breakable : MonoBehaviour
     protected virtual void Broken()
     {
         EventManager.Idol.OnIdolDestroyed?.Invoke(TaskManager.TasksNames.DestroyIdol);
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 
 }

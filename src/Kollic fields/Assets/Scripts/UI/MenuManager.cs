@@ -40,6 +40,7 @@ public class MenuManager : MonoBehaviour
         
         if (SaveManager.GetSavedFileNames().Count == 0)
         {
+            clearButton.onClick.AddListener(SaveManager.DeleteAllSaves);
             newGameButton.onClick.AddListener(() => EventManager.Game.OnSceneTransition?.Invoke(1));
             continuePlayButton.interactable = false;
         }

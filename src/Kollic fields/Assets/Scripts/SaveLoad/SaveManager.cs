@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
@@ -5,6 +6,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 public static class SaveManager
 {
+    static string fileToExclude = "settingsManager.save";
     private static string IndexPath => Application.persistentDataPath + "/save_index.txt";
     static string GetPath(string fileName)
     {
@@ -64,9 +66,36 @@ public static class SaveManager
     public static List<string> GetSavedFileNames()
     {
         if (File.Exists(IndexPath))
+        {
             return new List<string>(File.ReadAllLines(IndexPath));
+        }
         else
-            return new List<string>();
+        {
+            // Rebuild the index from scratch
+            List<string> savedFiles = new List<string>();
+        
+            // Get all .save files in the persistent data path
+            string[] allSaveFiles = Directory.GetFiles(Application.persistentDataPath, "*.save");
+        
+            foreach (string filePath in allSaveFiles)
+            {
+                string fileName = Path.GetFileNameWithoutExtension(filePath);
+            
+                // Exclude the settingsManager file
+                if (!fileName.Equals("settingsManager", StringComparison.OrdinalIgnoreCase))
+                {
+                    savedFiles.Add(fileName);
+                }
+            }
+        
+            // Create the new index file
+            if (savedFiles.Count > 0)
+            {
+                File.WriteAllLines(IndexPath, savedFiles);
+            }
+        
+            return savedFiles;
+        }
     }
 
     private static void AddToIndex(string fileName)

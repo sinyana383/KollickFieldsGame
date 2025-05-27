@@ -5,7 +5,7 @@ using UnityEngine.XR.Interaction.Toolkit.Interactables;
 public class Interactable : MonoBehaviour
 {
     public XRSimpleInteractable interactable;
-    void Awake()
+    public virtual void Awake()
     {
         interactable = GetComponent<XRSimpleInteractable>();
         if (interactable != null)

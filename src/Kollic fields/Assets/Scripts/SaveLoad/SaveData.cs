@@ -101,4 +101,14 @@ public class SaveData
             rotation[2] = akratit.transform.rotation.z;
         }
     }
+    
+    [System.Serializable]
+    public class IdolData
+    {
+        public int toughness;
+        public IdolData(Idol idol)
+        {
+            toughness = idol.breakable.toughness;
+        }
+    }
 }

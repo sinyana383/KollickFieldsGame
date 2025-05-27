@@ -1,18 +1,43 @@
 using UnityEngine;
-using UnityEngine.XR.Interaction.Toolkit;
-using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
-public class Idol : Interactable
+public class Idol : MonoBehaviour
 {
-    public override void ActionOnDetection(SelectEnterEventArgs args)
+    [SerializeField] private string savefileName = "idol";
+    public Breakable breakable;
+
+    public void Awake()
     {
-        base.ActionOnDetection(args);
-        EventManager.Idol.OnIdolFound?.Invoke(TaskManager.TasksNames.FindIdol);
+        breakable = GetComponentInChildren<Breakable>();
+    }
+    
+    private void Start()
+    {
+        LoadIdol();
     }
 
-    //protected override void Broken() 
-    //{
-    //    EventManager.Idol.OnIdolDestroyed?.Invoke();
-    //    base.Broken();
-    //}
+    private void OnEnable()
+    {
+        EventManager.Save.OnSaveGame += SaveIdol;
+    }
+
+    private void OnDisable()
+    {
+        EventManager.Save.OnSaveGame -= SaveIdol;
+    }
+    
+    public void SaveIdol() => SaveManager.SaveData(new SaveData.IdolData(this), savefileName);
+
+    public void LoadIdol() 
+    {
+        SaveData.IdolData idolData = SaveManager.LoadData<SaveData.IdolData>(savefileName);
+        
+        if (idolData == null)
+        {
+            return;
+        }
+        
+        breakable.toughness = idolData.toughness;
+        if (breakable.toughness <= 0)
+            breakable.gameObject.SetActive(false);
+    }
 }
