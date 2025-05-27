@@ -1,16 +1,20 @@
 ### All tasks
 
 #### Controls
-##### Left Controller
 https://docs.unity3d.com/6000.1/Documentation/Manual/xr_input.html
-Left:
-primary2DAxis       - joystick  - move
-primary2DAxisClick  -  —    - stamina speed up
-secondaryButton     -  B    - hand menu
+Левый контроллер:
+джостик - передвижение
+кнопка джостика - поворот
+X - вкл/выкл меню
+grip trigger - взять пердмет
+index trigger - нажать на UI
 
-Right:
-secondaryButton     -  Y    - switch fleshlight
-primaryButton       -  X    - switch Tasklist
+Правый контроллер:
+джостик - поворот
+А - вкл/выкл список заданий
+B - вкл/выкл фонарик
+grip trigger - взять пердмет
+index trigger - нажать на UI
 
 #### General systems for all scenes
 
@@ -41,7 +45,7 @@ primaryButton       -  X    - switch Tasklist
 | Audio manager. Akratit sound                   | 3        |
 | Audio manager. Akratit hit sound               | 3        |
 | Audio manager. Idol hit sound                  | 3        |
-| Audio manager. Voice setting                   | 3        |
+| Audio manager. Voice setting                   | 3        | Done
 | Save\Load. idol                                | 2        | Done
 | Controls. Weapon not cover UI                  | 2        | Done
 | Don'tDestroyOnLoad. GameManager                | 1        | Done
@@ -64,7 +68,9 @@ primaryButton       -  X    - switch Tasklist
 #### Yulya tasks
 | Task name                                             |Priority|Status|Description|
 |-------------------------------------------------------|---|---|---|
+| Change lod distance                                   | 0 |
 | Forest horizon skybox                                 | 1 |
+| Controls tutorial	                                    | 1 |
 | Ground texture different for raznoobrazie             | 2 |
 | Grass or kust (not heavy check triangles and fps)     | 2 |
 | Level design. Starter scene. Hide and protect borders | 1 | Done
