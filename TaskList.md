@@ -33,15 +33,16 @@ primaryButton       -  X    - switch Tasklist
 #### Concreate tasks
 | Task name                                      | Priority |Status|Description|
 |------------------------------------------------|----------|---|---|
+| Recheck all branches in task list              | 0        |
 | Dead branch                                    | 1        |
 | Run from acratit branch                        | 1        | 
-| Save\Load. idol                                | 2        | 
 | Effects. Die effect                            | 2        |
 | Kill Akratit done on animation event           | 2        |
 | Audio manager. Akratit sound                   | 3        |
 | Audio manager. Akratit hit sound               | 3        |
 | Audio manager. Idol hit sound                  | 3        |
 | Audio manager. Voice setting                   | 4        |
+| Save\Load. idol                                | 2        | Done
 | Controls. Weapon not cover UI                  | 2        | Done
 | Don'tDestroyOnLoad. GameManager                | 1        | Done
 | Save\Load. enemy                               | 2        | Done
@@ -63,6 +64,9 @@ primaryButton       -  X    - switch Tasklist
 #### Yulya tasks
 | Task name                                             |Priority|Status|Description|
 |-------------------------------------------------------|---|---|---|
+| Forest horizon skybox                                 | 1 |
+| Ground texture different for raznoobrazie             | 2 |
+| Grass or kust (not heavy check triangles and fps)     | 2 |
 | Level design. Starter scene. Hide and protect borders | 1 | Done
 | Level design. Main scene. Borders decor               | 1 | Done
 | Level design. Main scene. Borders decor               | 1 | Done

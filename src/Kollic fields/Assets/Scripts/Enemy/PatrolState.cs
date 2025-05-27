@@ -7,6 +7,7 @@ public class PatrolState : AState
 
     public override void EnterState(EnemyStateManager enemyStateManager)
     {
+        EventManager.Akratit.RunFromAkratit?.Invoke(TaskManager.TasksNames.RunHome);
         enemyStateManager.SetAutoBreaking(true);
         enemyStateManager.animator.SetBool("is_Attacking", false);
         enemyStateManager.animator.SetBool("is_Angry", false);

@@ -81,6 +81,15 @@ public class TaskManager : MonoBehaviour
         EventManager.Akratit.OnAkratitDeath += PlayTaskComments;
         EventManager.Idol.OnIdolFound += PlayTaskComments;
         EventManager.Idol.OnIdolDestroyed += PlayTaskComments;
+        EventManager.Akratit.RunFromAkratit += CheckRunHome;
+    }
+
+    private void CheckRunHome(TasksNames arg0)
+    {
+        if (gameState.akratit == GameState.SubjectState.Found)
+        {
+            PlayTaskComments(arg0);
+        }
     }
 
     private void OnDisable()
