@@ -2,14 +2,14 @@ using UnityEngine;
 
 public class Zone : MonoBehaviour
 {
-    [SerializeField] AudioSource audioSource;
+    [SerializeField] AudioSourceSetting audioSourceSetting;
     [SerializeField] protected bool enteredZone = false;
 
     private void Start()
     {
-        if (audioSource == null) 
+        if (audioSourceSetting == null) 
         {
-            audioSource = GetComponent<AudioSource>();
+            audioSourceSetting = GetComponent<AudioSourceSetting>();
         }
     }
 
@@ -22,8 +22,8 @@ public class Zone : MonoBehaviour
     {
         if (!enteredZone) 
         {
-            if (audioSource != null)
-                audioSource.Play();
+            if (audioSourceSetting != null)
+                audioSourceSetting.AudioPlayOneShot(0);
             enteredZone = true;
         }
     }
