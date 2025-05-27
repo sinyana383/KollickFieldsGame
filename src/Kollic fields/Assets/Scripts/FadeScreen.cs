@@ -7,7 +7,18 @@ public class FadeScreen : MonoBehaviour
     public float fadeDuration = 1f;
     public Color fadeColor;
     Renderer rend;
-    
+
+    private void OnDisable()
+    {
+        
+    }
+
+    private void OnEnable()
+    {
+        
+    }
+
+
     void Start()
     {
         rend = GetComponent<Renderer>();
