@@ -9727,7 +9727,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10629,7 +10629,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c9bddc188801d104b825963f913545ee, type: 2}
   - {fileID: 11400000, guid: 3a76bd5a3eaca3546a894f2968541224, type: 2}
   - {fileID: 11400000, guid: 73f1ddb95e265ee4b87d33f2d4fc996b, type: 2}
-  - {fileID: 11400000, guid: 618c779e8eacc674eb275fad3efc697f, type: 2}
+  - {fileID: 11400000, guid: 39559d702a737b84593223444ee45976, type: 2}
   - {fileID: 11400000, guid: 39559d702a737b84593223444ee45976, type: 2}
   gameState: {fileID: 1052560558}
   audioSource: {fileID: 1727911517}
