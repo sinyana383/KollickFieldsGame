@@ -16,10 +16,12 @@ public class SettingsManager : MonoBehaviour
     [SerializeField] Slider soundSlider;
     [SerializeField] Slider musicSlider;
     [SerializeField] Slider brightnessSlider;
+    [SerializeField] Slider voiceSlider;
     
     [SerializeField] float backgroundVolume;
     [SerializeField] float soundVolume;
     [SerializeField] float brightness;
+    [SerializeField] float voice;
     
     public float BackgroundVolume 
     { 
@@ -47,6 +49,19 @@ public class SettingsManager : MonoBehaviour
             }
         }
     }
+    public float Voice
+    {
+        get => voice;
+        set
+        {
+            voice = value;
+            if (voiceSlider != null) 
+            {
+                voiceSlider.value = voice;
+                EventManager.Game.OnVoiceChanged?.Invoke(voice);
+            }
+        }
+    }
     public float Brightness
     {
         get => brightness;
@@ -66,7 +81,8 @@ public class SettingsManager : MonoBehaviour
             }
         }
     }
-    
+
+
     private void OnEnable()
     {
         EventManager.Save.OnSaveSettings += SaveSettings;
@@ -91,6 +107,7 @@ public class SettingsManager : MonoBehaviour
         BackgroundVolume = settingsData.backgroundVolume;
         SoundVolume = settingsData.soundVolume;
         Brightness = settingsData.brightness;
+        Voice = settingsData.voiceValume;
     }
     
     private void Start()
@@ -98,6 +115,7 @@ public class SettingsManager : MonoBehaviour
         if (volume != null)
             volume.profile.TryGet(out colorAdjustments);
         brightnessSlider.onValueChanged.AddListener(ChangeBrightness);
+        voiceSlider.onValueChanged.AddListener(ChangeVoice);
         musicSlider.onValueChanged.AddListener(ChangeMusic);
         soundSlider.onValueChanged.AddListener(ChangeSound);
         saveButton.onClick.AddListener(() => EventManager.Save.OnSaveSettings?.Invoke());
@@ -118,5 +136,10 @@ public class SettingsManager : MonoBehaviour
     void ChangeSound(float value)
     {
         SoundVolume = value;
+    }
+
+    void ChangeVoice(float value)
+    {
+        Voice = value;
     }
 }

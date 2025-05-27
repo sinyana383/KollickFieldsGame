@@ -21,6 +21,8 @@ public class AudioSourceSetting : MonoBehaviour
             EventManager.Game.OnSoundVolumeChanged += ChangeVolume;
         if (audioType == AudioType.music)
             EventManager.Game.OnMusicVolumeChanged += ChangeVolume;
+        if (audioType == AudioType.voice)
+            EventManager.Game.OnVoiceChanged += ChangeVolume;
     }
 
     private void OnDisable()
@@ -29,6 +31,8 @@ public class AudioSourceSetting : MonoBehaviour
             EventManager.Game.OnSoundVolumeChanged -= ChangeVolume;
         if (audioType == AudioType.music)
             EventManager.Game.OnMusicVolumeChanged -= ChangeVolume;
+        if (audioType == AudioType.voice)
+            EventManager.Game.OnVoiceChanged -= ChangeVolume;
     }
 
     private void Awake()

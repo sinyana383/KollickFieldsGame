@@ -43,12 +43,14 @@ public class SaveData
         public float backgroundVolume;
         public float soundVolume;
         public float brightness;
+        public float voiceValume;
 
         public SettingsData(SettingsManager settingsManager)
         {
             backgroundVolume = settingsManager.BackgroundVolume;
             soundVolume = settingsManager.SoundVolume;
             brightness = settingsManager.Brightness;
+            voiceValume = settingsManager.Voice;
         }
     }
 

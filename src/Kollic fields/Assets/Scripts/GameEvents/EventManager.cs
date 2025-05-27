@@ -59,6 +59,7 @@ public static class EventManager
         public UnityAction<int> OnSceneTransition;
         public UnityAction<float> OnSoundVolumeChanged;
         public UnityAction<float> OnMusicVolumeChanged;
+        public UnityAction<float> OnVoiceChanged;
     }
 
     public class SaveEv
