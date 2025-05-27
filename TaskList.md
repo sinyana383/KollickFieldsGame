@@ -43,7 +43,7 @@ index trigger - нажать на UI
 | Effects. Die effect                            | 2        |
 | Kill Akratit done on animation event           | 2        |
 | Audio manager. Akratit sound                   | 4        |
-| Audio manager. Voice setting                   | 3        | 
+| Audio manager. Voice setting                   | 3        | Done
 | Audio manager. Akratit hit sound               | 3        | Done
 | Audio manager. Idol hit sound                  | 3        | Done
 | Save\Load. idol                                | 2        | Done
