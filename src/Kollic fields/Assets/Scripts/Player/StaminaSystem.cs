@@ -66,7 +66,7 @@ public class StaminaSystem : MonoBehaviour
         {
             CurrentStamina -= staminaUseRate * Time.deltaTime;
             CurrentStamina = Mathf.Max(0, CurrentStamina);
-            Debug.Log("Stamina: " + CurrentStamina);
+            //Debug.Log("Stamina: " + CurrentStamina);
 
             if (CurrentStamina <= 0)
             {
@@ -84,7 +84,7 @@ public class StaminaSystem : MonoBehaviour
         {
             CurrentStamina += staminaRegenRate * Time.deltaTime;
             CurrentStamina = Mathf.Min(maxStamina, CurrentStamina);
-            Debug.Log("Stamina: " + CurrentStamina);
+            //Debug.Log("Stamina: " + CurrentStamina);
             yield return null;
         }
     }

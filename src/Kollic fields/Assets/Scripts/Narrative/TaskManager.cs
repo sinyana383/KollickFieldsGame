@@ -49,9 +49,16 @@ public class TaskManager : MonoBehaviour
         wasWin = taskManagerData.wasWin;
         return true;
     }
-    
+
+    private void Awake()
+    {
+        gameState = FindAnyObjectByType<GameState>();
+        Debug.Log($"GameState! {gameState} ---------------------");
+    }
+
     private void Start()
     {
+
         if (LoadTaskManager())
             LoadTaskManager();
         else
