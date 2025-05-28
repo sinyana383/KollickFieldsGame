@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2510715028639780104
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2309652537347696713}
+  - component: {fileID: 9199598195143011425}
+  m_Layer: 0
+  m_Name: TaskManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2309652537347696713
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2510715028639780104}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9199598195143011425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2510715028639780104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2add8178dfa39a745ad6383f49807a21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  savefileName: taskManager
+  winComment: {fileID: 11400000, guid: 833f1df4742c6964191052ac4695d0eb, type: 2}
+  wasWin: 0
+  tasksPool:
+  - {fileID: 11400000, guid: 10749966f53b33145935fbac860143bb, type: 2}
+  - {fileID: 11400000, guid: 1819c469d4b5439449d453ccce41c448, type: 2}
+  - {fileID: 11400000, guid: c9bddc188801d104b825963f913545ee, type: 2}
+  - {fileID: 11400000, guid: 3a76bd5a3eaca3546a894f2968541224, type: 2}
+  - {fileID: 11400000, guid: 73f1ddb95e265ee4b87d33f2d4fc996b, type: 2}
+  - {fileID: 11400000, guid: 39559d702a737b84593223444ee45976, type: 2}
+  - {fileID: 11400000, guid: 39559d702a737b84593223444ee45976, type: 2}
+  gameState: {fileID: 0}
+  audioSource: {fileID: 0}
+  tasksContainer: {fileID: 0}
+  taskBoxPrefab: {fileID: 5469129984229746118, guid: b890fd04ca5a533408b105a16a64f134, type: 3}
+  commentText: {fileID: 0}
+  delayBetweenComments: 3
