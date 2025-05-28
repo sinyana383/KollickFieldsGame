@@ -18956,6 +18956,10 @@ PrefabInstance:
       propertyPath: m_fontSizeBase
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7475490109014378301, guid: 71820611a3d1d5c4f9f3dcedd699d776, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7165379e78b4c794d99d22af6ab7ed1f, type: 3}
     - target: {fileID: 8422887513478537068, guid: 71820611a3d1d5c4f9f3dcedd699d776, type: 3}
       propertyPath: m_Name
       value: ControlsPanel

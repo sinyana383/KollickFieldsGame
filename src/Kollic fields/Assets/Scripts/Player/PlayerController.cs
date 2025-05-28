@@ -26,8 +26,8 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         // TODO: Comment when disable Simulator
-        // inputActionManager.XRILeft.AButton.performed += context => EventManager.Player.OnStaminaUseEntered?.Invoke();
-        // inputActionManager.XRILeft.AButton.canceled += context => EventManager.Player.OnStaminaUseExited?.Invoke();
+        inputActionManager.XRILeft.AButton.performed += context => EventManager.Player.OnStaminaUseEntered?.Invoke();
+        inputActionManager.XRILeft.AButton.canceled += context => EventManager.Player.OnStaminaUseExited?.Invoke();
 
         inputActionManager.XRILeft.JoystickButton.performed += context => EventManager.Player.OnStaminaUseEntered?.Invoke();
         inputActionManager.XRILeft.JoystickButton.canceled += context => EventManager.Player.OnStaminaUseExited?.Invoke();

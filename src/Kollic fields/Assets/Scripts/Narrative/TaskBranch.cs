@@ -4,6 +4,8 @@ using System.Collections.Generic;
 [CreateAssetMenu(fileName = "NewTaskBranch", menuName = "Task System/TaskBranch")]
 public class TaskBranch : ScriptableObject
 {
+    public GameState.SubjectType subjectType;
+    public GameState.SubjectState notStartCondition;
     public enum TaskState
     {
         NotStarted,

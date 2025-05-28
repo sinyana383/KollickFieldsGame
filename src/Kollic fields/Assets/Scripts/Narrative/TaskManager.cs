@@ -177,6 +177,7 @@ public class TaskManager : MonoBehaviour
                 {
                     for (int i = 0; i < curComment.tasksToChange.Count; i++)
                     {
+                        if (curComment.taskState[i] == TaskBranch.TaskState.Started)
                         ChangeTaskList(curComment.tasksToChange[i], curComment.taskState[i]);
                     }
                     RefreshActiveTasksDisplay();
