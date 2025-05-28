@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c0835178b4b40fc499b88f0bb4434508, type: 3}
-  m_Name: KillAkratit
+  m_Name: RunFromAkratit
   m_EditorClassIdentifier: 
-  subjectsToCheck: 2
-  notStartCondition: 2
-  title: "\u0423\u0441\u0442\u0440\u0430\u043D\u0438\u0442\u044C \u0410\u043A\u0440\u0430\u0442\u0438\u0442\u0430"
+  subjectsToCheck: 0
+  notStartCondition: 0
+  title: "\u0423\u0431\u0435\u0436\u0430\u0442\u044C \u043E\u0442 \u0410\u043A\u0440\u0430\u0442\u0438"
   taskState: 0
-  startComment: {fileID: 11400000, guid: 11e6b74e1c0097842bf3f847f256e12d, type: 2}
+  startComment: {fileID: 11400000, guid: 686b3466b3e14eb46a70826375b6f508, type: 2}

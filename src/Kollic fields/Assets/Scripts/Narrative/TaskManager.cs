@@ -49,9 +49,16 @@ public class TaskManager : MonoBehaviour
         wasWin = taskManagerData.wasWin;
         return true;
     }
-    
+
+    private void Awake()
+    {
+        gameState = FindAnyObjectByType<GameState>();
+        Debug.Log($"GameState! {gameState} ---------------------");
+    }
+
     private void Start()
     {
+
         if (LoadTaskManager())
             LoadTaskManager();
         else
@@ -177,6 +184,12 @@ public class TaskManager : MonoBehaviour
                 {
                     for (int i = 0; i < curComment.tasksToChange.Count; i++)
                     {
+                        if (curComment.taskState[i] == TaskBranch.TaskState.Started && curComment.tasksToChange[i].subjectsToCheck != GameState.SubjectType.None)
+                        {
+                            var subjectState = gameState.GetSubjectState(curComment.tasksToChange[i].subjectsToCheck);
+                            if (subjectState >= curComment.tasksToChange[i].notStartCondition)
+                                continue;
+                        }
                         ChangeTaskList(curComment.tasksToChange[i], curComment.taskState[i]);
                     }
                     RefreshActiveTasksDisplay();

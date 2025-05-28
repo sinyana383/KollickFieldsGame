@@ -101,6 +101,9 @@ public class GameState : MonoBehaviour
     private void ChangeState(out SubjectState state, SubjectState newState)
     {
         state = newState;
+        //Debug.Log($"Idol {idol}");
+        //Debug.Log($"Akratit {akratit}");
+        //Debug.Log($"Bodies {bodies}");
     }
 
     public void SaveGameState() => SaveManager.SaveData(new SaveData.GameStateData(this), savefileName);

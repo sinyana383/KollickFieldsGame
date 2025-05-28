@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0835178b4b40fc499b88f0bb4434508, type: 3}
   m_Name: FindIdol
   m_EditorClassIdentifier: 
+  subjectsToCheck: 3
+  notStartCondition: 1
   title: "\u041D\u0430\u0439\u0442\u0438 \u043F\u0440\u0438\u0447\u0438\u043D\u0443
     \u043F\u043E\u044F\u0432\u043B\u0435\u043D\u0438\u044F \u0410\u043A\u0440\u0430\u0442\u0438\u0442\u0430"
   taskState: 2

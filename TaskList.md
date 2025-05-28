@@ -22,9 +22,9 @@ index trigger - нажать на UI
 #### General tasks
 | Task name              | Priority |Status|Description|
 |------------------------|----------|---|---|
-| EFFECTS                | 3        |
+| EFFECTS                | 3        | Almost done
 | Save\Load system       | 1        | Almost done
-| Music and Sound System | 1        | Partly done
+| Music and Sound System | 1        | Almost done
 | Load Screen            | 2        | Almost done
 | Task system            | 1        | Almost done
 | End  system            | 1        | Almost done
