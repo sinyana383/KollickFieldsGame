@@ -17,19 +17,19 @@ public class PlayerMove : MonoBehaviour
 
     private void OnEnable()
     {
-        EventManager.Zone.OnWarningEntered += arg0 => Stop();
+        EventManager.Zone.OnWarningEntered += arg0 => SlowDonwn();
         EventManager.Zone.OnPlayerRelease += NormalSpeed;
     }
 
     private void OnDisable()
     {
-        EventManager.Zone.OnWarningEntered -= arg0 => Stop();
+        EventManager.Zone.OnWarningEntered -= arg0 => SlowDonwn();
         EventManager.Zone.OnPlayerRelease -= NormalSpeed;
     }
 
-    private void Stop()
+    private void SlowDonwn()
     {
-        moveProvider.moveSpeed = 0;
+        moveProvider.moveSpeed /= acceleration;
     }
 
     public void NormalSpeed()

@@ -5,7 +5,7 @@ public class Zone : MonoBehaviour
     [SerializeField] AudioSourceSetting audioSourceSetting;
     [SerializeField] protected bool enteredZone = false;
 
-    private void Start()
+    private void Awake()
     {
         if (audioSourceSetting == null) 
         {

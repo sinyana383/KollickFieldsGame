@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class FadeScreen : MonoBehaviour
 {
@@ -8,17 +9,29 @@ public class FadeScreen : MonoBehaviour
     public Color fadeColor;
     Renderer rend;
 
-    private void OnDisable()
-    {
-        
-    }
-
     private void OnEnable()
     {
-        
+        EventManager.Zone.OnWarningEntered += WarningScreenFadeEnter;
+        EventManager.Zone.OnPlayerRelease += WarningScreenFadeExit;
+    }
+    
+    private void OnDisable()
+    {
+        EventManager.Zone.OnWarningEntered -= WarningScreenFadeEnter;
+        EventManager.Zone.OnPlayerRelease -= WarningScreenFadeExit;
     }
 
-
+    public void WarningScreenFadeEnter(string warningText)
+    {
+        // Debug.Log("WarningScreenFadeEnter");
+        Fade(0, 0.8f);
+    }
+    public void WarningScreenFadeExit()
+    {
+        // Debug.Log("WarningScreenFadeExit");
+        Fade(0.8f, 0);
+    }
+    
     void Start()
     {
         rend = GetComponent<Renderer>();

@@ -19,5 +19,6 @@ public class WarningZone : Zone
     private void OnTriggerExit(Collider other)
     {
         enteredZone = false;
+        EventManager.Zone.OnPlayerRelease?.Invoke();
     }
 }
