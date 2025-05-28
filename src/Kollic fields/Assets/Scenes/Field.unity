@@ -420,6 +420,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Conifer1 Variant (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6576245829349607628, guid: d6d27d9e3e45b4540926b5a288df497f, type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.58651835
+      objectReference: {fileID: 0}
+    - target: {fileID: 6576245829349607628, guid: d6d27d9e3e45b4540926b5a288df497f, type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.3164779
+      objectReference: {fileID: 0}
+    - target: {fileID: 6576245829349607628, guid: d6d27d9e3e45b4540926b5a288df497f, type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.17651036
+      objectReference: {fileID: 0}
+    - target: {fileID: 6576245829349607628, guid: d6d27d9e3e45b4540926b5a288df497f, type: 3}
+      propertyPath: m_LODs.Array.data[3].screenRelativeHeight
+      value: 0.10127009
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -661,6 +677,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1126960073}
     m_Modifications:
+    - target: {fileID: 3813773079025741571, guid: b6639bfe5c9fc754eb2f5df557bf3065, type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.58651835
+      objectReference: {fileID: 0}
+    - target: {fileID: 3813773079025741571, guid: b6639bfe5c9fc754eb2f5df557bf3065, type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.32222402
+      objectReference: {fileID: 0}
+    - target: {fileID: 3813773079025741571, guid: b6639bfe5c9fc754eb2f5df557bf3065, type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.17651036
+      objectReference: {fileID: 0}
+    - target: {fileID: 3813773079025741571, guid: b6639bfe5c9fc754eb2f5df557bf3065, type: 3}
+      propertyPath: m_LODs.Array.data[3].screenRelativeHeight
+      value: 0.10127009
+      objectReference: {fileID: 0}
     - target: {fileID: 3902103304896706987, guid: b6639bfe5c9fc754eb2f5df557bf3065, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.649994
@@ -2061,6 +2093,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7466951794709427284, guid: a59e323da47b2e24a8c2c0d0df1233b7, type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.58651835
+      objectReference: {fileID: 0}
+    - target: {fileID: 7466951794709427284, guid: a59e323da47b2e24a8c2c0d0df1233b7, type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.3164779
+      objectReference: {fileID: 0}
+    - target: {fileID: 7466951794709427284, guid: a59e323da47b2e24a8c2c0d0df1233b7, type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.12889256
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2735,6 +2779,22 @@ PrefabInstance:
     - target: {fileID: 6457180069349409040, guid: d6d27d9e3e45b4540926b5a288df497f, type: 3}
       propertyPath: m_Name
       value: Conifer1 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6576245829349607628, guid: d6d27d9e3e45b4540926b5a288df497f, type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.58651835
+      objectReference: {fileID: 0}
+    - target: {fileID: 6576245829349607628, guid: d6d27d9e3e45b4540926b5a288df497f, type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.32222402
+      objectReference: {fileID: 0}
+    - target: {fileID: 6576245829349607628, guid: d6d27d9e3e45b4540926b5a288df497f, type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.1808135
+      objectReference: {fileID: 0}
+    - target: {fileID: 6576245829349607628, guid: d6d27d9e3e45b4540926b5a288df497f, type: 3}
+      propertyPath: m_LODs.Array.data[3].screenRelativeHeight
+      value: 0.098049186
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3469,6 +3529,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7466951794709427284, guid: a59e323da47b2e24a8c2c0d0df1233b7, type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.58651835
+      objectReference: {fileID: 0}
+    - target: {fileID: 7466951794709427284, guid: a59e323da47b2e24a8c2c0d0df1233b7, type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.32222402
+      objectReference: {fileID: 0}
+    - target: {fileID: 7466951794709427284, guid: a59e323da47b2e24a8c2c0d0df1233b7, type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.11814761
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4027,6 +4099,22 @@ PrefabInstance:
     - target: {fileID: 6457180069349409040, guid: d6d27d9e3e45b4540926b5a288df497f, type: 3}
       propertyPath: m_Name
       value: Conifer1 Variant (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6576245829349607628, guid: d6d27d9e3e45b4540926b5a288df497f, type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.59432584
+      objectReference: {fileID: 0}
+    - target: {fileID: 6576245829349607628, guid: d6d27d9e3e45b4540926b5a288df497f, type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.3164779
+      objectReference: {fileID: 0}
+    - target: {fileID: 6576245829349607628, guid: d6d27d9e3e45b4540926b5a288df497f, type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.17651036
+      objectReference: {fileID: 0}
+    - target: {fileID: 6576245829349607628, guid: d6d27d9e3e45b4540926b5a288df497f, type: 3}
+      propertyPath: m_LODs.Array.data[3].screenRelativeHeight
+      value: 0.10127009
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5688,6 +5776,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1126960073}
     m_Modifications:
+    - target: {fileID: 6112077355235665305, guid: 0ea70d91e8c49df45b5935c00c86f4b6, type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.58651835
+      objectReference: {fileID: 0}
+    - target: {fileID: 6112077355235665305, guid: 0ea70d91e8c49df45b5935c00c86f4b6, type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.32222402
+      objectReference: {fileID: 0}
+    - target: {fileID: 6112077355235665305, guid: 0ea70d91e8c49df45b5935c00c86f4b6, type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.1808135
+      objectReference: {fileID: 0}
+    - target: {fileID: 6112077355235665305, guid: 0ea70d91e8c49df45b5935c00c86f4b6, type: 3}
+      propertyPath: m_LODs.Array.data[3].screenRelativeHeight
+      value: 0.10454252
+      objectReference: {fileID: 0}
     - target: {fileID: 6200733515207795391, guid: 0ea70d91e8c49df45b5935c00c86f4b6, type: 3}
       propertyPath: m_Name
       value: Conifer5 Variant (1)
@@ -7282,6 +7386,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Conifer1 Variant (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6576245829349607628, guid: d6d27d9e3e45b4540926b5a288df497f, type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.58651835
+      objectReference: {fileID: 0}
+    - target: {fileID: 6576245829349607628, guid: d6d27d9e3e45b4540926b5a288df497f, type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.32222402
+      objectReference: {fileID: 0}
+    - target: {fileID: 6576245829349607628, guid: d6d27d9e3e45b4540926b5a288df497f, type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.1808135
+      objectReference: {fileID: 0}
+    - target: {fileID: 6576245829349607628, guid: d6d27d9e3e45b4540926b5a288df497f, type: 3}
+      propertyPath: m_LODs.Array.data[3].screenRelativeHeight
+      value: 0.10127009
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7300,6 +7420,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1126960073}
     m_Modifications:
+    - target: {fileID: 1466963411666679331, guid: e9027dbb472584842bc9e68a2ceb2f30, type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.58651835
+      objectReference: {fileID: 0}
+    - target: {fileID: 1466963411666679331, guid: e9027dbb472584842bc9e68a2ceb2f30, type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.32222402
+      objectReference: {fileID: 0}
+    - target: {fileID: 1466963411666679331, guid: e9027dbb472584842bc9e68a2ceb2f30, type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.1808135
+      objectReference: {fileID: 0}
     - target: {fileID: 1623510484320466599, guid: e9027dbb472584842bc9e68a2ceb2f30, type: 3}
       propertyPath: m_Name
       value: Conifer4 Variant
@@ -8791,6 +8923,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1126960073}
     m_Modifications:
+    - target: {fileID: 4004167843112753662, guid: 5c933541e9695ec4fb00c0ccff0202d5, type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.58651835
+      objectReference: {fileID: 0}
+    - target: {fileID: 4004167843112753662, guid: 5c933541e9695ec4fb00c0ccff0202d5, type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.32222402
+      objectReference: {fileID: 0}
+    - target: {fileID: 4004167843112753662, guid: 5c933541e9695ec4fb00c0ccff0202d5, type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.15177384
+      objectReference: {fileID: 0}
     - target: {fileID: 8199848591528406671, guid: 5c933541e9695ec4fb00c0ccff0202d5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 41.85
@@ -9056,15 +9200,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6576245829349607628, guid: d6d27d9e3e45b4540926b5a288df497f, type: 3}
       propertyPath: m_LODs.Array.data[0].screenRelativeHeight
-      value: 0.83426446
+      value: 0.59432584
+      objectReference: {fileID: 0}
+    - target: {fileID: 6576245829349607628, guid: d6d27d9e3e45b4540926b5a288df497f, type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.3164779
       objectReference: {fileID: 0}
     - target: {fileID: 6576245829349607628, guid: d6d27d9e3e45b4540926b5a288df497f, type: 3}
       propertyPath: m_LODs.Array.data[2].screenRelativeHeight
-      value: 0.3288606
+      value: 0.1808135
       objectReference: {fileID: 0}
     - target: {fileID: 6576245829349607628, guid: d6d27d9e3e45b4540926b5a288df497f, type: 3}
       propertyPath: m_LODs.Array.data[3].screenRelativeHeight
-      value: 0.1620188
+      value: 0.10454252
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10575,6 +10723,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Conifer1 Variant (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6576245829349607628, guid: d6d27d9e3e45b4540926b5a288df497f, type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.59432584
+      objectReference: {fileID: 0}
+    - target: {fileID: 6576245829349607628, guid: d6d27d9e3e45b4540926b5a288df497f, type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.3164779
+      objectReference: {fileID: 0}
+    - target: {fileID: 6576245829349607628, guid: d6d27d9e3e45b4540926b5a288df497f, type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.1808135
+      objectReference: {fileID: 0}
+    - target: {fileID: 6576245829349607628, guid: d6d27d9e3e45b4540926b5a288df497f, type: 3}
+      propertyPath: m_LODs.Array.data[3].screenRelativeHeight
+      value: 0.09487982
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10593,6 +10757,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1126960073}
     m_Modifications:
+    - target: {fileID: 3813773079025741571, guid: b6639bfe5c9fc754eb2f5df557bf3065, type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.58651835
+      objectReference: {fileID: 0}
+    - target: {fileID: 3813773079025741571, guid: b6639bfe5c9fc754eb2f5df557bf3065, type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.3164779
+      objectReference: {fileID: 0}
+    - target: {fileID: 3813773079025741571, guid: b6639bfe5c9fc754eb2f5df557bf3065, type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.1808135
+      objectReference: {fileID: 0}
+    - target: {fileID: 3813773079025741571, guid: b6639bfe5c9fc754eb2f5df557bf3065, type: 3}
+      propertyPath: m_LODs.Array.data[3].screenRelativeHeight
+      value: 0.10454252
+      objectReference: {fileID: 0}
     - target: {fileID: 3902103304896706987, guid: b6639bfe5c9fc754eb2f5df557bf3065, type: 3}
       propertyPath: m_LocalPosition.x
       value: 40.98999
@@ -10984,6 +11164,18 @@ PrefabInstance:
     - target: {fileID: 4875787711807019330, guid: a59e323da47b2e24a8c2c0d0df1233b7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7466951794709427284, guid: a59e323da47b2e24a8c2c0d0df1233b7, type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.58651835
+      objectReference: {fileID: 0}
+    - target: {fileID: 7466951794709427284, guid: a59e323da47b2e24a8c2c0d0df1233b7, type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.3164779
+      objectReference: {fileID: 0}
+    - target: {fileID: 7466951794709427284, guid: a59e323da47b2e24a8c2c0d0df1233b7, type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.09487982
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12233,6 +12425,22 @@ PrefabInstance:
     - target: {fileID: 6457180069349409040, guid: d6d27d9e3e45b4540926b5a288df497f, type: 3}
       propertyPath: m_Name
       value: Conifer1 Variant (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6576245829349607628, guid: d6d27d9e3e45b4540926b5a288df497f, type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.58651835
+      objectReference: {fileID: 0}
+    - target: {fileID: 6576245829349607628, guid: d6d27d9e3e45b4540926b5a288df497f, type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.32222402
+      objectReference: {fileID: 0}
+    - target: {fileID: 6576245829349607628, guid: d6d27d9e3e45b4540926b5a288df497f, type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.17651036
+      objectReference: {fileID: 0}
+    - target: {fileID: 6576245829349607628, guid: d6d27d9e3e45b4540926b5a288df497f, type: 3}
+      propertyPath: m_LODs.Array.data[3].screenRelativeHeight
+      value: 0.098049186
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14582,6 +14790,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7466951794709427284, guid: a59e323da47b2e24a8c2c0d0df1233b7, type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.58651835
+      objectReference: {fileID: 0}
+    - target: {fileID: 7466951794709427284, guid: a59e323da47b2e24a8c2c0d0df1233b7, type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.3164779
+      objectReference: {fileID: 0}
+    - target: {fileID: 7466951794709427284, guid: a59e323da47b2e24a8c2c0d0df1233b7, type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.10454252
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14904,6 +15124,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1126960073}
     m_Modifications:
+    - target: {fileID: 6112077355235665305, guid: 0ea70d91e8c49df45b5935c00c86f4b6, type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.59432584
+      objectReference: {fileID: 0}
+    - target: {fileID: 6112077355235665305, guid: 0ea70d91e8c49df45b5935c00c86f4b6, type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.32222402
+      objectReference: {fileID: 0}
+    - target: {fileID: 6112077355235665305, guid: 0ea70d91e8c49df45b5935c00c86f4b6, type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.17651036
+      objectReference: {fileID: 0}
+    - target: {fileID: 6112077355235665305, guid: 0ea70d91e8c49df45b5935c00c86f4b6, type: 3}
+      propertyPath: m_LODs.Array.data[3].screenRelativeHeight
+      value: 0.10127009
+      objectReference: {fileID: 0}
     - target: {fileID: 6200733515207795391, guid: 0ea70d91e8c49df45b5935c00c86f4b6, type: 3}
       propertyPath: m_Name
       value: Conifer5 Variant
@@ -15322,6 +15558,22 @@ PrefabInstance:
     - target: {fileID: 6457180069349409040, guid: d6d27d9e3e45b4540926b5a288df497f, type: 3}
       propertyPath: m_Name
       value: Conifer1 Variant (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6576245829349607628, guid: d6d27d9e3e45b4540926b5a288df497f, type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.58651835
+      objectReference: {fileID: 0}
+    - target: {fileID: 6576245829349607628, guid: d6d27d9e3e45b4540926b5a288df497f, type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.32222402
+      objectReference: {fileID: 0}
+    - target: {fileID: 6576245829349607628, guid: d6d27d9e3e45b4540926b5a288df497f, type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.1808135
+      objectReference: {fileID: 0}
+    - target: {fileID: 6576245829349607628, guid: d6d27d9e3e45b4540926b5a288df497f, type: 3}
+      propertyPath: m_LODs.Array.data[3].screenRelativeHeight
+      value: 0.10454252
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15987,6 +16239,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Conifer1 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 6576245829349607628, guid: d6d27d9e3e45b4540926b5a288df497f, type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.59432584
+      objectReference: {fileID: 0}
+    - target: {fileID: 6576245829349607628, guid: d6d27d9e3e45b4540926b5a288df497f, type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.32222402
+      objectReference: {fileID: 0}
+    - target: {fileID: 6576245829349607628, guid: d6d27d9e3e45b4540926b5a288df497f, type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.17651036
+      objectReference: {fileID: 0}
+    - target: {fileID: 6576245829349607628, guid: d6d27d9e3e45b4540926b5a288df497f, type: 3}
+      propertyPath: m_LODs.Array.data[3].screenRelativeHeight
+      value: 0.10127009
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16005,6 +16273,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1126960073}
     m_Modifications:
+    - target: {fileID: 1466963411666679331, guid: e9027dbb472584842bc9e68a2ceb2f30, type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.58651835
+      objectReference: {fileID: 0}
+    - target: {fileID: 1466963411666679331, guid: e9027dbb472584842bc9e68a2ceb2f30, type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.3164779
+      objectReference: {fileID: 0}
+    - target: {fileID: 1466963411666679331, guid: e9027dbb472584842bc9e68a2ceb2f30, type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.17651036
+      objectReference: {fileID: 0}
     - target: {fileID: 1623510484320466599, guid: e9027dbb472584842bc9e68a2ceb2f30, type: 3}
       propertyPath: m_Name
       value: Conifer4 Variant (2)
@@ -16989,6 +17269,22 @@ PrefabInstance:
     - target: {fileID: 6457180069349409040, guid: d6d27d9e3e45b4540926b5a288df497f, type: 3}
       propertyPath: m_Name
       value: Conifer1 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6576245829349607628, guid: d6d27d9e3e45b4540926b5a288df497f, type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.58651835
+      objectReference: {fileID: 0}
+    - target: {fileID: 6576245829349607628, guid: d6d27d9e3e45b4540926b5a288df497f, type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.32222402
+      objectReference: {fileID: 0}
+    - target: {fileID: 6576245829349607628, guid: d6d27d9e3e45b4540926b5a288df497f, type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.1808135
+      objectReference: {fileID: 0}
+    - target: {fileID: 6576245829349607628, guid: d6d27d9e3e45b4540926b5a288df497f, type: 3}
+      propertyPath: m_LODs.Array.data[3].screenRelativeHeight
+      value: 0.098049186
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19169,6 +19465,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7466951794709427284, guid: a59e323da47b2e24a8c2c0d0df1233b7, type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.58651835
+      objectReference: {fileID: 0}
+    - target: {fileID: 7466951794709427284, guid: a59e323da47b2e24a8c2c0d0df1233b7, type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.32222402
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19187,6 +19491,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1126960073}
     m_Modifications:
+    - target: {fileID: 3813773079025741571, guid: b6639bfe5c9fc754eb2f5df557bf3065, type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.58651835
+      objectReference: {fileID: 0}
+    - target: {fileID: 3813773079025741571, guid: b6639bfe5c9fc754eb2f5df557bf3065, type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.32222402
+      objectReference: {fileID: 0}
+    - target: {fileID: 3813773079025741571, guid: b6639bfe5c9fc754eb2f5df557bf3065, type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.1808135
+      objectReference: {fileID: 0}
+    - target: {fileID: 3813773079025741571, guid: b6639bfe5c9fc754eb2f5df557bf3065, type: 3}
+      propertyPath: m_LODs.Array.data[3].screenRelativeHeight
+      value: 0.10127009
+      objectReference: {fileID: 0}
     - target: {fileID: 3902103304896706987, guid: b6639bfe5c9fc754eb2f5df557bf3065, type: 3}
       propertyPath: m_LocalPosition.x
       value: 25.73999
@@ -19345,6 +19665,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1126960073}
     m_Modifications:
+    - target: {fileID: 1466963411666679331, guid: e9027dbb472584842bc9e68a2ceb2f30, type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.5787625
+      objectReference: {fileID: 0}
+    - target: {fileID: 1466963411666679331, guid: e9027dbb472584842bc9e68a2ceb2f30, type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.3164779
+      objectReference: {fileID: 0}
+    - target: {fileID: 1466963411666679331, guid: e9027dbb472584842bc9e68a2ceb2f30, type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.17651036
+      objectReference: {fileID: 0}
     - target: {fileID: 1623510484320466599, guid: e9027dbb472584842bc9e68a2ceb2f30, type: 3}
       propertyPath: m_Name
       value: Conifer4 Variant (1)
@@ -22214,6 +22546,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1126960073}
     m_Modifications:
+    - target: {fileID: 4004167843112753662, guid: 5c933541e9695ec4fb00c0ccff0202d5, type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.58651835
+      objectReference: {fileID: 0}
+    - target: {fileID: 4004167843112753662, guid: 5c933541e9695ec4fb00c0ccff0202d5, type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.32222402
+      objectReference: {fileID: 0}
+    - target: {fileID: 4004167843112753662, guid: 5c933541e9695ec4fb00c0ccff0202d5, type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.15177384
+      objectReference: {fileID: 0}
     - target: {fileID: 8199848591528406671, guid: 5c933541e9695ec4fb00c0ccff0202d5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 28.088165

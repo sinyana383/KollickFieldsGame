@@ -68,8 +68,8 @@ index trigger - нажать на UI
 #### Yulya tasks
 | Task name                                             |Priority|Status|Description|
 |-------------------------------------------------------|---|---|---|
-| Change lod distance                                   | 0 |
-| Forest horizon skybox                                 | 1 |
+| Change lod distance                                   | 0 | | Done
+| Forest horizon skybox                                 | 1 | | Done
 | Controls tutorial	                                    | 1 |
 | Ground texture different for raznoobrazie             | 2 |
 | Grass or kust (not heavy check triangles and fps)     | 2 |
