@@ -27702,6 +27702,10 @@ PrefabInstance:
       propertyPath: tasksContainer
       value: 
       objectReference: {fileID: 1192017567}
+    - target: {fileID: 9199598195143011425, guid: b884ae9a4a9d4584d8d73f326f3d9f59, type: 3}
+      propertyPath: 'tasksPool.Array.data[5]'
+      value: 
+      objectReference: {fileID: 11400000, guid: f934dd2ac08fd1e49908e4851180c37d, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -26,6 +26,7 @@ public class AgroState : AState
     {
         if (enemyManager.CheckOnTarget() > enemyManager.agroDistance)
         {
+            EventManager.Akratit.RunFromAkratit?.Invoke(TaskManager.TasksNames.RunHome);
             //Debug.Log("enemyManager.CheckOnTarget() > enemyManager.agroDistance");
             enemyManager.animator.SetBool("is_Angry", false);
             enemyManager.animator.SetBool("is_Attacking", false);
