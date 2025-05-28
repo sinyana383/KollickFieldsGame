@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0835178b4b40fc499b88f0bb4434508, type: 3}
   m_Name: KillAkratit
   m_EditorClassIdentifier: 
+  subjectsToCheck: 2
+  notStartCondition: 2
   title: "\u0423\u0441\u0442\u0440\u0430\u043D\u0438\u0442\u044C \u0410\u043A\u0440\u0430\u0442\u0438\u0442\u0430"
   taskState: 0
   startComment: {fileID: 11400000, guid: 11e6b74e1c0097842bf3f847f256e12d, type: 2}
