@@ -12,6 +12,16 @@ public class StaminaSystem : MonoBehaviour
     public float staminaRegenRate = 10f;    // Per second
     private float currentStamina;
 
+    public float CurrentStamina
+    {
+        get{return currentStamina;}
+        set
+        {
+            currentStamina = value;
+            EventManager.Player.OnStaminaChanged?.Invoke(currentStamina/maxStamina);
+        }
+    }
+
     private Coroutine staminaCoroutine;
 
     private void Awake()
@@ -33,7 +43,7 @@ public class StaminaSystem : MonoBehaviour
 
     private void Start()
     {
-        currentStamina = maxStamina;
+        CurrentStamina = maxStamina;
     }
 
     private void StartUsingStamina()
@@ -52,13 +62,13 @@ public class StaminaSystem : MonoBehaviour
 
     private IEnumerator DrainStamina()
     {
-        while (currentStamina > 0)
+        while (CurrentStamina > 0)
         {
-            currentStamina -= staminaUseRate * Time.deltaTime;
-            currentStamina = Mathf.Max(0, currentStamina);
-            Debug.Log("Stamina: " + currentStamina);
+            CurrentStamina -= staminaUseRate * Time.deltaTime;
+            CurrentStamina = Mathf.Max(0, CurrentStamina);
+            Debug.Log("Stamina: " + CurrentStamina);
 
-            if (currentStamina <= 0)
+            if (CurrentStamina <= 0)
             {
                 StopUsingStamina();
                 yield break;
@@ -70,11 +80,11 @@ public class StaminaSystem : MonoBehaviour
 
     private IEnumerator RegenerateStamina()
     {
-        while (currentStamina < maxStamina)
+        while (CurrentStamina < maxStamina)
         {
-            currentStamina += staminaRegenRate * Time.deltaTime;
-            currentStamina = Mathf.Min(maxStamina, currentStamina);
-            Debug.Log("Stamina: " + currentStamina);
+            CurrentStamina += staminaRegenRate * Time.deltaTime;
+            CurrentStamina = Mathf.Min(maxStamina, CurrentStamina);
+            Debug.Log("Stamina: " + CurrentStamina);
             yield return null;
         }
     }

@@ -13,12 +13,13 @@ public static class EventManager
     public static readonly SaveEv Save = new SaveEv();
     public class PlayerEv
     {
-        public UnityAction OnHealthChanged;
         public UnityAction OnFlashlightSwitch;
         public UnityAction OnMenuSwitch;
         public UnityAction OnTaskListSwitch;
         public UnityAction OnStaminaUseEntered;
         public UnityAction OnStaminaUseExited;
+        public UnityAction<float> OnStaminaChanged;
+        public UnityAction<float> OnHealthChanged;
     }
     
     public class AkratitEv

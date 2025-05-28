@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     [SerializeField] private string savefileName = "player";
+    [SerializeField] int maxHp = 100;
     [SerializeField] int hp = 100;
 
     public int HP
@@ -16,12 +17,14 @@ public class Player : MonoBehaviour
         set
         {
             hp = value;
+            EventManager.Player.OnHealthChanged?.Invoke((float)hp/maxHp);
         }
     }
     
     private void Start()
     {
-        LoadPlayerParameters();
+        if (!LoadPlayerParameters())
+            HP = maxHp;
     }
 
     private void OnEnable()
@@ -35,18 +38,19 @@ public class Player : MonoBehaviour
     }
 
     public void SavePlayerParameters() => SaveManager.SaveData(new SaveData.PlayerData(this), savefileName);
-    public void LoadPlayerParameters() 
+    public bool LoadPlayerParameters() 
     {
         SaveData.PlayerData playerData = SaveManager.LoadData<SaveData.PlayerData>(savefileName);
         
         if (playerData == null)
         {
-            return;
+            return false;
         }
         
         Vector3 position = new Vector3(playerData.position[0], playerData.position[1], playerData.position[2]);
         this.transform.position = position;
         HP = playerData.hp;
+        return true;
     }
     void PlayerDead()
     {
@@ -59,9 +63,9 @@ public class Player : MonoBehaviour
         //Debug.Log($"Trigger enter: {other.name}");
         if (other.gameObject.TryGetComponent(out EnemyDamager enemyDamager))
         {
-            this.hp -= enemyDamager.enemyDmg;
-            Debug.Log($"Player hp: {hp}");
-            if (this.hp <= 0)
+            HP -= enemyDamager.enemyDmg;
+            Debug.Log($"Player hp: {HP}");
+            if (HP <= 0)
             {
                 PlayerDead();
             }
