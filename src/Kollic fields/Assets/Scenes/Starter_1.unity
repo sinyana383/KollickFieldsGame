@@ -2906,6 +2906,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BackgroundMusic
       objectReference: {fileID: 0}
+    - target: {fileID: 2327715985400395503, guid: 883820c2801298b42a98c339203100bd, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2327715985400395503, guid: 883820c2801298b42a98c339203100bd, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4900631533261136478, guid: 883820c2801298b42a98c339203100bd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2946,6 +2954,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5748984178472332371, guid: 883820c2801298b42a98c339203100bd, type: 3}
+      propertyPath: 'audioClips.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 9249d965fb5f64e419d753d4107d480a, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
