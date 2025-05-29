@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textLine: "\u0412\u0441\u0451, \u0445\u0432\u0430\u0442\u0438\u0442 \u043D\u0430
     \u0441\u0435\u0433\u043E\u0434\u043D\u044F"
-  voiceLine: {fileID: 0}
+  voiceLine: {fileID: 8300000, guid: c60a0e025dbcd2545911d1ebbb9b8d5f, type: 3}
   subjectsToCheck: 0
   nextComments: []
   taskState: 01000000
