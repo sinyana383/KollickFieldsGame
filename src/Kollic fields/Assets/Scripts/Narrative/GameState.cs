@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 using UnityEngine.XR;
 public class GameState : MonoBehaviour
@@ -77,6 +78,8 @@ public class GameState : MonoBehaviour
     
     private void OnEnable()
     {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+
         EventManager.Idol.OnIdolFound += ChangeStateByTaskName;
         EventManager.Akratit.OnAkratitFound += AkratitFound;
         EventManager.Bodies.OnBodiesFound += ChangeStateByTaskName;
@@ -88,6 +91,8 @@ public class GameState : MonoBehaviour
     }
     private void OnDisable()
     {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+
         EventManager.Idol.OnIdolFound -= ChangeStateByTaskName;
         EventManager.Akratit.OnAkratitFound -= AkratitFound;
         EventManager.Bodies.OnBodiesFound -= ChangeStateByTaskName;
@@ -107,24 +112,39 @@ public class GameState : MonoBehaviour
     }
 
     public void SaveGameState() => SaveManager.SaveData(new SaveData.GameStateData(this), savefileName);
-    public void LoadGameState() 
+    public bool LoadGameState() 
     {
         SaveData.GameStateData gameStateData = SaveManager.LoadData<SaveData.GameStateData>(savefileName);
 
         if (gameStateData == null)
         {
-            return;
+            return false;
         }
         
         bodies = (SubjectState)gameStateData.missingPeople;
         akratit = (SubjectState)gameStateData.mainEnemy;
         idol = (SubjectState)gameStateData.idol;
         mainCharacter = (SubjectState)gameStateData.mainCharacter;
+        return true;
     }
 
     private void Start()
     {
-        if (Instance != this) return; 
+        if (Instance != this) return;
+        Debug.Log("GameState start");
         LoadGameState();
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        Debug.Log("GameState OnSceneLoaded");
+        if (!LoadGameState() && scene.buildIndex == 1) 
+        {
+            akratit = SubjectState.None;
+            idol = SubjectState.None;
+            bodies = SubjectState.None;
+            mainCharacter = SubjectState.None;
+        }
+            
     }
 }

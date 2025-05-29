@@ -19,6 +19,5 @@ MonoBehaviour:
   voiceLine: {fileID: 8300000, guid: a9df9d526bcae0f4d85f03b83d889464, type: 3}
   subjectsToCheck: 0
   nextComments: []
-  taskState: 02000000
-  tasksToChange:
-  - {fileID: 11400000, guid: 1819c469d4b5439449d453ccce41c448, type: 2}
+  taskState: 
+  tasksToChange: []

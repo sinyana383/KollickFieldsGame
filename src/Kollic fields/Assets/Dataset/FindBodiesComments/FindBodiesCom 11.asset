@@ -22,5 +22,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e2c0f0ce71670d043b2af5134b49283c, type: 2}
   - {fileID: 11400000, guid: 31c341b745562a94cbaffae9047d9aa3, type: 2}
   - {fileID: 11400000, guid: b5f89067b8cfaf74a8002ef1651a08d0, type: 2}
-  taskState: 
-  tasksToChange: []
+  taskState: 03000000
+  tasksToChange:
+  - {fileID: 11400000, guid: 1819c469d4b5439449d453ccce41c448, type: 2}
