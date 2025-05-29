@@ -20,7 +20,11 @@ public class AudioSourceSetting : MonoBehaviour
         if (audioType == AudioType.sound)
             EventManager.Game.OnSoundVolumeChanged += ChangeVolume;
         if (audioType == AudioType.music)
+        {
             EventManager.Game.OnMusicVolumeChanged += ChangeVolume;
+            EventManager.Akratit.OnAkratitSpotPlayer += AudioPlay;
+            EventManager.Akratit.OnAkratitLosePlayer += AudioPlay;
+        }
         if (audioType == AudioType.voice)
             EventManager.Game.OnVoiceChanged += ChangeVolume;
     }
@@ -30,7 +34,11 @@ public class AudioSourceSetting : MonoBehaviour
         if (audioType == AudioType.sound)
             EventManager.Game.OnSoundVolumeChanged -= ChangeVolume;
         if (audioType == AudioType.music)
+        {
             EventManager.Game.OnMusicVolumeChanged -= ChangeVolume;
+            EventManager.Akratit.OnAkratitSpotPlayer -= AudioPlay;
+            EventManager.Akratit.OnAkratitLosePlayer -= AudioPlay;
+        }
         if (audioType == AudioType.voice)
             EventManager.Game.OnVoiceChanged -= ChangeVolume;
     }
@@ -60,6 +68,10 @@ public class AudioSourceSetting : MonoBehaviour
     public void AudioPlay(int index)
     {
         if (index >= audioClips.Length) return;
+        if (audioSource == null)
+            audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+            return;
         audioSource.clip = audioClips[index];
         audioSource.Play();
     }

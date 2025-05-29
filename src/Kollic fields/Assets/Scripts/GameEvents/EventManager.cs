@@ -29,6 +29,9 @@ public static class EventManager
         public UnityAction<int> OnAkratitHit;
         public UnityAction<TaskManager.TasksNames> OnAkratitDeath;
         public UnityAction<TaskManager.TasksNames> RunFromAkratit;
+        
+        public UnityAction<int> OnAkratitSpotPlayer;
+        public UnityAction<int> OnAkratitLosePlayer;
     }
     
     public class BodiesEv

@@ -4,6 +4,7 @@ public class DeadState : AState
 {
     public override void EnterState(EnemyStateManager enemyManager)
     {
+        EventManager.Akratit.OnAkratitLosePlayer?.Invoke(0);
         enemyManager.DisableAgent();
         enemyManager.animator.SetBool("is_Dead", true);
         enemyManager.animator.SetBool("is_Attacking", false);
