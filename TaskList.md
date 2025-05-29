@@ -70,9 +70,9 @@ index trigger - нажать на UI
 |-------------------------------------------------------|---|---|---|
 | Change lod distance                                   | 0 | | Done
 | Forest horizon skybox                                 | 1 | | Done
-| Controls tutorial	                                    | 1 |
+| Controls tutorial	                                    | 1 | |Done
 | Ground texture different for raznoobrazie             | 2 |
-| Grass or kust (not heavy check triangles and fps)     | 2 |
+| Grass or kust (not heavy check triangles and fps)     | 2 | |Done
 | Level design. Starter scene. Hide and protect borders | 1 | Done
 | Level design. Main scene. Borders decor               | 1 | Done
 | Level design. Main scene. Borders decor               | 1 | Done
