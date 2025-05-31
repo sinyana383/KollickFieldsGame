@@ -5052,6 +5052,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BackgroundMusic
       objectReference: {fileID: 0}
+    - target: {fileID: 2327715985400395503, guid: 883820c2801298b42a98c339203100bd, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4900631533261136478, guid: 883820c2801298b42a98c339203100bd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -5107,7 +5111,7 @@ PrefabInstance:
     - target: {fileID: 5748984178472332371, guid: 883820c2801298b42a98c339203100bd, type: 3}
       propertyPath: 'audioClips.Array.data[1]'
       value: 
-      objectReference: {fileID: 8300000, guid: 6eadc6fe5999ae64bb56b60fb539492d, type: 3}
+      objectReference: {fileID: 8300000, guid: aedb201152f1c4b44bd92300ec56310e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10601,7 +10605,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15799,8 +15803,12 @@ PrefabInstance:
       value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 4310161508395848999, guid: 989d909146f76f7448c4c3cabfd4cd6b, type: 3}
+      propertyPath: hp
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 4310161508395848999, guid: 989d909146f76f7448c4c3cabfd4cd6b, type: 3}
       propertyPath: maxHp
-      value: 100
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 4493840492130023736, guid: 989d909146f76f7448c4c3cabfd4cd6b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -28160,6 +28168,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3983334194128337479, guid: 25265cc024d14684ca4c786a8de2bc31, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4360727500316573461, guid: 25265cc024d14684ca4c786a8de2bc31, type: 3}
+      propertyPath: m_MaxValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4360727500316573461, guid: 25265cc024d14684ca4c786a8de2bc31, type: 3}
+      propertyPath: m_MinValue
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5515821704003122444, guid: 25265cc024d14684ca4c786a8de2bc31, type: 3}

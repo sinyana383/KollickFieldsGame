@@ -74,6 +74,8 @@ public class AudioSourceSetting : MonoBehaviour
             return;
         audioSource.clip = audioClips[index];
         audioSource.Play();
+        if (audioType == AudioType.music)
+            audioSource.loop = true;
     }
     
     public int GetAudioClipCount() => audioClips.Length;
