@@ -131,14 +131,12 @@ public class GameState : MonoBehaviour
     private void Start()
     {
         if (Instance != this) return;
-        Debug.Log("GameState start");
-        LoadGameState();
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         Debug.Log("GameState OnSceneLoaded");
-        if (!LoadGameState() && scene.buildIndex == 1) 
+        if (scene.buildIndex == 1 && !LoadGameState()) 
         {
             akratit = SubjectState.None;
             idol = SubjectState.None;

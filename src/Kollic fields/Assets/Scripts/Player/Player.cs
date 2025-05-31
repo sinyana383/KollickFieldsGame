@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     [SerializeField] private string savefileName = "player";
-    [SerializeField] int maxHp = 100;
-    [SerializeField] int hp = 100;
+    [SerializeField] int maxHp = 200;
+    [SerializeField] int hp = 200;
 
     public int HP
     {

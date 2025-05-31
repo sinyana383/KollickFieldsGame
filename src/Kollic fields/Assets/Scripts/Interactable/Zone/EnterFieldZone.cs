@@ -4,7 +4,10 @@ public class EnterFieldZone : Zone
 {
     private void OnTriggerEnter(Collider other)
     {
-        FunctionOnTriggerEnter(other);
+        if (other.TryGetComponent<Player>(out Player player))
+        {
+            FunctionOnTriggerEnter(other);
+        }
     }
 
     protected override void FunctionOnTriggerEnter(Collider other)

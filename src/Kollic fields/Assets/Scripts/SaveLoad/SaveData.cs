@@ -62,7 +62,7 @@ public class SaveData
 
         public PlayerData(Player player)
         {
-            player.HP = hp;
+            hp = player.HP;
             
             position[0] = player.transform.position.x;
             position[1] = player.transform.position.y;
