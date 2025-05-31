@@ -55,6 +55,7 @@ public class Player : MonoBehaviour
     void PlayerDead()
     {
         Debug.Log("Player is dead");
+        EventManager.Player.OnPlayerDeath?.Invoke();
         EventManager.Game.OnGameOver?.Invoke();
         EventManager.Game.OnSceneTransition?.Invoke(0);
     }

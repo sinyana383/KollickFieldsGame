@@ -86,6 +86,7 @@ public class GameState : MonoBehaviour
         EventManager.Akratit.OnAkratitDeath += ChangeStateByTaskName;
         EventManager.Idol.OnIdolDestroyed += ChangeStateByTaskName;
         EventManager.Game.OnGameOver += SetGameOver;
+        EventManager.Player.OnPlayerDeath += MainCharacterDestroyed;
 
         EventManager.Save.OnSaveGame += SaveGameState;
     }
@@ -99,10 +100,13 @@ public class GameState : MonoBehaviour
         EventManager.Akratit.OnAkratitDeath -= ChangeStateByTaskName;
         EventManager.Idol.OnIdolDestroyed -= ChangeStateByTaskName;
         EventManager.Game.OnGameOver -= SetGameOver;
+        EventManager.Player.OnPlayerDeath -= MainCharacterDestroyed;
         
         EventManager.Save.OnSaveGame -= SaveGameState;
     }
 
+    private void MainCharacterDestroyed() => mainCharacter = SubjectState.Destroyed;
+    
     private void ChangeState(out SubjectState state, SubjectState newState)
     {
         state = newState;
@@ -127,11 +131,7 @@ public class GameState : MonoBehaviour
         mainCharacter = (SubjectState)gameStateData.mainCharacter;
         return true;
     }
-
-    private void Start()
-    {
-        if (Instance != this) return;
-    }
+    
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {

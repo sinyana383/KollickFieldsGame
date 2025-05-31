@@ -20,6 +20,8 @@ public static class EventManager
         public UnityAction OnStaminaUseExited;
         public UnityAction<float> OnStaminaChanged;
         public UnityAction<float> OnHealthChanged;
+
+        public UnityAction OnPlayerDeath;
     }
     
     public class AkratitEv

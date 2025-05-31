@@ -7239,9 +7239,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7443045582763213105, guid: 6422c0515d3633c4bab7c5f9e2f645d4, type: 3}
+      propertyPath: curNode
+      value: 
+      objectReference: {fileID: 11400000, guid: 9c7d2d8a6137c8f41b70a4faec005c26, type: 2}
+    - target: {fileID: 7443045582763213105, guid: 6422c0515d3633c4bab7c5f9e2f645d4, type: 3}
       propertyPath: endNode
       value: 
-      objectReference: {fileID: 11400000, guid: 7159098f80fdc2f438e5a105bf57ef38, type: 2}
+      objectReference: {fileID: 11400000, guid: 9c7d2d8a6137c8f41b70a4faec005c26, type: 2}
     - target: {fileID: 7443045582763213105, guid: 6422c0515d3633c4bab7c5f9e2f645d4, type: 3}
       propertyPath: gameState
       value: 
@@ -7249,7 +7253,7 @@ PrefabInstance:
     - target: {fileID: 7443045582763213105, guid: 6422c0515d3633c4bab7c5f9e2f645d4, type: 3}
       propertyPath: startNode
       value: 
-      objectReference: {fileID: 11400000, guid: d1a2787a77e630e45bdd3c2a1e8932f8, type: 2}
+      objectReference: {fileID: 11400000, guid: 7686fc502055fb8488483236493f04e9, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
