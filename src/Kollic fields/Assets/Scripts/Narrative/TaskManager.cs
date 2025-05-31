@@ -107,6 +107,7 @@ public class TaskManager : MonoBehaviour
         EventManager.Akratit.OnAkratitDeath -= PlayTaskComments;
         EventManager.Idol.OnIdolFound -= PlayTaskComments;
         EventManager.Idol.OnIdolDestroyed -= PlayTaskComments;
+        EventManager.Akratit.RunFromAkratit -= CheckRunHome;
     }
 
     public void ChangeTaskList(TaskBranch task, TaskBranch.TaskState state)
